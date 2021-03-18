@@ -49,3 +49,7 @@ Just print some values probably.
 ### reset
 
 Assign a random state for the DPLM
+
+## The main file
+
+Basically a while loop with the algorithm and some stopping conditions.
