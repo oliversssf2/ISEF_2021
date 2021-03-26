@@ -10,7 +10,7 @@ The purpose of this class is to create a DPLM object that:
 
 3. Store the variables of the DPLM object in different states for reusing when its functions are called again with the exact same parameters.
 
-### Function required:
+### Function required
 
 1. A change state function that takes in the change of slot of each springs as input).
 2. A return state function
