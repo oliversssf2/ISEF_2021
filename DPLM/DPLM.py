@@ -4,7 +4,7 @@ import math
 import matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
-matplotlib.use('MacOSX')
+
 
 def print_dir():
     print(os.getcwd())
@@ -104,18 +104,18 @@ def _calculate_moment(self, inst_pos, spring_constant, spring_init_len, angle):
 
     #calculate the coordinate of the COMs of the linkages
     #the prefix m_ stands for COM
-    m_o1o_1x = o1x + self.dplm_config['r_o1o_1'] * math.cos(math.radians(self.dplm_config['alpha_o1o_1']) + angle)
-    m_o1o_1y = o1y + self.dplm_config['r_o1o_1'] * math.sin(math.radians(self.dplm_config['alpha_o1o_1']) + angle)
+    m_o1o_1y = o1y + self.dplm_config['r_o1o_1'] * math.sin(math.radians(self.dplm_config['alpha_o1o_1'] + angle))
+    m_o1o_1x = o1x + self.dplm_config['r_o1o_1'] * math.cos(math.radians(self.dplm_config['alpha_o1o_1'] + angle))
 
 
-    m_o2o_2x = o2x + self.dplm_config['r_o2o_2'] * math.cos(math.radians(self.dplm_config['alpha_o2o_2']) + angle)
-    m_o2o_2y = o2y + self.dplm_config['r_o2o_2'] * math.sin(math.radians(self.dplm_config['alpha_o2o_2']) + angle)
+    m_o2o_2x = o2x + self.dplm_config['r_o2o_2'] * math.cos(math.radians(self.dplm_config['alpha_o2o_2'] + angle))
+    m_o2o_2y = o2y + self.dplm_config['r_o2o_2'] * math.sin(math.radians(self.dplm_config['alpha_o2o_2'] + angle))
 
-    m_o3o_3x = o3x - self.dplm_config['r_o3o_3'] * math.cos(math.radians(self.dplm_config['alpha_o3o_3']) + angle)
-    m_o3o_3y = o3y + self.dplm_config['r_o3o_3'] * math.sin(math.radians(self.dplm_config['alpha_o3o_3']) + angle)
+    m_o3o_3x = o3x - self.dplm_config['r_o3o_3'] * math.cos(math.radians(self.dplm_config['alpha_o3o_3'] + angle))
+    m_o3o_3y = o3y + self.dplm_config['r_o3o_3'] * math.sin(math.radians(self.dplm_config['alpha_o3o_3'] + angle))
 
-    m_o4o_4x = o4x - self.dplm_config['r_o4o_4'] * math.cos(math.radians(self.dplm_config['alpha_o4o_4']) + angle)
-    m_o4o_4y = o4y + self.dplm_config['r_o4o_4'] * math.sin(math.radians(self.dplm_config['alpha_o4o_4']) + angle)
+    m_o4o_4x = o4x - self.dplm_config['r_o4o_4'] * math.cos(math.radians(self.dplm_config['alpha_o4o_4'] + angle))
+    m_o4o_4y = o4y + self.dplm_config['r_o4o_4'] * math.sin(math.radians(self.dplm_config['alpha_o4o_4'] + angle))
 
     m_o_1o_2x = o2x + self.dplm_config['r_o_1o_2'] * math.sin(math.radians(self.dplm_config['alpha_o_1o_2']))
     m_o_1o_2y = o2y - self.dplm_config['r_o_1o_2'] * math.cos(math.radians(self.dplm_config['alpha_o_1o_2']))
@@ -193,10 +193,10 @@ class DPLM:
             # print("<{}:{}>".format(type(item[0]), type(item[1])))
 #Testing code
 if __name__ == "__main__":
-    dplm = DPLM("/home/fongsu/git_repos/R_Learning_gym/para1.csv")
-    dplm.show_dplm_config()
-    k = [dplm.calculate_moment(0.2,0.3,0.2, item) for item in range(-50, 50)]
+    dplm = DPLM("/Users/fongsu/git_project/R_Learning_gym/para1.csv")
+    k = [dplm.calculate_moment(0.2,0.3,0.2, item)[1] for item in range(-50, 51)]
     print(k)
-    plt.plot(k)
+    dplm.calculate_moment(0.25)
+    plt.plot(range(-50,51), k)
     plt.show()
     
