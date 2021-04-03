@@ -1,7 +1,6 @@
-import DPLM.DPLM as dplm
+# import DPLM.DPLM as dplm
 import sys
 import os 
+import gym
 
-print(os.getcwd())
-dplm.print_dir()
-
+gym.make('gym_dplm:dplm-v0')
