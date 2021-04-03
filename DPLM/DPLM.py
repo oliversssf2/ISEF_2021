@@ -183,16 +183,30 @@ class dplm:
     calculate_moment = _calculate_moment
 
     def __init__(self, dplm_config_file):
-        self.dplm_config = {}
-        self.spring_positions = []
+        #the basic parameters (length, mass, etc.) of the DPLM instance
+        self.dplm_config =      {}
+        
         self.spring_constants = []
+        self.dplm_allowed_angle_range = {}
+        
+        self.spring_positions = []
+        
         self.import_parameter(dplm_config_file, self.dplm_config)
 
     def show_dplm_config(self):
         for item in sorted(self.dplm_config.items()):
             print('{}:{}'.format(item[0], item[1]))
-            # print("<{}:{}>".format(type(item[0]), type(item[1])))
-#Testing code
+
+    def set_dplm_allowed_angle_range(upper, lower, step):
+        if ((upper-lower)/step).is_integer()==False:
+            raise ValueError('The angle range and step value is not valid \n \
+                The upper limit is {}. The lower limit is {}. The step value\
+                    is {}'.format(upper, lower,step))
+        else:
+            self.dplm
+
+
+# Testing code
 if __name__ == "__main__":
     dplm_1 = dplm("/Users/fongsu/git_project/R_Learning_gym/para1.csv")
     k = [dplm_1.calculate_moment(0.2,0.3,0.2, item)[1] for item in range(-50, 51)]

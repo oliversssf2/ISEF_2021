@@ -8,11 +8,11 @@ The purpose of this class is to create a DPLM object that:
 
 2. Performs all the calculations (moment, position, angle, etc.) and returns the requested variables of the DPLM When its functions are called.
 
-3. Store the variables of the DPLM object in different states for reusing when its functions are called again with the exact same parameters.
+3. Cache different states of DPLM for reusing when its functions are called again with the same parameters.
 
 ### Function required
 
-1. A change state function that takes in the change of slot of each springs as input).
+1. A change state function that takes in the change of slot of each spring as input).
 2. A return state function
 3. A RMSE calculation function (used as the reward for the action taken).
 4. Internal calculation functions.
@@ -39,12 +39,12 @@ setup the followings:
 
 1. change state by calling the DPLM object (spring installation position) according to action taken by the algorithm.
 2. Give reward according to updated state (RMSE across all angles)
-3. check if the mission is done (probably RMSE within certain range or if maximum step reached)
+3. check if the mission is done (probably RMSE within a certain range or if maximum step reached)
 4. return info
 
 ### render
 
-Just print some values probably.
+Just print some values.
 
 ### reset
 
@@ -52,4 +52,6 @@ Assign a random state for the DPLM
 
 ## The main file
 
-Basically a while loop with the algorithm and some stopping conditions.
+A while loop plus the algorithm and some stopping conditions.
+
+## Interactions between the dplm base class and the dplm environment class.
