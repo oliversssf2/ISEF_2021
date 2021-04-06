@@ -24,14 +24,14 @@ The purpose of this class is to create a DPLM object that:
 - n springs
 - l slots for spring installation on each linkage (in total $2l-1$ ways to install a single spring)
 
-- each of the three springs can either remain in the original slot (+0), move to the left r right adjacent slot (+1/-1), move to the third slot to its either side (+3/-3). So there are in total 5^n possible actions. (Tuple(5,5,...,5)(n in total))
+- each of the three springs can either remain in the original slot (+0), move to the left r right adjacent slot (+1/-1), move to the third slot to its either side (+3/-3). So there are in total 5^n possible actions. (MultiDiscrete[5,5,5]) 
   
 ### init
 
 setup the followings:
 
-- action space: Tuple (n*Discrete(5))
-- observation space: Tuple (n*Discrete($2l-1$))
+- action space: MultiDiscrete[n*5]
+- observation space: MultiDiscrete[n*($2l-1$)]
 - initiatiate the DPLM with a random state
 - set maximum episode length (max step)
 
@@ -54,4 +54,11 @@ Assign a random state for the DPLM
 
 A while loop plus the algorithm and some stopping conditions.
 
-## Interactions between the dplm base class and the dplm environment class.
+## Interactions between the dplm base class, the main class, and the dplm environment class
+
+main---------------------------dplm base class---------------------------dplm env class
+
+Request a DPLM instance with dplm configuation, spring number, spring constants, slot number, angle range, angle step.
+
+-------------------------------------------------------------------------->
+
