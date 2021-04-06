@@ -82,7 +82,7 @@ class DplmEnv(gym.Env):
 
         #Value at which the episode is considererd to be successful
         self.rmse = None
-        self.rmse_threshold = 2
+        self.rmse_threshold = 1
         self.action_per_spring_num = 4
         self.action_per_spring = [-1, 1, -3, 3]
 
@@ -133,7 +133,7 @@ class DplmEnv(gym.Env):
         #if the action is infeasible, set the reward to -10000 and not update the
         #state of the dplm agent.
 
-        print('Step: action is {}'.format(action))
+        # print('Step: action is {}'.format(action))
         action_to_take = self.action_list[action]
         new_state = [sum(x) for x in zip(action_to_take, self.state)]
         
@@ -144,17 +144,19 @@ class DplmEnv(gym.Env):
             self.state = new_state
             self.dplm_agent.set_slot([x-self.dplm_agent.get_slot_num()+1 for x in new_state])
             self.rmse = self.dplm_agent.current_rmse()
-            reward = self.rmse
-            print('Step: new state is {}'.format(new_state))
-            print('Step: new positions are {}.'.format([x-self.dplm_agent.get_slot_num()+1 for x in new_state]))
+            reward = -self.rmse
+            # print('Step: new state is {}'.format(new_state))
+            # print('Step: new positions are {}.'.format([x-self.dplm_agent.get_slot_num()+1 for x in new_state]))
         done = bool(
             not self.rmse
             and self.rmse < self.rmse_threshold
         )
+        
 
         if not done:
             pass
         elif self.steps_beyond_done is None:
+            # print("DONE!!")
             self.steps_beyond_done = 0
             reward = 1 #??? should i do this or should i just use the RMSE
         else:
@@ -179,8 +181,8 @@ class DplmEnv(gym.Env):
         self.dplm_agent.set_slot([x-slot_num+1 for x in self.state])
         self.steps_beyond_done = None
 
-        print('Reset: spring_num is {}. slot_num is{}.'.format(self.dplm_agent.get_spring_num(), self.dplm_agent.get_slot_num))
-        print('Reset: self state is {}. New positions are {}'.format(self.state,[x-slot_num+1 for x in self.state]))
+        # print('Reset: spring_num is {}. slot_num is{}.'.format(self.dplm_agent.get_spring_num(), self.dplm_agent.get_slot_num))
+        # print('Reset: self state is {}. New positions are {}'.format(self.state,[x-slot_num+1 for x in self.state]))
         return np.array(self.state)
 
     def render(self, mode='human'):
@@ -211,7 +213,9 @@ class DplmEnv(gym.Env):
 
             plt.pause(0.001)
         elif mode=='text':
-            print('Render: state: {}, rmse: {}'.format(self.state, self.rmse))
+            pass
+            # print('Render: state: {}, rmse: {}'.format(self.state, self.rmse))
+
     def close(self):
         pass
     

@@ -331,7 +331,7 @@ class dplm:
             moment_weight = [self._calculate_moment(0,0,0,i+angle_range['lower_limit'], True, False)[1]\
              for i in range(angle_range['total_angle_num'])]
             self.moment_cache['moment_weight'] = moment_weight
-            print('caching moment_weight')
+            # print('caching moment_weight')
 
         
         for spring in range(self.spring_num):
@@ -350,7 +350,7 @@ class dplm:
                 self.moment_cache['moment_spring_dict']\
                     [(self.spring_constants[spring], self.spring_positions[spring],self.spring_init_lengths[spring])]\
                          = moment_spring
-                print('caching new moment_spring')
+                # print('caching new moment_spring')
 
             moment_spring_list.append(moment_spring)
 
@@ -422,7 +422,7 @@ class dplm:
 
         #minus one because there are only slot_num-1 intervals
         self.set_springs_positions([(linkage_length/(slot_num-1))*x for x in slots])
-        print('Set_slot: spring positions are {}'.format(self.spring_positions))
+        # print('Set_slot: spring positions are {}'.format(self.spring_positions))
         self.calculate_current_moment()
         
 
