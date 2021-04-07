@@ -139,19 +139,21 @@ class DplmEnv(gym.Env):
         
         if (((max(new_state))>(2*self.dplm_agent.get_slot_num()-2)) 
             or ((min(new_state))<0)):
-            reward = -10000
+            reward = -1
+            done = True
+
         else:
             self.state = new_state
             self.dplm_agent.set_slot([x-self.dplm_agent.get_slot_num()+1 for x in new_state])
             self.rmse = self.dplm_agent.current_rmse()
-            reward = -self.rmse
+            reward = 1/self.rmse
             # print('Step: new state is {}'.format(new_state))
             # print('Step: new positions are {}.'.format([x-self.dplm_agent.get_slot_num()+1 for x in new_state]))
-        done = bool(
-            not self.rmse
-            and self.rmse < self.rmse_threshold
-        )
-        
+            done = bool(
+                not self.rmse
+                and self.rmse < self.rmse_threshold
+            ) 
+  
 
         if not done:
             pass
