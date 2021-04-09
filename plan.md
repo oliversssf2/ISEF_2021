@@ -56,9 +56,3 @@ A while loop plus the algorithm and some stopping conditions.
 
 ## Interactions between the dplm base class, the main class, and the dplm environment class
 
-main---------------------------dplm base class---------------------------dplm env class
-
-Request a DPLM instance with dplm configuation, spring number, spring constants, slot number, angle range, angle step.
-
--------------------------------------------------------------------------->
-

@@ -1,4 +1,3 @@
-from re import I
 import gym
 from gym import error, spaces, utils, logger
 from gym.utils import seeding
@@ -68,7 +67,7 @@ class DplmEnv(gym.Env):
 
     def __init__(self, dplm_config_file, spring_num = 3, slot_num = 20, \
                  spring_constants=[300, 300, 300], spring_init_lengths=[0.16,0.16,0.16],\
-                 **allowed_angle_range):
+                 rmse_limit = 2, **allowed_angle_range):
         
         #Initialize the dplm agent with given parameters
         self.dplm_agent = dplm_base.dplm(dplm_config_file)
@@ -82,9 +81,9 @@ class DplmEnv(gym.Env):
 
         #Value at which the episode is considererd to be successful
         self.rmse = None
-        self.rmse_threshold = 1
-        self.action_per_spring_num = 4
-        self.action_per_spring = [-1, 1, -3, 3]
+        self.rmse_threshold = rmse_limit 
+        self.action_per_spring_num = 8
+        self.action_per_spring = [-1,1, -3, 3, -5, 5, -7, 7]
 
         self.possible_installation_num = 2*slot_num-1
         self.action_space = spaces.Discrete(spring_num * self.action_per_spring_num)
@@ -160,7 +159,7 @@ class DplmEnv(gym.Env):
         elif self.steps_beyond_done is None:
             # print("DONE!!")
             self.steps_beyond_done = 0
-            reward = 1 #??? should i do this or should i just use the RMSE
+            # reward = 1 #??? should i do this or should i just use the RMSE
         else:
             if self.steps_beyond_done == 0:
                 logger.warn(
@@ -170,7 +169,7 @@ class DplmEnv(gym.Env):
                     "True' -- any further steps are undefined behavior."
                 )
             self.steps_beyond_done += 1
-            reward = 0 #????
+            # reward = 0 #????
         
         return np.array(self.state), reward, done, {}
         

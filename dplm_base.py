@@ -67,14 +67,6 @@ class dplm:
         #       }
         #      
         # }
-        self.moment_cache = {
-            'moment_weight':[],
-            'moment_spring_dict':{
-
-            }
-
-        }
-
         
     def show_dplm_config(self):
         for item in sorted(self.dplm_config.items()):
@@ -324,44 +316,32 @@ class dplm:
         angle_range = self.dplm_allowed_angle_range
         moment_spring_list = []
 
-        #Take list from cache if the list is not empty
-        if(self.moment_cache['moment_weight']):
-            moment_weight = self.moment_cache['moment_weight']
-        else:
-            moment_weight = [self._calculate_moment(0,0,0,i+angle_range['lower_limit'], True, False)[1]\
-             for i in range(angle_range['total_angle_num'])]
-            self.moment_cache['moment_weight'] = moment_weight
-            # print('caching moment_weight')
+        moment_weight = [self._calculate_moment(0,0,0,i+angle_range['lower_limit'], True, False)[1]\
+        for i in range(angle_range['total_angle_num'])]
 
         
         for spring in range(self.spring_num):
-            if(self.spring_constants[spring], self.spring_positions[spring],self.spring_init_lengths[spring]) \
-                in self.moment_cache['moment_spring_dict'].keys():
-                moment_spring = self.moment_cache['moment_spring_dict']\
-                    [(self.spring_constants[spring], self.spring_positions[spring],self.spring_init_lengths[spring])]
-
-            else:
-                moment_spring  = [self._calculate_moment(
-                    self.spring_positions[spring],
-                    self.spring_constants[spring],
-                    self.spring_init_lengths[spring],
-                    angle+angle_range['lower_limit'], False, True)[0] 
-                    for angle in range(angle_range['total_angle_num'])]
-                self.moment_cache['moment_spring_dict']\
-                    [(self.spring_constants[spring], self.spring_positions[spring],self.spring_init_lengths[spring])]\
-                         = moment_spring
-                # print('caching new moment_spring')
-
+            moment_spring  = [self._calculate_moment(
+                self.spring_positions[spring],
+                self.spring_constants[spring],
+                self.spring_init_lengths[spring],
+                angle+angle_range['lower_limit'], False, True)[0] 
+                for angle in range(angle_range['total_angle_num'])]
             moment_spring_list.append(moment_spring)
-
+        
+        moment_total = [sum(x) for x in zip(*moment_spring_list, [-y for y in moment_weight])]
+        
+        temp = 0
+        for x in moment_total:
+            temp+=x**2
+        rmse = math.sqrt(temp/self.dplm_allowed_angle_range['total_angle_num'])
         # for i in moment_spring_list:
             # print('****************************************')
             # for k in i:
                 # print(k)
 
         #The sum of the moments of all springs minus the moment of weight        
-        moment_total = [sum(x) for x in zip(*moment_spring_list, [-y for y in moment_weight])]
-        return moment_weight, moment_spring_list, moment_total
+        return moment_weight, moment_spring_list, moment_total, rmse
 
     def get_allowed_angle_range(self):
         """return the dictionary containing the allowed angle range
@@ -377,17 +357,8 @@ class dplm:
         """
         return self.dplm_allowed_angle_range
 
-    def current_rmse(self):
-        moment_weight = self.moment_cache['moment_weight']
-        moment_spring_list = []
-        for spring in zip(self.spring_constants, self.spring_positions, self.spring_init_lengths):
-            moment_spring_list.append(self.moment_cache['moment_spring_dict'][spring])
-        moment_total = [sum(x) for x in zip(*moment_spring_list, [-y for y in moment_weight])]
-        
-        temp = 0
-        for x in moment_total:
-            temp+=x**2
-        rmse = math.sqrt(temp/self.dplm_allowed_angle_range['total_angle_num'])
+    def current_rmse(self ):
+        rmse = self.calculate_current_moment()[3]
         return rmse
         
     def get_slot_num(self):
@@ -396,6 +367,9 @@ class dplm:
     def get_spring_num(self):
         return self.spring_num
 
+    def set_extremity_load(self, load_mass_kg):
+        self.dplm_config['m_o_1o_2'] = load_mass_kg
+        pass
     def set_slot(self, slots):
         """Change the installation slots of the springs on the dplm as specified
            by the incoming list [slots]. The lenght [slots] must be equal to the 
@@ -423,7 +397,7 @@ class dplm:
         #minus one because there are only slot_num-1 intervals
         self.set_springs_positions([(linkage_length/(slot_num-1))*x for x in slots])
         # print('Set_slot: spring positions are {}'.format(self.spring_positions))
-        self.calculate_current_moment()
+        #self.calculate_current_moment()
         
 
 # Testing code
