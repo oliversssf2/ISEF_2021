@@ -90,7 +90,7 @@ aps={'max_num_iteration': None,\
 sample_size = 100000
 
 # Backup size
-backup_size = 2
+backup_size = 50 
 # %%
 if __name__ == "__main__":
     # file name prefix
