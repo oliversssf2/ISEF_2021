@@ -57,42 +57,30 @@ import time
 import random
 
 
-# %%
-# define ranges of random parameters
-# spring constants [150, 500] (N/m)
-s_c_range = np.array([150, 500])
-# spring initial length [0.2, 0.4] (m)
-s_l_range = np.array([0.15, 0.4])
-# extremity load [0, 5] (kg)
-e_l_range = np.array([0, 10])
-# number of springs (2 to six)
-s_num_range = np.array([2, 6])
+# # %%
+# # define ranges of random parameters
+# # spring constants [150, 500] (N/m)
+# s_c_range = np.array([150, 500])
+# # spring initial length [0.2, 0.4] (m)
+# s_l_range = np.array([0.15, 0.4])
+# # extremity load [0, 5] (kg)
+# e_l_range = np.array([0, 10])
+# # number of springs (2 to six)
+# s_num_range = np.array([2, 6])
 
-# optimization constraint
-# installation position: [-0.4, 0.4]
-i_p_range = np.array([-0.4, 0.4])
-i_p_step_size = 1e-2
+# # optimization constraint
+# # installation position: [-0.4, 0.4]
+# i_p_range = np.array([-0.4, 0.4])
+# i_p_step_size = 1e-2
 
-#angle range and step size (lower, upper, step)
-ang_ran = [-40, 60, 4]
+# #angle range and step size (lower, upper, step)
+# ang_ran = [-40, 60, 4]
 
-# GA parameters
-aps={'max_num_iteration': None,\
-                'population_size':100,\
-                'mutation_probability':0.1,\
-                'elit_ratio': 0.01,\
-                'crossover_probability': 0.5,\
-                'parents_portion': 0.3,\
-                'crossover_type':'uniform',\
-                'max_iteration_without_improv':30}
 
-# Objective sample size
-sample_size = 100000
 
-# Backup size
-backup_size = 50 
-# %%
-if __name__ == "__main__":
+
+
+def file_set_up():
     # file name prefix
     currentdir = os.getcwd()
     name = sys.argv[2]
@@ -102,33 +90,136 @@ if __name__ == "__main__":
         os.mkdir(save_dir)
     save_file = os.path.join(save_dir, name)+'.csv'
 
-    # create filename according to input
-    f_name = '{}.csv'.format(name)
-
-    dplm_instance = dplm_base.dplm('para1.csv')
-    dplm_instance.set_dplm_allowed_angle_range(*ang_ran)
-    # dplm_instance.set_dplm_spring_num(s_num)
-
-    def fitness_func(X):
-       dplm_instance.set_springs_positions(X*i_p_step_size)
-       return dplm_instance.current_rmse() 
-
-    
-
-    rng = default_rng()
-    
-    sample_count = 0
-    #write the header
     with open(save_file, mode = 'w+', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['s_num[int]', 's_const[N/m]', 's_len[m]', 'e_load','s_pos', 'rmse'])
     csvfile.close()
 
+    return save_file
+
+def setup_paras1():
+    # define ranges of random parameters
+    # spring constants [150, 500] (N/m)
+    s_c_range = np.array([150, 500])
+    # spring initial length [0.2, 0.4] (m)
+    s_l_range = np.array([0.15, 0.4])
+    # extremity load [0, 5] (kg)
+    e_l_range = np.array([0, 10])
+    # number of springs (2 to six)
+    s_num_range = np.array([2, 6])
+
+    # optimization constraint
+    # installation position: [-0.4, 0.4]
+    i_p_range = np.array([-0.4, 0.4])
+    i_p_step_size = 1e-2
+
+    #angle range and step size (lower, upper, step)
+    ang_ran = [-40, 60, 4]
+
+    # GA parameters
+    aps={'max_num_iteration': None,\
+                'population_size':100,\
+                'mutation_probability':0.1,\
+                'elit_ratio': 0.01,\
+                'crossover_probability': 0.5,\
+                'parents_portion': 0.3,\
+                'crossover_type':'uniform',\
+                'max_iteration_without_improv':30}
+
+    # Objective sample size
+    sample_size = 100000
+    # Backup size
+    backup_size = 50 
+
+    dplm_instance = dplm_base.dplm('para1.csv')
+    dplm_instance.set_dplm_allowed_angle_range(*ang_ran)
+    
+    # dplm_instance.set_dplm_spring_num(s_num)
+
+    def fitness_func(X):
+       dplm_instance.set_springs_positions(X*i_p_step_size)
+       return dplm_instance.current_rmse() 
+    rng = default_rng()
+
+    return s_c_range, s_l_range, e_l_range, s_num_range, i_p_range, i_p_step_size, ang_ran, aps, sample_size, backup_size, dplm_instance, fitness_func, rng
+
+def setup_paras2():
+    # define ranges of random parameters
+    # spring constants [150, 500] (N/m)
+    s_c_range = np.array([150, 500])
+    # spring initial length [0.15, 0.4] (m)
+    s_l_range = np.array([0.15, 0.4])
+    # extremity load [0, 5] (kg)
+    e_l_range = np.array([0, 10])
+    # number of springs (2 to six)
+    s_num_range = np.array([5, 5])
+
+    # optimization constraint
+    # installation position: [-0.4, 0.4]
+    i_p_range = np.array([-0.4, 0.35])
+    i_p_step_size = 1e-2
+
+    #angle range and step size (lower, upper, step)
+    ang_ran = [-40, 60, 4]
+
+    # GA parameters
+    aps={'max_num_iteration': None,\
+                'population_size':3000,\
+            'mutation_probability':0.01,
+                'elit_ratio': 0.05,\
+                'crossover_probability': 0.5,\
+                'parents_portion': 0.3,\
+                'crossover_type':'uniform',\
+                'max_iteration_without_improv':200} 
+    # aps={'max_num_iteration': None,\
+    #             'population_size':1500,\
+    #             'mutation_probability':0.01,\
+    #             'elit_ratio': 0.02,\
+    #             'crossover_probability': 0.5,\
+    #             'parents_portion': 0.3,\
+    #             'crossover_type':'uniform',\
+    #             'max_iteration_without_improv':200}
+    # aps={'max_num_iteration': None,\
+    #             'population_size':300,\
+    #             'mutation_probability':0.01,\
+    #             'elit_ratio': 0.01,\
+    #             'crossover_probability': 0.3,\
+    #             'parents_portion': 0.3,\
+    #             'crossover_type':'uniform',\
+    #             'max_iteration_without_improv':50}
+    # Objective sample size
+    sample_size = 100000
+    # Backup size
+    backup_size = 50 
+
+    dplm_instance = dplm_base.dplm('para1.csv')
+    dplm_instance.set_dplm_allowed_angle_range(*ang_ran)
+    
+    # dplm_instance.set_dplm_spring_num(s_num)
+
+    def fitness_func(X):
+    #    dplm_instance.set_springs_positions(X*i_p_step_size)
+       dplm_instance.set_springs_positions(X)
+       return dplm_instance.current_rmse() 
+    rng = default_rng()
+
+    return s_c_range, s_l_range, e_l_range, s_num_range, i_p_range, i_p_step_size, ang_ran, aps, sample_size, backup_size, dplm_instance, fitness_func, rng
+
+
+# %%
+if __name__ == "__main__":
+    save_file = file_set_up()
+    s_c_range, s_l_range, e_l_range, s_num_range, i_p_range,\
+         i_p_step_size, ang_ran, aps, sample_size, backup_size,\
+              dplm_instance, fitness_func, rng = setup_paras2()
+
+    
+    sample_count = 0
+    #write the header
+
     buffer = []
     for i in range(sample_size):
         start = time.time() #start timer
-
-        
         # generate random parameters and change the state of the dplm with them
         s_num = int(rng.integers(*s_num_range, endpoint = True))
         s_c = rng.uniform(*s_c_range, s_num)
@@ -140,10 +231,11 @@ if __name__ == "__main__":
         dplm_instance.set_dplm_spring_lengths(s_l)
         dplm_instance.set_extremity_load(e_l)
         
-        varbound=np.array([[i_p_range[0]/i_p_step_size,i_p_range[1]/i_p_step_size]]*s_num)
+        # varbound=np.array([[i_p_range[0]/i_p_step_size,i_p_range[1]/i_p_step_size]]*s_num)
+        varbound=np.array([[i_p_range[0],i_p_range[1]]]*s_num)
         model=ga(function=fitness_func,
                 dimension=s_num,
-                variable_type='int',
+                variable_type='real',
                 variable_boundaries=varbound,
                 algorithm_parameters=aps,
                 convergence_curve=False,
@@ -156,7 +248,7 @@ if __name__ == "__main__":
                   e_l,
                   *(model.output_dict['variable']*i_p_step_size),
                   model.output_dict['function']]
-        print('exporting: {}'.format(export))
+        # print('exporting: {}'.format(export))
         buffer.append(export)
 
         del model 
