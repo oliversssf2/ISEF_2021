@@ -14,7 +14,7 @@ import time
 
 
 
-def setup1(eplm_instance): 
+def setup1(dplm_instance): 
     aps={'max_num_iteration': None,\
                 'population_size':100,\
                 'mutation_probability':0.2,\
@@ -47,7 +47,7 @@ def setup1(eplm_instance):
     model=ga(function=f,dimension=9,variable_type='int',variable_boundaries=varbound, algorithm_parameters=aps)
     return model
 
-def setup2(eplm_instance): 
+def setup2(dplm_instance): 
     aps={'max_num_iteration': None,\
                 'population_size':300,\
                 'mutation_probability':0.2,\
@@ -95,8 +95,8 @@ def setup3(file):
     dplm_instance.show_dplm_config()
     dplm_instance.set_dplm_allowed_angle_range(-40, 60, 1)
 
-    spring_constant = 74
-    spring_initial_length = 0.186
+    spring_constant = 52/2
+    spring_initial_length = 0.184
     slot_num = 39
 
     install_position_step = 1e-2
@@ -113,7 +113,7 @@ def setup3(file):
         dplm_instance.rm_triangle()
         return val
 
-    varbound=np.array([[1, 20]]+ [[-slot_num+1, slot_num-1]]*2)
+    varbound=np.array([[1, 20]]+ [[-15, 16]]*2)
     vartype=np.array([['int'],['int'],['int']])
     model=ga(function=f,dimension=3,
              variable_boundaries=varbound, algorithm_parameters=aps,
