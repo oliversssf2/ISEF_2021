@@ -3,9 +3,25 @@ import numpy as np
 import matplotlib.pyplot as plt
 import csv
 import pandas as pd
+import os
+from pathlib import Path
 
 
 plotting = True
+save_path_str = '4_springs_5_loops'
+
+
+def ensure_path(path_str):
+    cwd = Path.cwd()
+    path = Path.joinpath(cwd, path_str)
+    try:
+        Path.mkdir(path, parents=True)
+    except FileExistsError:
+        path_str = input('This path [{}] already exists. Enter a new folder name'.format(path_str))
+    return path
+        
+    
+
 
 if __name__ == '__main__':
     dplm_instance = dplm_base.dplm('para1.csv')
@@ -17,8 +33,9 @@ if __name__ == '__main__':
     dplm_instance.set_dplm_spring_lengths([0.1, 0.2, 0.17, .13])
     dplm_instance.set_dplm_allowed_angle_range(-40, 60, 1)
 
+    path = ensure_path(save_path_str)
 
-    with open('greedy_graphs/4_springs/greedy.csv', mode='w+', newline='') as csvfile:
+    with open(Path.joinpath(path, 'greedy.csv'), mode='w+', newline='') as csvfile:
         csvfile.writelines('number of springs: {}\n'.format(dplm_instance.get_spring_num()))
         csvfile.writelines('Number of slots: {}\n'.format(dplm_instance.get_slot_num()))
         csvfile.writelines('spring_constants: {}\n'.format(dplm_instance.get_spring_constatnts()))
@@ -53,7 +70,7 @@ if __name__ == '__main__':
 
             if plotting == True:
                 plt.figure(1)
-                print(plt.gcf().number)
+                # print(plt.gcf().number)
                 lower_limit, upper_limit, step_size, total_angle_num = dplm_instance.get_allowed_angle_range().values()
 
                 a,b,c, rmse = dplm_instance.calculate_current_moment()
@@ -76,7 +93,7 @@ if __name__ == '__main__':
 
 
                 ax.text(-20,-13, 'RMSE={:.2f} \nInitial random state: {} \nFinal install positions: {}'.format(rmse,init_guess, guess))
-                plt.savefig('greedy_graphs/4_springs_t/test_{}.png'.format(sample+1))
+                plt.savefig(Path.joinpath(path,'test_{}.png'.format(sample+1)))
                 # plt.show()
                 plt.pause(0.001)
                 # del fig
@@ -91,12 +108,12 @@ if __name__ == '__main__':
 
         # plt.figure(2)
 
-    k = pd.read_csv('greedy_graphs/4_springs/greedy.csv', header = 4)
+    k = pd.read_csv(Path.join(path,'greedy.csv'), header = 4)
 
     k.index = np.arange(1, len(k)+1)
     k.index.name='sample'
-    k.to_excel('greedy_graphs/4_springs/greedy.xlsx')
-    k.to_csv('greedy_graphs/4_springs/greedy_processed.csv')
+    k.to_excel(Path.joinpath(path,'greedy.xlsx'))
+    k.to_csv(Path.joinpath('greedy_processed.csv'))
     k.to_clipboard(sep = ',')
 
     k

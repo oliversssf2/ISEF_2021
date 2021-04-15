@@ -81,9 +81,47 @@ def setup2(eplm_instance):
              variable_type_mixed=vartype)
     return model
 
+def setup3(file): 
+    dplm_instance = dplm_base.dplm(file)
+    aps={'max_num_iteration': None,\
+                'population_size':300,\
+                'mutation_probability':0.2,\
+                'elit_ratio': 0.01,\
+                'crossover_probability': 0.5,\
+                'parents_portion': 0.3,\
+                'crossover_type':'uniform',\
+                'max_iteration_without_improv':30}
 
-dplm_instance = dplm_base.dplm('para1.csv')
-model = setup2(dplm_instance)
+    dplm_instance.show_dplm_config()
+    dplm_instance.set_dplm_allowed_angle_range(-40, 60, 1)
+
+    spring_constant = 74
+    spring_initial_length = 0.186
+    slot_num = 39
+
+    install_position_step = 1e-2
+    spring_constant_step = 1e1
+    spring_length_step = 1e-2
+
+    # dplm_instance.set_dplm_spring_constants([400,300,200])
+    # dplm_instance.set_dplm_spring_lengths([0.2, 0.15, 0.1])
+    dplm_instance.set_dplm_slot_num(slot_num)
+    def f(X):
+        dplm_instance.add_triangle(spring_constant*X[0], spring_initial_length)
+        dplm_instance.set_slot([X[1], X[2]])
+        val = dplm_instance.current_rmse()
+        dplm_instance.rm_triangle()
+        return val
+
+    varbound=np.array([[1, 20]]+ [[-slot_num+1, slot_num-1]]*2)
+    vartype=np.array([['int'],['int'],['int']])
+    model=ga(function=f,dimension=3,
+             variable_boundaries=varbound, algorithm_parameters=aps,
+             variable_type_mixed=vartype)
+    return model
+
+# dplm_instance = dplm_base.dplm('para1.csv')
+model = setup3('para2.csv')
 
 
 start = time.time()
@@ -100,3 +138,5 @@ for i in model.output_dict.items():
 print("printing report")
 for j in model.report:
     print(j)
+
+# %%

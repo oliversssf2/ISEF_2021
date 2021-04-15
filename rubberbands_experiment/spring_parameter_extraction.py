@@ -18,7 +18,32 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
+# +
+column_names = ['time[s]', 'deflexion[mm]', 'force[kgf]']
+raw_diamond = pd.read_excel("./tesile test raw data/raw_data_diamond_rubber_bands.xlsx", index_col=0)  
+raw_diamond.attrs['name'] = 'Diamond'
+raw_diamond_linear_range = [50,300]
 
+raw_sannex = pd.read_excel("./tesile test raw data/raw_data_sannex_rubber_bands.xlsx", index_col=0)  
+raw_sannex.attrs['name'] = 'Sannex'
+raw_sannex_linear_range = [50,300]
+
+# raw_orange_round = pd.read_excel("./tesile test raw data/raw_data_orange_round_rubber_band_100mm.xlsx", index_col=0)  
+# raw_orange_round.attrs['name'] = 'orange_round_100mm'
+# raw_orange_round_linear_range = [0,1000]
+
+raw_orange_round = pd.read_excel("./tesile test raw data/raw_data_orange_round_rubber_band.xlsx", index_col=0)  
+raw_orange_round.attrs['name'] = 'Orange round'
+raw_orange_round_linear_range = [40,550]
+
+raw_orange_rect = pd.read_excel("./tesile test raw data/raw_data_orange_rect_rubber_band.xlsx", index_col=0)  
+raw_orange_rect.attrs['name'] = 'Orange rect'
+raw_orange_rect_linear_range = [200,500]
+
+raw_shortened_orange_round = pd.read_excel("./tesile test raw data/rwa_data_shortened_orange_round.xlsx", index_col=0)  
+raw_shortened_orange_round.attrs['name'] = 'Shortened orange round'
+raw_shortened_orange_round_linear_range = [90,400]
+# -
 
 # # Comparison of all four types of rubber bands
 
