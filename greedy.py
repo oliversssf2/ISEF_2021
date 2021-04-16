@@ -16,8 +16,9 @@ def ensure_path(path_str):
         Path.mkdir(path, parents=True)
     except FileExistsError:
         path_str = input('This path [{}] already exists. Enter a new folder name'.format(path_str))
+        path = Path.joinpath(cwd, path_str)
+
     return path
-        
 def greedy1(dplm):
     start = time.time()
     init_guess = np.random.randint(0, high=dplm_instance.get_slot_num()*2-1, size=dplm_instance.get_spring_num())-dplm_instance.get_slot_num()+1
@@ -36,8 +37,6 @@ def greedy1(dplm):
     end = time.time()
     time_elapsed = end-start
     return init_guess, final_guess, final_rmse, time_elapsed
-
-
 def greedy2(dplm, s_c_range, s_c_step, s_l_range, s_l_step):
     spring_num = dplm_instance.get_spring_num()
     slot_num = dplm_instance.get_slot_num()
@@ -76,8 +75,6 @@ def greedy2(dplm, s_c_range, s_c_step, s_l_range, s_l_step):
         guess[i] = list(guess[i])
     final_guess = guess
     return init_guess, final_guess, final_rmse
-
-
 def plot_gragh(path, sample_count):
     lower_limit, upper_limit, step_size, total_angle_num = dplm_instance.get_allowed_angle_range().values()
 
@@ -107,7 +104,6 @@ def plot_gragh(path, sample_count):
     # del fig
     
     print(rmse) 
-
 def plot_gragh2(path, sample_count):
     lower_limit, upper_limit, step_size, total_angle_num = dplm_instance.get_allowed_angle_range().values()
 
@@ -181,7 +177,7 @@ if __name__ == '__main__':
         writer.writerow(['rmse', 'initial guess', 'final install positions', 'time elapsed'])
 
         #Start interactive plotting
-        plt.ion()
+        # plt.ion()
         fig = plt.figure(figsize=[8, 6.4])
 
         for sample_count in range(sample_size):
