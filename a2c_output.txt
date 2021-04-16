@@ -1,0 +1,3539 @@
+Logging to ./dplm_tensorboards/a2c_tensorboard/A2C_6
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 15.6     |
+|    ep_rew_mean        | -0.424   |
+| time/                 |          |
+|    fps                | 141      |
+|    iterations         | 100      |
+|    time_elapsed       | 17       |
+|    total_timesteps    | 2500     |
+| train/                |          |
+|    entropy_loss       | -3.18    |
+|    explained_variance | -0.154   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 99       |
+|    policy_loss        | -0.223   |
+|    value_loss         | 0.055    |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 18       |
+|    ep_rew_mean        | -0.263   |
+| time/                 |          |
+|    fps                | 140      |
+|    iterations         | 200      |
+|    time_elapsed       | 35       |
+|    total_timesteps    | 5000     |
+| train/                |          |
+|    entropy_loss       | -3.18    |
+|    explained_variance | 0.127    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 199      |
+|    policy_loss        | -0.793   |
+|    value_loss         | 0.18     |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 17.9     |
+|    ep_rew_mean        | -0.278   |
+| time/                 |          |
+|    fps                | 140      |
+|    iterations         | 300      |
+|    time_elapsed       | 53       |
+|    total_timesteps    | 7500     |
+| train/                |          |
+|    entropy_loss       | -3.17    |
+|    explained_variance | -0.875   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 299      |
+|    policy_loss        | 0.902    |
+|    value_loss         | 0.113    |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 17.9     |
+|    ep_rew_mean        | -0.2     |
+| time/                 |          |
+|    fps                | 140      |
+|    iterations         | 400      |
+|    time_elapsed       | 71       |
+|    total_timesteps    | 10000    |
+| train/                |          |
+|    entropy_loss       | -3.16    |
+|    explained_variance | -0.0611  |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 399      |
+|    policy_loss        | -0.426   |
+|    value_loss         | 0.174    |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 16       |
+|    ep_rew_mean        | -0.331   |
+| time/                 |          |
+|    fps                | 140      |
+|    iterations         | 500      |
+|    time_elapsed       | 89       |
+|    total_timesteps    | 12500    |
+| train/                |          |
+|    entropy_loss       | -3.13    |
+|    explained_variance | 0.0217   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 499      |
+|    policy_loss        | 0.00978  |
+|    value_loss         | 0.133    |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 19.3     |
+|    ep_rew_mean        | -0.251   |
+| time/                 |          |
+|    fps                | 140      |
+|    iterations         | 600      |
+|    time_elapsed       | 106      |
+|    total_timesteps    | 15000    |
+| train/                |          |
+|    entropy_loss       | -3.07    |
+|    explained_variance | -0.0652  |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 599      |
+|    policy_loss        | -0.455   |
+|    value_loss         | 0.122    |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 18.9     |
+|    ep_rew_mean        | -0.18    |
+| time/                 |          |
+|    fps                | 139      |
+|    iterations         | 700      |
+|    time_elapsed       | 125      |
+|    total_timesteps    | 17500    |
+| train/                |          |
+|    entropy_loss       | -2.69    |
+|    explained_variance | -0.713   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 699      |
+|    policy_loss        | 0.525    |
+|    value_loss         | 0.0591   |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 31.5     |
+|    ep_rew_mean        | 0.49     |
+| time/                 |          |
+|    fps                | 138      |
+|    iterations         | 800      |
+|    time_elapsed       | 144      |
+|    total_timesteps    | 20000    |
+| train/                |          |
+|    entropy_loss       | -2.13    |
+|    explained_variance | -0.0398  |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 799      |
+|    policy_loss        | -0.796   |
+|    value_loss         | 0.423    |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 41.8     |
+|    ep_rew_mean        | 1.03     |
+| time/                 |          |
+|    fps                | 137      |
+|    iterations         | 900      |
+|    time_elapsed       | 163      |
+|    total_timesteps    | 22500    |
+| train/                |          |
+|    entropy_loss       | -2.12    |
+|    explained_variance | -0.396   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 899      |
+|    policy_loss        | 0.842    |
+|    value_loss         | 0.249    |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 52.6     |
+|    ep_rew_mean        | 1.66     |
+| time/                 |          |
+|    fps                | 137      |
+|    iterations         | 1000     |
+|    time_elapsed       | 181      |
+|    total_timesteps    | 25000    |
+| train/                |          |
+|    entropy_loss       | -1.79    |
+|    explained_variance | -0.259   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 999      |
+|    policy_loss        | -0.526   |
+|    value_loss         | 0.444    |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 67.3     |
+|    ep_rew_mean        | 2.28     |
+| time/                 |          |
+|    fps                | 137      |
+|    iterations         | 1100     |
+|    time_elapsed       | 200      |
+|    total_timesteps    | 27500    |
+| train/                |          |
+|    entropy_loss       | -1.35    |
+|    explained_variance | -16.2    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 1099     |
+|    policy_loss        | -0.594   |
+|    value_loss         | 0.152    |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 84.5     |
+|    ep_rew_mean        | 3.16     |
+| time/                 |          |
+|    fps                | 136      |
+|    iterations         | 1200     |
+|    time_elapsed       | 219      |
+|    total_timesteps    | 30000    |
+| train/                |          |
+|    entropy_loss       | -1.18    |
+|    explained_variance | -35.8    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 1199     |
+|    policy_loss        | -0.139   |
+|    value_loss         | 0.0374   |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 98.8     |
+|    ep_rew_mean        | 3.57     |
+| time/                 |          |
+|    fps                | 136      |
+|    iterations         | 1300     |
+|    time_elapsed       | 237      |
+|    total_timesteps    | 32500    |
+| train/                |          |
+|    entropy_loss       | -1.05    |
+|    explained_variance | -7.8     |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 1299     |
+|    policy_loss        | -0.381   |
+|    value_loss         | 0.109    |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 111      |
+|    ep_rew_mean        | 4        |
+| time/                 |          |
+|    fps                | 136      |
+|    iterations         | 1400     |
+|    time_elapsed       | 256      |
+|    total_timesteps    | 35000    |
+| train/                |          |
+|    entropy_loss       | -1.02    |
+|    explained_variance | -2.19    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 1399     |
+|    policy_loss        | 0.299    |
+|    value_loss         | 0.106    |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 136      |
+|    ep_rew_mean        | 5.22     |
+| time/                 |          |
+|    fps                | 136      |
+|    iterations         | 1500     |
+|    time_elapsed       | 274      |
+|    total_timesteps    | 37500    |
+| train/                |          |
+|    entropy_loss       | -0.975   |
+|    explained_variance | -0.462   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 1499     |
+|    policy_loss        | -0.327   |
+|    value_loss         | 0.131    |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 149      |
+|    ep_rew_mean        | 5.77     |
+| time/                 |          |
+|    fps                | 136      |
+|    iterations         | 1600     |
+|    time_elapsed       | 293      |
+|    total_timesteps    | 40000    |
+| train/                |          |
+|    entropy_loss       | -0.949   |
+|    explained_variance | -1.64    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 1599     |
+|    policy_loss        | -0.0494  |
+|    value_loss         | 0.00364  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 145      |
+|    ep_rew_mean        | 5.57     |
+| time/                 |          |
+|    fps                | 136      |
+|    iterations         | 1700     |
+|    time_elapsed       | 311      |
+|    total_timesteps    | 42500    |
+| train/                |          |
+|    entropy_loss       | -0.909   |
+|    explained_variance | -2.5     |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 1699     |
+|    policy_loss        | 0.059    |
+|    value_loss         | 0.00437  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 167      |
+|    ep_rew_mean        | 6.64     |
+| time/                 |          |
+|    fps                | 136      |
+|    iterations         | 1800     |
+|    time_elapsed       | 330      |
+|    total_timesteps    | 45000    |
+| train/                |          |
+|    entropy_loss       | -0.834   |
+|    explained_variance | -0.0449  |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 1799     |
+|    policy_loss        | -0.252   |
+|    value_loss         | 0.0726   |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 195      |
+|    ep_rew_mean        | 8.61     |
+| time/                 |          |
+|    fps                | 136      |
+|    iterations         | 1900     |
+|    time_elapsed       | 348      |
+|    total_timesteps    | 47500    |
+| train/                |          |
+|    entropy_loss       | -0.854   |
+|    explained_variance | -10.1    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 1899     |
+|    policy_loss        | 0.00125  |
+|    value_loss         | 0.000439 |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 204      |
+|    ep_rew_mean        | 9.24     |
+| time/                 |          |
+|    fps                | 136      |
+|    iterations         | 2000     |
+|    time_elapsed       | 367      |
+|    total_timesteps    | 50000    |
+| train/                |          |
+|    entropy_loss       | -0.809   |
+|    explained_variance | -0.577   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 1999     |
+|    policy_loss        | 0.0335   |
+|    value_loss         | 0.00484  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 229      |
+|    ep_rew_mean        | 10.9     |
+| time/                 |          |
+|    fps                | 136      |
+|    iterations         | 2100     |
+|    time_elapsed       | 385      |
+|    total_timesteps    | 52500    |
+| train/                |          |
+|    entropy_loss       | -0.842   |
+|    explained_variance | -0.748   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 2099     |
+|    policy_loss        | 0.076    |
+|    value_loss         | 0.0116   |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 238      |
+|    ep_rew_mean        | 11.3     |
+| time/                 |          |
+|    fps                | 135      |
+|    iterations         | 2200     |
+|    time_elapsed       | 404      |
+|    total_timesteps    | 55000    |
+| train/                |          |
+|    entropy_loss       | -0.832   |
+|    explained_variance | -3.27    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 2199     |
+|    policy_loss        | -0.00706 |
+|    value_loss         | 0.00159  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 256      |
+|    ep_rew_mean        | 12       |
+| time/                 |          |
+|    fps                | 135      |
+|    iterations         | 2300     |
+|    time_elapsed       | 422      |
+|    total_timesteps    | 57500    |
+| train/                |          |
+|    entropy_loss       | -0.881   |
+|    explained_variance | -5.07    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 2299     |
+|    policy_loss        | 0.0648   |
+|    value_loss         | 0.00758  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 254      |
+|    ep_rew_mean        | 11.7     |
+| time/                 |          |
+|    fps                | 135      |
+|    iterations         | 2400     |
+|    time_elapsed       | 443      |
+|    total_timesteps    | 60000    |
+| train/                |          |
+|    entropy_loss       | -0.841   |
+|    explained_variance | 0.0649   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 2399     |
+|    policy_loss        | 0.233    |
+|    value_loss         | 0.0325   |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 258      |
+|    ep_rew_mean        | 11.9     |
+| time/                 |          |
+|    fps                | 135      |
+|    iterations         | 2500     |
+|    time_elapsed       | 462      |
+|    total_timesteps    | 62500    |
+| train/                |          |
+|    entropy_loss       | -0.816   |
+|    explained_variance | -0.209   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 2499     |
+|    policy_loss        | 0.00455  |
+|    value_loss         | 0.0049   |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 260      |
+|    ep_rew_mean        | 12.4     |
+| time/                 |          |
+|    fps                | 134      |
+|    iterations         | 2600     |
+|    time_elapsed       | 481      |
+|    total_timesteps    | 65000    |
+| train/                |          |
+|    entropy_loss       | -0.821   |
+|    explained_variance | -0.404   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 2599     |
+|    policy_loss        | -2.22    |
+|    value_loss         | 4.98     |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 293      |
+|    ep_rew_mean        | 14.2     |
+| time/                 |          |
+|    fps                | 134      |
+|    iterations         | 2700     |
+|    time_elapsed       | 500      |
+|    total_timesteps    | 67500    |
+| train/                |          |
+|    entropy_loss       | -0.749   |
+|    explained_variance | -32.7    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 2699     |
+|    policy_loss        | -0.0353  |
+|    value_loss         | 0.0946   |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 306      |
+|    ep_rew_mean        | 14.8     |
+| time/                 |          |
+|    fps                | 134      |
+|    iterations         | 2800     |
+|    time_elapsed       | 519      |
+|    total_timesteps    | 70000    |
+| train/                |          |
+|    entropy_loss       | -0.751   |
+|    explained_variance | -0.0536  |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 2799     |
+|    policy_loss        | 0.0159   |
+|    value_loss         | 0.00987  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 306      |
+|    ep_rew_mean        | 14.7     |
+| time/                 |          |
+|    fps                | 134      |
+|    iterations         | 2900     |
+|    time_elapsed       | 539      |
+|    total_timesteps    | 72500    |
+| train/                |          |
+|    entropy_loss       | -0.834   |
+|    explained_variance | -0.758   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 2899     |
+|    policy_loss        | 0.0906   |
+|    value_loss         | 0.0195   |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 306      |
+|    ep_rew_mean        | 14.7     |
+| time/                 |          |
+|    fps                | 134      |
+|    iterations         | 3000     |
+|    time_elapsed       | 558      |
+|    total_timesteps    | 75000    |
+| train/                |          |
+|    entropy_loss       | -0.788   |
+|    explained_variance | -2.44    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 2999     |
+|    policy_loss        | -0.0656  |
+|    value_loss         | 0.0152   |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 364      |
+|    ep_rew_mean        | 18.5     |
+| time/                 |          |
+|    fps                | 134      |
+|    iterations         | 3100     |
+|    time_elapsed       | 576      |
+|    total_timesteps    | 77500    |
+| train/                |          |
+|    entropy_loss       | -0.819   |
+|    explained_variance | -0.154   |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3099     |
+|    policy_loss        | -0.0874  |
+|    value_loss         | 0.026    |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 340      |
+|    ep_rew_mean        | 17.3     |
+| time/                 |          |
+|    fps                | 134      |
+|    iterations         | 3200     |
+|    time_elapsed       | 595      |
+|    total_timesteps    | 80000    |
+| train/                |          |
+|    entropy_loss       | -0.82    |
+|    explained_variance | -1.85    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3199     |
+|    policy_loss        | -0.0105  |
+|    value_loss         | 0.00293  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 304      |
+|    ep_rew_mean        | 15.3     |
+| time/                 |          |
+|    fps                | 134      |
+|    iterations         | 3300     |
+|    time_elapsed       | 615      |
+|    total_timesteps    | 82500    |
+| train/                |          |
+|    entropy_loss       | -0.896   |
+|    explained_variance | -76.2    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3299     |
+|    policy_loss        | 0.431    |
+|    value_loss         | 0.29     |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 299      |
+|    ep_rew_mean        | 15.2     |
+| time/                 |          |
+|    fps                | 133      |
+|    iterations         | 3400     |
+|    time_elapsed       | 634      |
+|    total_timesteps    | 85000    |
+| train/                |          |
+|    entropy_loss       | -0.929   |
+|    explained_variance | -3.51    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3399     |
+|    policy_loss        | -0.0162  |
+|    value_loss         | 0.0089   |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 301      |
+|    ep_rew_mean        | 15.3     |
+| time/                 |          |
+|    fps                | 133      |
+|    iterations         | 3500     |
+|    time_elapsed       | 653      |
+|    total_timesteps    | 87500    |
+| train/                |          |
+|    entropy_loss       | -1.01    |
+|    explained_variance | -61.5    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3499     |
+|    policy_loss        | -0.395   |
+|    value_loss         | 0.236    |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 298      |
+|    ep_rew_mean        | 14.8     |
+| time/                 |          |
+|    fps                | 134      |
+|    iterations         | 3600     |
+|    time_elapsed       | 671      |
+|    total_timesteps    | 90000    |
+| train/                |          |
+|    entropy_loss       | -1.13    |
+|    explained_variance | -38.4    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3599     |
+|    policy_loss        | -0.0442  |
+|    value_loss         | 0.00523  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 303      |
+|    ep_rew_mean        | 14.5     |
+| time/                 |          |
+|    fps                | 134      |
+|    iterations         | 3700     |
+|    time_elapsed       | 690      |
+|    total_timesteps    | 92500    |
+| train/                |          |
+|    entropy_loss       | -1.06    |
+|    explained_variance | -8.1     |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3699     |
+|    policy_loss        | 0.5      |
+|    value_loss         | 0.194    |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 306      |
+|    ep_rew_mean        | 14.4     |
+| time/                 |          |
+|    fps                | 134      |
+|    iterations         | 3800     |
+|    time_elapsed       | 708      |
+|    total_timesteps    | 95000    |
+| train/                |          |
+|    entropy_loss       | -0.907   |
+|    explained_variance | -1.4     |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3799     |
+|    policy_loss        | -0.00901 |
+|    value_loss         | 0.00225  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 298      |
+|    ep_rew_mean        | 13.6     |
+| time/                 |          |
+|    fps                | 134      |
+|    iterations         | 3900     |
+|    time_elapsed       | 727      |
+|    total_timesteps    | 97500    |
+| train/                |          |
+|    entropy_loss       | -0.908   |
+|    explained_variance | -2.41    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3899     |
+|    policy_loss        | 0.0171   |
+|    value_loss         | 0.0246   |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 323      |
+|    ep_rew_mean        | 15.4     |
+| time/                 |          |
+|    fps                | 134      |
+|    iterations         | 4000     |
+|    time_elapsed       | 746      |
+|    total_timesteps    | 100000   |
+| train/                |          |
+|    entropy_loss       | -0.929   |
+|    explained_variance | -1.77    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 3999     |
+|    policy_loss        | 0.011    |
+|    value_loss         | 0.0315   |
+------------------------------------
+Test: NO.1
+Step 1
+Action:  [17 16 16 17 17]
+obs= [[11  3  4]
+ [11  3  3]
+ [11  3  2]
+ [11  3  3]
+ [11  3  4]] reward= [0.0095413  0.00934831 0.00916228 0.00934831 0.0095413 ] done= [False False False False False]
+Step 2
+Action:  [17 17 17 17 17]
+obs= [[11  3  5]
+ [11  3  6]
+ [11  3  7]
+ [11  3  8]
+ [11  3  9]] reward= [0.00974147 0.00994894 0.01016373 0.0103857  0.01061438] done= [False False False False False]
+Step 3
+Action:  [17 17 17 17 17]
+obs= [[11  3 10]
+ [11  3 11]
+ [11  3 12]
+ [11  3 13]
+ [11  3 14]] reward= [0.01084892 0.01108778 0.01132861 0.01156798 0.01180163] done= [False False False False False]
+Step 4
+Action:  [17 17 17 17 17]
+obs= [[11  3 15]
+ [11  3 16]
+ [11  3 17]
+ [11  3 18]
+ [11  3 19]] reward= [0.01202525 0.01223589 0.01243311 0.0126191  0.01279801] done= [False False False False False]
+Step 5
+Action:  [17 17 17 17 17]
+obs= [[11  3 20]
+ [11  3 21]
+ [11  3 22]
+ [11  3 23]
+ [11  3 24]] reward= [0.01297529 0.01315747 0.01335261 0.0135711  0.01382609] done= [False False False False False]
+Step 6
+Action:  [17 17 16 17 17]
+obs= [[11  3 25]
+ [11  3 26]
+ [11  3 25]
+ [11  3 26]
+ [11  3 27]] reward= [0.01413016 0.01448938 0.01413016 0.01448938 0.01490194] done= [False False False False False]
+Step 7
+Action:  [17 17 17 17 17]
+obs= [[11  3 28]
+ [11  3 29]
+ [11  3 30]
+ [11  3 31]
+ [11  3 32]] reward= [0.01536316 0.0158702  0.01642277 0.01702264 0.01767316] done= [False False False False False]
+Step 8
+Action:  [17 17 17 16 16]
+obs= [[11  3 33]
+ [11  3 34]
+ [11  3 35]
+ [11  3 34]
+ [11  3 33]] reward= [0.01837902 0.01914615 0.01998186 0.01914615 0.01837902] done= [False False False False False]
+Step 9
+Action:  [16 16 16 16 16]
+obs= [[11  3 32]
+ [11  3 31]
+ [11  3 30]
+ [11  3 29]
+ [11  3 28]] reward= [0.01767316 0.01702264 0.01642277 0.0158702  0.01536316] done= [False False False False False]
+Step 10
+Action:  [16 16 17 17 17]
+obs= [[11  3 27]
+ [11  3 26]
+ [11  3 27]
+ [11  3 28]
+ [11  3 29]] reward= [0.01490194 0.01448938 0.01490194 0.01536316 0.0158702 ] done= [False False False False False]
+Step 11
+Action:  [17 17 17 17 17]
+obs= [[11  3 30]
+ [11  3 31]
+ [11  3 32]
+ [11  3 33]
+ [11  3 34]] reward= [0.01642277 0.01702264 0.01767316 0.01837902 0.01914615] done= [False False False False False]
+Step 12
+Action:  [17 16 16 16 16]
+obs= [[11  3 35]
+ [11  3 34]
+ [11  3 33]
+ [11  3 32]
+ [11  3 31]] reward= [0.01998186 0.01914615 0.01837902 0.01767316 0.01702264] done= [False False False False False]
+Step 13
+Action:  [16 16 16 16 16]
+obs= [[11  3 30]
+ [11  3 29]
+ [11  3 28]
+ [11  3 27]
+ [11  3 26]] reward= [0.01642277 0.0158702  0.01536316 0.01490194 0.01448938] done= [False False False False False]
+Step 14
+Action:  [17 17 17 17 17]
+obs= [[11  3 27]
+ [11  3 28]
+ [11  3 29]
+ [11  3 30]
+ [11  3 31]] reward= [0.01490194 0.01536316 0.0158702  0.01642277 0.01702264] done= [False False False False False]
+Step 15
+Action:  [17 17 17 17 16]
+obs= [[11  3 32]
+ [11  3 33]
+ [11  3 34]
+ [11  3 35]
+ [11  3 34]] reward= [0.01767316 0.01837902 0.01914615 0.01998186 0.01914615] done= [False False False False False]
+Step 16
+Action:  [16 16 16 16 16]
+obs= [[11  3 33]
+ [11  3 32]
+ [11  3 31]
+ [11  3 30]
+ [11  3 29]] reward= [0.01837902 0.01767316 0.01702264 0.01642277 0.0158702 ] done= [False False False False False]
+Step 17
+Action:  [16 16 16 17 17]
+obs= [[11  3 28]
+ [11  3 27]
+ [11  3 26]
+ [11  3 27]
+ [11  3 28]] reward= [0.01536316 0.01490194 0.01448938 0.01490194 0.01536316] done= [False False False False False]
+Step 18
+Action:  [17 17 17 17 17]
+obs= [[11  3 29]
+ [11  3 30]
+ [11  3 31]
+ [11  3 32]
+ [11  3 33]] reward= [0.0158702  0.01642277 0.01702264 0.01767316 0.01837902] done= [False False False False False]
+Step 19
+Action:  [17 17 16 16 16]
+obs= [[11  3 34]
+ [11  3 35]
+ [11  3 34]
+ [11  3 33]
+ [11  3 32]] reward= [0.01914615 0.01998186 0.01914615 0.01837902 0.01767316] done= [False False False False False]
+Step 20
+Action:  [16 16 16 16 16]
+obs= [[11  3 31]
+ [11  3 30]
+ [11  3 29]
+ [11  3 28]
+ [11  3 27]] reward= [0.01702264 0.01642277 0.0158702  0.01536316 0.01490194] done= [False False False False False]
+Step 21
+Action:  [16 17 17 17 17]
+obs= [[11  3 26]
+ [11  3 27]
+ [11  3 28]
+ [11  3 29]
+ [11  3 30]] reward= [0.01448938 0.01490194 0.01536316 0.0158702  0.01642277] done= [False False False False False]
+Step 22
+Action:  [17 17 17 17 17]
+obs= [[11  3 31]
+ [11  3 32]
+ [11  3 33]
+ [11  3 34]
+ [11  3 35]] reward= [0.01702264 0.01767316 0.01837902 0.01914615 0.01998186] done= [False False False False False]
+Step 23
+Action:  [16 16 16 16 16]
+obs= [[11  3 34]
+ [11  3 33]
+ [11  3 32]
+ [11  3 31]
+ [11  3 30]] reward= [0.01914615 0.01837902 0.01767316 0.01702264 0.01642277] done= [False False False False False]
+Step 24
+Action:  [16 16 16 16 17]
+obs= [[11  3 29]
+ [11  3 28]
+ [11  3 27]
+ [11  3 26]
+ [11  3 27]] reward= [0.0158702  0.01536316 0.01490194 0.01448938 0.01490194] done= [False False False False False]
+Step 25
+Action:  [17 17 17 17 17]
+obs= [[11  3 28]
+ [11  3 29]
+ [11  3 30]
+ [11  3 31]
+ [11  3 32]] reward= [0.01536316 0.0158702  0.01642277 0.01702264 0.01767316] done= [False False False False False]
+Step 26
+Action:  [17 17 17 16 16]
+obs= [[11  3 33]
+ [11  3 34]
+ [11  3 35]
+ [11  3 34]
+ [11  3 33]] reward= [0.01837902 0.01914615 0.01998186 0.01914615 0.01837902] done= [False False False False False]
+Step 27
+Action:  [16 16 16 16 16]
+obs= [[11  3 32]
+ [11  3 31]
+ [11  3 30]
+ [11  3 29]
+ [11  3 28]] reward= [0.01767316 0.01702264 0.01642277 0.0158702  0.01536316] done= [False False False False False]
+Step 28
+Action:  [16 16 17 17 17]
+obs= [[11  3 27]
+ [11  3 26]
+ [11  3 27]
+ [11  3 28]
+ [11  3 29]] reward= [0.01490194 0.01448938 0.01490194 0.01536316 0.0158702 ] done= [False False False False False]
+Step 29
+Action:  [17 17 17 17 17]
+obs= [[11  3 30]
+ [11  3 31]
+ [11  3 32]
+ [11  3 33]
+ [11  3 34]] reward= [0.01642277 0.01702264 0.01767316 0.01837902 0.01914615] done= [False False False False False]
+Step 30
+Action:  [17 16 16 16 16]
+obs= [[11  3 35]
+ [11  3 34]
+ [11  3 33]
+ [11  3 32]
+ [11  3 31]] reward= [0.01998186 0.01914615 0.01837902 0.01767316 0.01702264] done= [False False False False False]
+Step 31
+Action:  [16 16 16 16 16]
+obs= [[11  3 30]
+ [11  3 29]
+ [11  3 28]
+ [11  3 27]
+ [11  3 26]] reward= [0.01642277 0.0158702  0.01536316 0.01490194 0.01448938] done= [False False False False False]
+Step 32
+Action:  [17 17 17 17 17]
+obs= [[11  3 27]
+ [11  3 28]
+ [11  3 29]
+ [11  3 30]
+ [11  3 31]] reward= [0.01490194 0.01536316 0.0158702  0.01642277 0.01702264] done= [False False False False False]
+Step 33
+Action:  [17 17 17 17 16]
+obs= [[11  3 32]
+ [11  3 33]
+ [11  3 34]
+ [11  3 35]
+ [11  3 34]] reward= [0.01767316 0.01837902 0.01914615 0.01998186 0.01914615] done= [False False False False False]
+Step 34
+Action:  [16 16 16 16 16]
+obs= [[11  3 33]
+ [11  3 32]
+ [11  3 31]
+ [11  3 30]
+ [11  3 29]] reward= [0.01837902 0.01767316 0.01702264 0.01642277 0.0158702 ] done= [False False False False False]
+Step 35
+Action:  [16 16 16 17 17]
+obs= [[11  3 28]
+ [11  3 27]
+ [11  3 26]
+ [11  3 27]
+ [11  3 28]] reward= [0.01536316 0.01490194 0.01448938 0.01490194 0.01536316] done= [False False False False False]
+Step 36
+Action:  [17 17 17 17 17]
+obs= [[11  3 29]
+ [11  3 30]
+ [11  3 31]
+ [11  3 32]
+ [11  3 33]] reward= [0.0158702  0.01642277 0.01702264 0.01767316 0.01837902] done= [False False False False False]
+Step 37
+Action:  [17 17 16 16 16]
+obs= [[11  3 34]
+ [11  3 35]
+ [11  3 34]
+ [11  3 33]
+ [11  3 32]] reward= [0.01914615 0.01998186 0.01914615 0.01837902 0.01767316] done= [False False False False False]
+Step 38
+Action:  [16 16 16 16 16]
+obs= [[11  3 31]
+ [11  3 30]
+ [11  3 29]
+ [11  3 28]
+ [11  3 27]] reward= [0.01702264 0.01642277 0.0158702  0.01536316 0.01490194] done= [False False False False False]
+Step 39
+Action:  [16 17 17 17 17]
+obs= [[11  3 26]
+ [11  3 27]
+ [11  3 28]
+ [11  3 29]
+ [11  3 30]] reward= [0.01448938 0.01490194 0.01536316 0.0158702  0.01642277] done= [False False False False False]
+Step 40
+Action:  [17 17 17 17 17]
+obs= [[11  3 31]
+ [11  3 32]
+ [11  3 33]
+ [11  3 34]
+ [11  3 35]] reward= [0.01702264 0.01767316 0.01837902 0.01914615 0.01998186] done= [False False False False False]
+Step 41
+Action:  [16 16 16 16 16]
+obs= [[11  3 34]
+ [11  3 33]
+ [11  3 32]
+ [11  3 31]
+ [11  3 30]] reward= [0.01914615 0.01837902 0.01767316 0.01702264 0.01642277] done= [False False False False False]
+Step 42
+Action:  [16 16 16 16 17]
+obs= [[11  3 29]
+ [11  3 28]
+ [11  3 27]
+ [11  3 26]
+ [11  3 27]] reward= [0.0158702  0.01536316 0.01490194 0.01448938 0.01490194] done= [False False False False False]
+Step 43
+Action:  [17 17 17 17 17]
+obs= [[11  3 28]
+ [11  3 29]
+ [11  3 30]
+ [11  3 31]
+ [11  3 32]] reward= [0.01536316 0.0158702  0.01642277 0.01702264 0.01767316] done= [False False False False False]
+Step 44
+Action:  [17 17 17 16 16]
+obs= [[11  3 33]
+ [11  3 34]
+ [11  3 35]
+ [11  3 34]
+ [11  3 33]] reward= [0.01837902 0.01914615 0.01998186 0.01914615 0.01837902] done= [False False False False False]
+Step 45
+Action:  [16 16 16 16 16]
+obs= [[11  3 32]
+ [11  3 31]
+ [11  3 30]
+ [11  3 29]
+ [11  3 28]] reward= [0.01767316 0.01702264 0.01642277 0.0158702  0.01536316] done= [False False False False False]
+Step 46
+Action:  [16 16 17 17 17]
+obs= [[11  3 27]
+ [11  3 26]
+ [11  3 27]
+ [11  3 28]
+ [11  3 29]] reward= [0.01490194 0.01448938 0.01490194 0.01536316 0.0158702 ] done= [False False False False False]
+Step 47
+Action:  [17 17 17 17 17]
+obs= [[11  3 30]
+ [11  3 31]
+ [11  3 32]
+ [11  3 33]
+ [11  3 34]] reward= [0.01642277 0.01702264 0.01767316 0.01837902 0.01914615] done= [False False False False False]
+Step 48
+Action:  [17 16 16 16 16]
+obs= [[11  3 35]
+ [11  3 34]
+ [11  3 33]
+ [11  3 32]
+ [11  3 31]] reward= [0.01998186 0.01914615 0.01837902 0.01767316 0.01702264] done= [False False False False False]
+Step 49
+Action:  [16 16 16 16 16]
+obs= [[11  3 30]
+ [11  3 29]
+ [11  3 28]
+ [11  3 27]
+ [11  3 26]] reward= [0.01642277 0.0158702  0.01536316 0.01490194 0.01448938] done= [False False False False False]
+Step 50
+Action:  [17 17 17 17 17]
+obs= [[11  3 27]
+ [11  3 28]
+ [11  3 29]
+ [11  3 30]
+ [11  3 31]] reward= [0.01490194 0.01536316 0.0158702  0.01642277 0.01702264] done= [False False False False False]
+Test: NO.2
+Step 1
+Action:  [17 17 17 17 17]
+obs= [[24 22 31]
+ [24 22 32]
+ [24 22 33]
+ [24 22 34]
+ [24 22 35]] reward= [0.12692271 0.11135215 0.09578977 0.08243179 0.071566  ] done= [False False False False False]
+Step 2
+Action:  [17 17 17 16 16]
+obs= [[24 22 36]
+ [24 22 37]
+ [24 22 38]
+ [24 22 37]
+ [24 22 36]] reward= [0.06283814 0.05579782 0.05005796 0.05579782 0.06283814] done= [False False False False False]
+Step 3
+Action:  [16 17 16 17 16]
+obs= [[24 22 35]
+ [24 22 36]
+ [24 22 35]
+ [24 22 36]
+ [24 22 35]] reward= [0.071566   0.06283814 0.071566   0.06283814 0.071566  ] done= [False False False False False]
+Step 4
+Action:  [16 16 16 16 16]
+obs= [[24 22 34]
+ [24 22 33]
+ [24 22 32]
+ [24 22 31]
+ [24 22 30]] reward= [0.08243179 0.09578977 0.11135215 0.12692271 0.13723396] done= [False False False False False]
+Step 5
+Action:  [16 17 17 17 17]
+obs= [[24 22 29]
+ [24 22 30]
+ [24 22 31]
+ [24 22 32]
+ [24 22 33]] reward= [0.13682766 0.13723396 0.12692271 0.11135215 0.09578977] done= [False False False False False]
+Step 6
+Action:  [17 17 17 17 17]
+obs= [[24 22 34]
+ [24 22 35]
+ [24 22 36]
+ [24 22 37]
+ [24 22 38]] reward= [0.08243179 0.071566   0.06283814 0.05579782 0.05005796] done= [False False False False False]
+Step 7
+Action:  [16 16 16 17 16]
+obs= [[24 22 37]
+ [24 22 36]
+ [24 22 35]
+ [24 22 36]
+ [24 22 35]] reward= [0.05579782 0.06283814 0.071566   0.06283814 0.071566  ] done= [False False False False False]
+Step 8
+Action:  [17 16 16 16 16]
+obs= [[24 22 36]
+ [24 22 35]
+ [24 22 34]
+ [24 22 33]
+ [24 22 32]] reward= [0.06283814 0.071566   0.08243179 0.09578977 0.11135215] done= [False False False False False]
+Step 9
+Action:  [16 16 16 17 17]
+obs= [[24 22 31]
+ [24 22 30]
+ [24 22 29]
+ [24 22 30]
+ [24 22 31]] reward= [0.12692271 0.13723396 0.13682766 0.13723396 0.12692271] done= [False False False False False]
+Step 10
+Action:  [17 17 17 17 17]
+obs= [[24 22 32]
+ [24 22 33]
+ [24 22 34]
+ [24 22 35]
+ [24 22 36]] reward= [0.11135215 0.09578977 0.08243179 0.071566   0.06283814] done= [False False False False False]
+Step 11
+Action:  [17 17 16 16 16]
+obs= [[24 22 37]
+ [24 22 38]
+ [24 22 37]
+ [24 22 36]
+ [24 22 35]] reward= [0.05579782 0.05005796 0.05579782 0.06283814 0.071566  ] done= [False False False False False]
+Step 12
+Action:  [17 16 17 16 16]
+obs= [[24 22 36]
+ [24 22 35]
+ [24 22 36]
+ [24 22 35]
+ [24 22 34]] reward= [0.06283814 0.071566   0.06283814 0.071566   0.08243179] done= [False False False False False]
+Step 13
+Action:  [16 16 16 16 16]
+obs= [[24 22 33]
+ [24 22 32]
+ [24 22 31]
+ [24 22 30]
+ [24 22 29]] reward= [0.09578977 0.11135215 0.12692271 0.13723396 0.13682766] done= [False False False False False]
+Step 14
+Action:  [17 17 17 17 17]
+obs= [[24 22 30]
+ [24 22 31]
+ [24 22 32]
+ [24 22 33]
+ [24 22 34]] reward= [0.13723396 0.12692271 0.11135215 0.09578977 0.08243179] done= [False False False False False]
+Step 15
+Action:  [17 17 17 17 16]
+obs= [[24 22 35]
+ [24 22 36]
+ [24 22 37]
+ [24 22 38]
+ [24 22 37]] reward= [0.071566   0.06283814 0.05579782 0.05005796 0.05579782] done= [False False False False False]
+Step 16
+Action:  [16 16 17 16 17]
+obs= [[24 22 36]
+ [24 22 35]
+ [24 22 36]
+ [24 22 35]
+ [24 22 36]] reward= [0.06283814 0.071566   0.06283814 0.071566   0.06283814] done= [False False False False False]
+Step 17
+Action:  [16 16 16 16 16]
+obs= [[24 22 35]
+ [24 22 34]
+ [24 22 33]
+ [24 22 32]
+ [24 22 31]] reward= [0.071566   0.08243179 0.09578977 0.11135215 0.12692271] done= [False False False False False]
+Step 18
+Action:  [16 16 17 17 17]
+obs= [[24 22 30]
+ [24 22 29]
+ [24 22 30]
+ [24 22 31]
+ [24 22 32]] reward= [0.13723396 0.13682766 0.13723396 0.12692271 0.11135215] done= [False False False False False]
+Step 19
+Action:  [17 17 17 17 17]
+obs= [[24 22 33]
+ [24 22 34]
+ [24 22 35]
+ [24 22 36]
+ [24 22 37]] reward= [0.09578977 0.08243179 0.071566   0.06283814 0.05579782] done= [False False False False False]
+Step 20
+Action:  [17 16 16 16 17]
+obs= [[24 22 38]
+ [24 22 37]
+ [24 22 36]
+ [24 22 35]
+ [24 22 36]] reward= [0.05005796 0.05579782 0.06283814 0.071566   0.06283814] done= [False False False False False]
+Step 21
+Action:  [16 17 16 16 16]
+obs= [[24 22 35]
+ [24 22 36]
+ [24 22 35]
+ [24 22 34]
+ [24 22 33]] reward= [0.071566   0.06283814 0.071566   0.08243179 0.09578977] done= [False False False False False]
+Step 22
+Action:  [16 16 16 16 17]
+obs= [[24 22 32]
+ [24 22 31]
+ [24 22 30]
+ [24 22 29]
+ [24 22 30]] reward= [0.11135215 0.12692271 0.13723396 0.13682766 0.13723396] done= [False False False False False]
+Step 23
+Action:  [17 17 17 17 17]
+obs= [[24 22 31]
+ [24 22 32]
+ [24 22 33]
+ [24 22 34]
+ [24 22 35]] reward= [0.12692271 0.11135215 0.09578977 0.08243179 0.071566  ] done= [False False False False False]
+Step 24
+Action:  [17 17 17 16 16]
+obs= [[24 22 36]
+ [24 22 37]
+ [24 22 38]
+ [24 22 37]
+ [24 22 36]] reward= [0.06283814 0.05579782 0.05005796 0.05579782 0.06283814] done= [False False False False False]
+Step 25
+Action:  [16 17 16 17 16]
+obs= [[24 22 35]
+ [24 22 36]
+ [24 22 35]
+ [24 22 36]
+ [24 22 35]] reward= [0.071566   0.06283814 0.071566   0.06283814 0.071566  ] done= [False False False False False]
+Step 26
+Action:  [16 16 16 16 16]
+obs= [[24 22 34]
+ [24 22 33]
+ [24 22 32]
+ [24 22 31]
+ [24 22 30]] reward= [0.08243179 0.09578977 0.11135215 0.12692271 0.13723396] done= [False False False False False]
+Step 27
+Action:  [16 17 17 17 17]
+obs= [[24 22 29]
+ [24 22 30]
+ [24 22 31]
+ [24 22 32]
+ [24 22 33]] reward= [0.13682766 0.13723396 0.12692271 0.11135215 0.09578977] done= [False False False False False]
+Step 28
+Action:  [17 17 17 17 17]
+obs= [[24 22 34]
+ [24 22 35]
+ [24 22 36]
+ [24 22 37]
+ [24 22 38]] reward= [0.08243179 0.071566   0.06283814 0.05579782 0.05005796] done= [False False False False False]
+Step 29
+Action:  [16 16 16 17 16]
+obs= [[24 22 37]
+ [24 22 36]
+ [24 22 35]
+ [24 22 36]
+ [24 22 35]] reward= [0.05579782 0.06283814 0.071566   0.06283814 0.071566  ] done= [False False False False False]
+Step 30
+Action:  [17 16 16 16 16]
+obs= [[24 22 36]
+ [24 22 35]
+ [24 22 34]
+ [24 22 33]
+ [24 22 32]] reward= [0.06283814 0.071566   0.08243179 0.09578977 0.11135215] done= [False False False False False]
+Step 31
+Action:  [16 16 16 17 17]
+obs= [[24 22 31]
+ [24 22 30]
+ [24 22 29]
+ [24 22 30]
+ [24 22 31]] reward= [0.12692271 0.13723396 0.13682766 0.13723396 0.12692271] done= [False False False False False]
+Step 32
+Action:  [17 17 17 17 17]
+obs= [[24 22 32]
+ [24 22 33]
+ [24 22 34]
+ [24 22 35]
+ [24 22 36]] reward= [0.11135215 0.09578977 0.08243179 0.071566   0.06283814] done= [False False False False False]
+Step 33
+Action:  [17 17 16 16 16]
+obs= [[24 22 37]
+ [24 22 38]
+ [24 22 37]
+ [24 22 36]
+ [24 22 35]] reward= [0.05579782 0.05005796 0.05579782 0.06283814 0.071566  ] done= [False False False False False]
+Step 34
+Action:  [17 16 17 16 16]
+obs= [[24 22 36]
+ [24 22 35]
+ [24 22 36]
+ [24 22 35]
+ [24 22 34]] reward= [0.06283814 0.071566   0.06283814 0.071566   0.08243179] done= [False False False False False]
+Step 35
+Action:  [16 16 16 16 16]
+obs= [[24 22 33]
+ [24 22 32]
+ [24 22 31]
+ [24 22 30]
+ [24 22 29]] reward= [0.09578977 0.11135215 0.12692271 0.13723396 0.13682766] done= [False False False False False]
+Step 36
+Action:  [17 17 17 17 17]
+obs= [[24 22 30]
+ [24 22 31]
+ [24 22 32]
+ [24 22 33]
+ [24 22 34]] reward= [0.13723396 0.12692271 0.11135215 0.09578977 0.08243179] done= [False False False False False]
+Step 37
+Action:  [17 17 17 17 16]
+obs= [[24 22 35]
+ [24 22 36]
+ [24 22 37]
+ [24 22 38]
+ [24 22 37]] reward= [0.071566   0.06283814 0.05579782 0.05005796 0.05579782] done= [False False False False False]
+Step 38
+Action:  [16 16 17 16 17]
+obs= [[24 22 36]
+ [24 22 35]
+ [24 22 36]
+ [24 22 35]
+ [24 22 36]] reward= [0.06283814 0.071566   0.06283814 0.071566   0.06283814] done= [False False False False False]
+Step 39
+Action:  [16 16 16 16 16]
+obs= [[24 22 35]
+ [24 22 34]
+ [24 22 33]
+ [24 22 32]
+ [24 22 31]] reward= [0.071566   0.08243179 0.09578977 0.11135215 0.12692271] done= [False False False False False]
+Step 40
+Action:  [16 16 17 17 17]
+obs= [[24 22 30]
+ [24 22 29]
+ [24 22 30]
+ [24 22 31]
+ [24 22 32]] reward= [0.13723396 0.13682766 0.13723396 0.12692271 0.11135215] done= [False False False False False]
+Step 41
+Action:  [17 17 17 17 17]
+obs= [[24 22 33]
+ [24 22 34]
+ [24 22 35]
+ [24 22 36]
+ [24 22 37]] reward= [0.09578977 0.08243179 0.071566   0.06283814 0.05579782] done= [False False False False False]
+Step 42
+Action:  [17 16 16 16 17]
+obs= [[24 22 38]
+ [24 22 37]
+ [24 22 36]
+ [24 22 35]
+ [24 22 36]] reward= [0.05005796 0.05579782 0.06283814 0.071566   0.06283814] done= [False False False False False]
+Step 43
+Action:  [16 17 16 16 16]
+obs= [[24 22 35]
+ [24 22 36]
+ [24 22 35]
+ [24 22 34]
+ [24 22 33]] reward= [0.071566   0.06283814 0.071566   0.08243179 0.09578977] done= [False False False False False]
+Step 44
+Action:  [16 16 16 16 17]
+obs= [[24 22 32]
+ [24 22 31]
+ [24 22 30]
+ [24 22 29]
+ [24 22 30]] reward= [0.11135215 0.12692271 0.13723396 0.13682766 0.13723396] done= [False False False False False]
+Step 45
+Action:  [17 17 17 17 17]
+obs= [[24 22 31]
+ [24 22 32]
+ [24 22 33]
+ [24 22 34]
+ [24 22 35]] reward= [0.12692271 0.11135215 0.09578977 0.08243179 0.071566  ] done= [False False False False False]
+Step 46
+Action:  [17 17 17 16 16]
+obs= [[24 22 36]
+ [24 22 37]
+ [24 22 38]
+ [24 22 37]
+ [24 22 36]] reward= [0.06283814 0.05579782 0.05005796 0.05579782 0.06283814] done= [False False False False False]
+Step 47
+Action:  [16 17 16 17 16]
+obs= [[24 22 35]
+ [24 22 36]
+ [24 22 35]
+ [24 22 36]
+ [24 22 35]] reward= [0.071566   0.06283814 0.071566   0.06283814 0.071566  ] done= [False False False False False]
+Step 48
+Action:  [16 16 16 16 16]
+obs= [[24 22 34]
+ [24 22 33]
+ [24 22 32]
+ [24 22 31]
+ [24 22 30]] reward= [0.08243179 0.09578977 0.11135215 0.12692271 0.13723396] done= [False False False False False]
+Step 49
+Action:  [16 17 17 17 17]
+obs= [[24 22 29]
+ [24 22 30]
+ [24 22 31]
+ [24 22 32]
+ [24 22 33]] reward= [0.13682766 0.13723396 0.12692271 0.11135215 0.09578977] done= [False False False False False]
+Step 50
+Action:  [17 17 17 17 17]
+obs= [[24 22 34]
+ [24 22 35]
+ [24 22 36]
+ [24 22 37]
+ [24 22 38]] reward= [0.08243179 0.071566   0.06283814 0.05579782 0.05005796] done= [False False False False False]
+Test: NO.3
+Step 1
+Action:  [17 17 17 17 17]
+obs= [[35 15  7]
+ [35 15  8]
+ [35 15  9]
+ [35 15 10]
+ [35 15 11]] reward= [0.08858524 0.07665676 0.06726325 0.05984272 0.05393722] done= [False False False False False]
+Step 2
+Action:  [17 17 17 17 17]
+obs= [[35 15 12]
+ [35 15 13]
+ [35 15 14]
+ [35 15 15]
+ [35 15 16]] reward= [0.04920825 0.04541126 0.04236397 0.03991751 0.03793715] done= [False False False False False]
+Step 3
+Action:  [17 17 17 17 17]
+obs= [[35 15 17]
+ [35 15 18]
+ [35 15 19]
+ [35 15 20]
+ [35 15 21]] reward= [0.03629844 0.03489388 0.03363827 0.03246762 0.03133463] done= [False False False False False]
+Step 4
+Action:  [17 17 16 17 17]
+obs= [[35 15 22]
+ [35 15 23]
+ [35 15 22]
+ [35 15 23]
+ [35 15 24]] reward= [0.03020456 0.02905368 0.03020456 0.02905368 0.02787159] done= [False False False False False]
+Step 5
+Action:  [16 17 16 17 17]
+obs= [[35 15 23]
+ [35 15 24]
+ [35 15 23]
+ [35 15 24]
+ [35 15 25]] reward= [0.02905368 0.02787159 0.02905368 0.02787159 0.02666703] done= [False False False False False]
+Step 6
+Action:  [17 17 17 17 17]
+obs= [[35 15 26]
+ [35 15 27]
+ [35 15 28]
+ [35 15 29]
+ [35 15 30]] reward= [0.02546569 0.02429746 0.02318479 0.02213935 0.02116463] done= [False False False False False]
+Step 7
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 8
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 9
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 10
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 11
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 12
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 13
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 14
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 15
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 16
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 17
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 18
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 19
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 20
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 21
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 22
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 23
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 24
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 25
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 26
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 27
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 28
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 29
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 30
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 31
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 32
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 33
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 34
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 35
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 36
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 37
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 38
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 39
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 40
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 41
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 42
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 43
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 44
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 45
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 46
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 47
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 48
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Step 49
+Action:  [17 16 17 16 17]
+obs= [[35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]] reward= [0.02025937 0.02116463 0.02025937 0.02116463 0.02025937] done= [False False False False False]
+Step 50
+Action:  [16 17 16 17 16]
+obs= [[35 15 30]
+ [35 15 31]
+ [35 15 30]
+ [35 15 31]
+ [35 15 30]] reward= [0.02116463 0.02025937 0.02116463 0.02025937 0.02116463] done= [False False False False False]
+Test: NO.4
+Step 1
+Action:  [17 16 17 17 17]
+obs= [[20 14  7]
+ [20 14  6]
+ [20 14  7]
+ [20 14  8]
+ [20 14  9]] reward= [0.01983286 0.01903012 0.01983286 0.02069699 0.02162646] done= [False False False False False]
+Step 2
+Action:  [17 17 17 17 17]
+obs= [[20 14 10]
+ [20 14 11]
+ [20 14 12]
+ [20 14 13]
+ [20 14 14]] reward= [0.02262374 0.02368858 0.02481603 0.02599448 0.02720475] done= [False False False False False]
+Step 3
+Action:  [17 17 17 17 17]
+obs= [[20 14 15]
+ [20 14 16]
+ [20 14 17]
+ [20 14 18]
+ [20 14 19]] reward= [0.02842285 0.02962757 0.0308096  0.03197638 0.03315098] done= [False False False False False]
+Step 4
+Action:  [17 17 17 17 17]
+obs= [[20 14 20]
+ [20 14 21]
+ [20 14 22]
+ [20 14 23]
+ [20 14 24]] reward= [0.03436929 0.03567981 0.03714905 0.03887515 0.04100922] done= [False False False False False]
+Step 5
+Action:  [17 17 17 17 17]
+obs= [[20 14 25]
+ [20 14 26]
+ [20 14 27]
+ [20 14 28]
+ [20 14 29]] reward= [0.043756   0.04733961 0.05198777 0.05799048 0.06581358] done= [False False False False False]
+Step 6
+Action:  [17 17 17 17 17]
+obs= [[20 14 30]
+ [20 14 31]
+ [20 14 32]
+ [20 14 33]
+ [20 14 34]] reward= [0.07624093 0.09063364 0.11147193 0.14349909 0.19542807] done= [False False False False False]
+Step 7
+Action:  [17 17 17 17 16]
+obs= [[20 14 35]
+ [20 14 36]
+ [20 14 37]
+ [20 14 38]
+ [20 14 37]] reward= [0.27258316 0.30910525 0.2407196  0.17183411 0.2407196 ] done= [False False False False False]
+Step 8
+Action:  [17 16 17 17 17]
+obs= [[20 14 38]
+ [20 14 37]
+ [20 14 38]
+ [15  1 22]
+ [15  1 23]] reward= [ 0.17183411  0.2407196   0.17183411 -1.          0.01554565] done= [False False False  True False]
+Goal reached! reward= [ 0.17183411  0.2407196   0.17183411 -1.          0.01554565]
+Test: NO.5
+Step 1
+Action:  [17 17 17 17 17]
+obs= [[19  2 29]
+ [19  2 30]
+ [19  2 31]
+ [19  2 32]
+ [19  2 33]] reward= [0.02276208 0.02392093 0.02522075 0.02668224 0.0283329 ] done= [False False False False False]
+Step 2
+Action:  [17 17 17 17 16]
+obs= [[19  2 34]
+ [19  2 35]
+ [19  2 36]
+ [19  2 37]
+ [19  2 36]] reward= [0.03020853 0.0323558  0.03483612 0.03773149 0.03483612] done= [False False False False False]
+Step 3
+Action:  [16 16 16 17 16]
+obs= [[19  2 35]
+ [19  2 34]
+ [19  2 33]
+ [19  2 34]
+ [19  2 33]] reward= [0.0323558  0.03020853 0.0283329  0.03020853 0.0283329 ] done= [False False False False False]
+Step 4
+Action:  [16 16 16 16 16]
+obs= [[19  2 32]
+ [19  2 31]
+ [19  2 30]
+ [19  2 29]
+ [19  2 28]] reward= [0.02668224 0.02522075 0.02392093 0.02276208 0.02172953] done= [False False False False False]
+Step 5
+Action:  [17 17 17 17 17]
+obs= [[19  2 29]
+ [19  2 30]
+ [19  2 31]
+ [19  2 32]
+ [19  2 33]] reward= [0.02276208 0.02392093 0.02522075 0.02668224 0.0283329 ] done= [False False False False False]
+Step 6
+Action:  [17 17 17 17 16]
+obs= [[19  2 34]
+ [19  2 35]
+ [19  2 36]
+ [19  2 37]
+ [19  2 36]] reward= [0.03020853 0.0323558  0.03483612 0.03773149 0.03483612] done= [False False False False False]
+Step 7
+Action:  [16 16 16 17 16]
+obs= [[19  2 35]
+ [19  2 34]
+ [19  2 33]
+ [19  2 34]
+ [19  2 33]] reward= [0.0323558  0.03020853 0.0283329  0.03020853 0.0283329 ] done= [False False False False False]
+Step 8
+Action:  [16 16 16 16 16]
+obs= [[19  2 32]
+ [19  2 31]
+ [19  2 30]
+ [19  2 29]
+ [19  2 28]] reward= [0.02668224 0.02522075 0.02392093 0.02276208 0.02172953] done= [False False False False False]
+Step 9
+Action:  [17 17 17 17 17]
+obs= [[19  2 29]
+ [19  2 30]
+ [19  2 31]
+ [19  2 32]
+ [19  2 33]] reward= [0.02276208 0.02392093 0.02522075 0.02668224 0.0283329 ] done= [False False False False False]
+Step 10
+Action:  [17 17 17 17 16]
+obs= [[19  2 34]
+ [19  2 35]
+ [19  2 36]
+ [19  2 37]
+ [19  2 36]] reward= [0.03020853 0.0323558  0.03483612 0.03773149 0.03483612] done= [False False False False False]
+Step 11
+Action:  [16 16 16 17 16]
+obs= [[19  2 35]
+ [19  2 34]
+ [19  2 33]
+ [19  2 34]
+ [19  2 33]] reward= [0.0323558  0.03020853 0.0283329  0.03020853 0.0283329 ] done= [False False False False False]
+Step 12
+Action:  [16 16 16 16 16]
+obs= [[19  2 32]
+ [19  2 31]
+ [19  2 30]
+ [19  2 29]
+ [19  2 28]] reward= [0.02668224 0.02522075 0.02392093 0.02276208 0.02172953] done= [False False False False False]
+Step 13
+Action:  [17 17 17 17 17]
+obs= [[19  2 29]
+ [19  2 30]
+ [19  2 31]
+ [19  2 32]
+ [19  2 33]] reward= [0.02276208 0.02392093 0.02522075 0.02668224 0.0283329 ] done= [False False False False False]
+Step 14
+Action:  [17 17 17 17 16]
+obs= [[19  2 34]
+ [19  2 35]
+ [19  2 36]
+ [19  2 37]
+ [19  2 36]] reward= [0.03020853 0.0323558  0.03483612 0.03773149 0.03483612] done= [False False False False False]
+Step 15
+Action:  [16 16 16 17 16]
+obs= [[19  2 35]
+ [19  2 34]
+ [19  2 33]
+ [19  2 34]
+ [19  2 33]] reward= [0.0323558  0.03020853 0.0283329  0.03020853 0.0283329 ] done= [False False False False False]
+Step 16
+Action:  [16 16 16 16 16]
+obs= [[19  2 32]
+ [19  2 31]
+ [19  2 30]
+ [19  2 29]
+ [19  2 28]] reward= [0.02668224 0.02522075 0.02392093 0.02276208 0.02172953] done= [False False False False False]
+Step 17
+Action:  [17 17 17 17 17]
+obs= [[19  2 29]
+ [19  2 30]
+ [19  2 31]
+ [19  2 32]
+ [19  2 33]] reward= [0.02276208 0.02392093 0.02522075 0.02668224 0.0283329 ] done= [False False False False False]
+Step 18
+Action:  [17 17 17 17 16]
+obs= [[19  2 34]
+ [19  2 35]
+ [19  2 36]
+ [19  2 37]
+ [19  2 36]] reward= [0.03020853 0.0323558  0.03483612 0.03773149 0.03483612] done= [False False False False False]
+Step 19
+Action:  [16 16 16 17 16]
+obs= [[19  2 35]
+ [19  2 34]
+ [19  2 33]
+ [19  2 34]
+ [19  2 33]] reward= [0.0323558  0.03020853 0.0283329  0.03020853 0.0283329 ] done= [False False False False False]
+Step 20
+Action:  [16 16 16 16 16]
+obs= [[19  2 32]
+ [19  2 31]
+ [19  2 30]
+ [19  2 29]
+ [19  2 28]] reward= [0.02668224 0.02522075 0.02392093 0.02276208 0.02172953] done= [False False False False False]
+Step 21
+Action:  [17 17 17 17 17]
+obs= [[19  2 29]
+ [19  2 30]
+ [19  2 31]
+ [19  2 32]
+ [19  2 33]] reward= [0.02276208 0.02392093 0.02522075 0.02668224 0.0283329 ] done= [False False False False False]
+Step 22
+Action:  [17 17 17 17 16]
+obs= [[19  2 34]
+ [19  2 35]
+ [19  2 36]
+ [19  2 37]
+ [19  2 36]] reward= [0.03020853 0.0323558  0.03483612 0.03773149 0.03483612] done= [False False False False False]
+Step 23
+Action:  [16 16 16 17 16]
+obs= [[19  2 35]
+ [19  2 34]
+ [19  2 33]
+ [19  2 34]
+ [19  2 33]] reward= [0.0323558  0.03020853 0.0283329  0.03020853 0.0283329 ] done= [False False False False False]
+Step 24
+Action:  [16 16 16 16 16]
+obs= [[19  2 32]
+ [19  2 31]
+ [19  2 30]
+ [19  2 29]
+ [19  2 28]] reward= [0.02668224 0.02522075 0.02392093 0.02276208 0.02172953] done= [False False False False False]
+Step 25
+Action:  [17 17 17 17 17]
+obs= [[19  2 29]
+ [19  2 30]
+ [19  2 31]
+ [19  2 32]
+ [19  2 33]] reward= [0.02276208 0.02392093 0.02522075 0.02668224 0.0283329 ] done= [False False False False False]
+Step 26
+Action:  [17 17 17 17 16]
+obs= [[19  2 34]
+ [19  2 35]
+ [19  2 36]
+ [19  2 37]
+ [19  2 36]] reward= [0.03020853 0.0323558  0.03483612 0.03773149 0.03483612] done= [False False False False False]
+Step 27
+Action:  [16 16 16 17 16]
+obs= [[19  2 35]
+ [19  2 34]
+ [19  2 33]
+ [19  2 34]
+ [19  2 33]] reward= [0.0323558  0.03020853 0.0283329  0.03020853 0.0283329 ] done= [False False False False False]
+Step 28
+Action:  [16 16 16 16 16]
+obs= [[19  2 32]
+ [19  2 31]
+ [19  2 30]
+ [19  2 29]
+ [19  2 28]] reward= [0.02668224 0.02522075 0.02392093 0.02276208 0.02172953] done= [False False False False False]
+Step 29
+Action:  [17 17 17 17 17]
+obs= [[19  2 29]
+ [19  2 30]
+ [19  2 31]
+ [19  2 32]
+ [19  2 33]] reward= [0.02276208 0.02392093 0.02522075 0.02668224 0.0283329 ] done= [False False False False False]
+Step 30
+Action:  [17 17 17 17 16]
+obs= [[19  2 34]
+ [19  2 35]
+ [19  2 36]
+ [19  2 37]
+ [19  2 36]] reward= [0.03020853 0.0323558  0.03483612 0.03773149 0.03483612] done= [False False False False False]
+Step 31
+Action:  [16 16 16 17 16]
+obs= [[19  2 35]
+ [19  2 34]
+ [19  2 33]
+ [19  2 34]
+ [19  2 33]] reward= [0.0323558  0.03020853 0.0283329  0.03020853 0.0283329 ] done= [False False False False False]
+Step 32
+Action:  [16 16 16 16 16]
+obs= [[19  2 32]
+ [19  2 31]
+ [19  2 30]
+ [19  2 29]
+ [19  2 28]] reward= [0.02668224 0.02522075 0.02392093 0.02276208 0.02172953] done= [False False False False False]
+Step 33
+Action:  [17 17 17 17 17]
+obs= [[19  2 29]
+ [19  2 30]
+ [19  2 31]
+ [19  2 32]
+ [19  2 33]] reward= [0.02276208 0.02392093 0.02522075 0.02668224 0.0283329 ] done= [False False False False False]
+Step 34
+Action:  [17 17 17 17 16]
+obs= [[19  2 34]
+ [19  2 35]
+ [19  2 36]
+ [19  2 37]
+ [19  2 36]] reward= [0.03020853 0.0323558  0.03483612 0.03773149 0.03483612] done= [False False False False False]
+Step 35
+Action:  [16 16 16 17 16]
+obs= [[19  2 35]
+ [19  2 34]
+ [19  2 33]
+ [19  2 34]
+ [19  2 33]] reward= [0.0323558  0.03020853 0.0283329  0.03020853 0.0283329 ] done= [False False False False False]
+Step 36
+Action:  [16 16 16 16 16]
+obs= [[19  2 32]
+ [19  2 31]
+ [19  2 30]
+ [19  2 29]
+ [19  2 28]] reward= [0.02668224 0.02522075 0.02392093 0.02276208 0.02172953] done= [False False False False False]
+Step 37
+Action:  [17 17 17 17 17]
+obs= [[19  2 29]
+ [19  2 30]
+ [19  2 31]
+ [19  2 32]
+ [19  2 33]] reward= [0.02276208 0.02392093 0.02522075 0.02668224 0.0283329 ] done= [False False False False False]
+Step 38
+Action:  [17 17 17 17 16]
+obs= [[19  2 34]
+ [19  2 35]
+ [19  2 36]
+ [19  2 37]
+ [19  2 36]] reward= [0.03020853 0.0323558  0.03483612 0.03773149 0.03483612] done= [False False False False False]
+Step 39
+Action:  [16 16 16 17 16]
+obs= [[19  2 35]
+ [19  2 34]
+ [19  2 33]
+ [19  2 34]
+ [19  2 33]] reward= [0.0323558  0.03020853 0.0283329  0.03020853 0.0283329 ] done= [False False False False False]
+Step 40
+Action:  [16 16 16 16 16]
+obs= [[19  2 32]
+ [19  2 31]
+ [19  2 30]
+ [19  2 29]
+ [19  2 28]] reward= [0.02668224 0.02522075 0.02392093 0.02276208 0.02172953] done= [False False False False False]
+Step 41
+Action:  [17 17 17 17 17]
+obs= [[19  2 29]
+ [19  2 30]
+ [19  2 31]
+ [19  2 32]
+ [19  2 33]] reward= [0.02276208 0.02392093 0.02522075 0.02668224 0.0283329 ] done= [False False False False False]
+Step 42
+Action:  [17 17 17 17 16]
+obs= [[19  2 34]
+ [19  2 35]
+ [19  2 36]
+ [19  2 37]
+ [19  2 36]] reward= [0.03020853 0.0323558  0.03483612 0.03773149 0.03483612] done= [False False False False False]
+Step 43
+Action:  [16 16 16 17 16]
+obs= [[19  2 35]
+ [19  2 34]
+ [19  2 33]
+ [19  2 34]
+ [19  2 33]] reward= [0.0323558  0.03020853 0.0283329  0.03020853 0.0283329 ] done= [False False False False False]
+Step 44
+Action:  [16 16 16 16 16]
+obs= [[19  2 32]
+ [19  2 31]
+ [19  2 30]
+ [19  2 29]
+ [19  2 28]] reward= [0.02668224 0.02522075 0.02392093 0.02276208 0.02172953] done= [False False False False False]
+Step 45
+Action:  [17 17 17 17 17]
+obs= [[19  2 29]
+ [19  2 30]
+ [19  2 31]
+ [19  2 32]
+ [19  2 33]] reward= [0.02276208 0.02392093 0.02522075 0.02668224 0.0283329 ] done= [False False False False False]
+Step 46
+Action:  [17 17 17 17 16]
+obs= [[19  2 34]
+ [19  2 35]
+ [19  2 36]
+ [19  2 37]
+ [19  2 36]] reward= [0.03020853 0.0323558  0.03483612 0.03773149 0.03483612] done= [False False False False False]
+Step 47
+Action:  [16 16 16 17 16]
+obs= [[19  2 35]
+ [19  2 34]
+ [19  2 33]
+ [19  2 34]
+ [19  2 33]] reward= [0.0323558  0.03020853 0.0283329  0.03020853 0.0283329 ] done= [False False False False False]
+Step 48
+Action:  [16 16 16 16 16]
+obs= [[19  2 32]
+ [19  2 31]
+ [19  2 30]
+ [19  2 29]
+ [19  2 28]] reward= [0.02668224 0.02522075 0.02392093 0.02276208 0.02172953] done= [False False False False False]
+Step 49
+Action:  [17 17 17 17 17]
+obs= [[19  2 29]
+ [19  2 30]
+ [19  2 31]
+ [19  2 32]
+ [19  2 33]] reward= [0.02276208 0.02392093 0.02522075 0.02668224 0.0283329 ] done= [False False False False False]
+Step 50
+Action:  [17 17 17 17 16]
+obs= [[19  2 34]
+ [19  2 35]
+ [19  2 36]
+ [19  2 37]
+ [19  2 36]] reward= [0.03020853 0.0323558  0.03483612 0.03773149 0.03483612] done= [False False False False False]
+Test: NO.6
+Step 1
+Action:  [17 17 17 17 16]
+obs= [[16 25 34]
+ [16 25 35]
+ [16 25 36]
+ [16 25 37]
+ [16 25 36]] reward= [0.17033952 0.15273103 0.12794036 0.10589935 0.12794036] done= [False False False False False]
+Step 2
+Action:  [16 16 16 17 16]
+obs= [[16 25 35]
+ [16 25 34]
+ [16 25 33]
+ [16 25 34]
+ [16 25 33]] reward= [0.15273103 0.17033952 0.16708587 0.17033952 0.16708587] done= [False False False False False]
+Step 3
+Action:  [16 16 16 16 16]
+obs= [[16 25 32]
+ [16 25 31]
+ [16 25 30]
+ [16 25 29]
+ [16 25 28]] reward= [0.14611138 0.12182778 0.10144877 0.08582594 0.07405105] done= [False False False False False]
+Step 4
+Action:  [17 17 17 17 17]
+obs= [[16 25 29]
+ [16 25 30]
+ [16 25 31]
+ [16 25 32]
+ [16 25 33]] reward= [0.08582594 0.10144877 0.12182778 0.14611138 0.16708587] done= [False False False False False]
+Step 5
+Action:  [17 17 17 17 16]
+obs= [[16 25 34]
+ [16 25 35]
+ [16 25 36]
+ [16 25 37]
+ [16 25 36]] reward= [0.17033952 0.15273103 0.12794036 0.10589935 0.12794036] done= [False False False False False]
+Step 6
+Action:  [16 16 16 17 16]
+obs= [[16 25 35]
+ [16 25 34]
+ [16 25 33]
+ [16 25 34]
+ [16 25 33]] reward= [0.15273103 0.17033952 0.16708587 0.17033952 0.16708587] done= [False False False False False]
+Step 7
+Action:  [16 16 16 16 16]
+obs= [[16 25 32]
+ [16 25 31]
+ [16 25 30]
+ [16 25 29]
+ [16 25 28]] reward= [0.14611138 0.12182778 0.10144877 0.08582594 0.07405105] done= [False False False False False]
+Step 8
+Action:  [17 17 17 17 17]
+obs= [[16 25 29]
+ [16 25 30]
+ [16 25 31]
+ [16 25 32]
+ [16 25 33]] reward= [0.08582594 0.10144877 0.12182778 0.14611138 0.16708587] done= [False False False False False]
+Step 9
+Action:  [17 17 17 17 16]
+obs= [[16 25 34]
+ [16 25 35]
+ [16 25 36]
+ [16 25 37]
+ [16 25 36]] reward= [0.17033952 0.15273103 0.12794036 0.10589935 0.12794036] done= [False False False False False]
+Step 10
+Action:  [16 16 16 17 16]
+obs= [[16 25 35]
+ [16 25 34]
+ [16 25 33]
+ [16 25 34]
+ [16 25 33]] reward= [0.15273103 0.17033952 0.16708587 0.17033952 0.16708587] done= [False False False False False]
+Step 11
+Action:  [16 16 16 16 16]
+obs= [[16 25 32]
+ [16 25 31]
+ [16 25 30]
+ [16 25 29]
+ [16 25 28]] reward= [0.14611138 0.12182778 0.10144877 0.08582594 0.07405105] done= [False False False False False]
+Step 12
+Action:  [17 17 17 17 17]
+obs= [[16 25 29]
+ [16 25 30]
+ [16 25 31]
+ [16 25 32]
+ [16 25 33]] reward= [0.08582594 0.10144877 0.12182778 0.14611138 0.16708587] done= [False False False False False]
+Step 13
+Action:  [17 17 17 17 16]
+obs= [[16 25 34]
+ [16 25 35]
+ [16 25 36]
+ [16 25 37]
+ [16 25 36]] reward= [0.17033952 0.15273103 0.12794036 0.10589935 0.12794036] done= [False False False False False]
+Step 14
+Action:  [16 16 16 17 16]
+obs= [[16 25 35]
+ [16 25 34]
+ [16 25 33]
+ [16 25 34]
+ [16 25 33]] reward= [0.15273103 0.17033952 0.16708587 0.17033952 0.16708587] done= [False False False False False]
+Step 15
+Action:  [16 16 16 16 16]
+obs= [[16 25 32]
+ [16 25 31]
+ [16 25 30]
+ [16 25 29]
+ [16 25 28]] reward= [0.14611138 0.12182778 0.10144877 0.08582594 0.07405105] done= [False False False False False]
+Step 16
+Action:  [17 17 17 17 17]
+obs= [[16 25 29]
+ [16 25 30]
+ [16 25 31]
+ [16 25 32]
+ [16 25 33]] reward= [0.08582594 0.10144877 0.12182778 0.14611138 0.16708587] done= [False False False False False]
+Step 17
+Action:  [17 17 17 17 16]
+obs= [[16 25 34]
+ [16 25 35]
+ [16 25 36]
+ [16 25 37]
+ [16 25 36]] reward= [0.17033952 0.15273103 0.12794036 0.10589935 0.12794036] done= [False False False False False]
+Step 18
+Action:  [16 16 16 17 16]
+obs= [[16 25 35]
+ [16 25 34]
+ [16 25 33]
+ [16 25 34]
+ [16 25 33]] reward= [0.15273103 0.17033952 0.16708587 0.17033952 0.16708587] done= [False False False False False]
+Step 19
+Action:  [16 16 16 16 16]
+obs= [[16 25 32]
+ [16 25 31]
+ [16 25 30]
+ [16 25 29]
+ [16 25 28]] reward= [0.14611138 0.12182778 0.10144877 0.08582594 0.07405105] done= [False False False False False]
+Step 20
+Action:  [17 17 17 17 17]
+obs= [[16 25 29]
+ [16 25 30]
+ [16 25 31]
+ [16 25 32]
+ [16 25 33]] reward= [0.08582594 0.10144877 0.12182778 0.14611138 0.16708587] done= [False False False False False]
+Step 21
+Action:  [17 17 17 17 16]
+obs= [[16 25 34]
+ [16 25 35]
+ [16 25 36]
+ [16 25 37]
+ [16 25 36]] reward= [0.17033952 0.15273103 0.12794036 0.10589935 0.12794036] done= [False False False False False]
+Step 22
+Action:  [16 16 16 17 16]
+obs= [[16 25 35]
+ [16 25 34]
+ [16 25 33]
+ [16 25 34]
+ [16 25 33]] reward= [0.15273103 0.17033952 0.16708587 0.17033952 0.16708587] done= [False False False False False]
+Step 23
+Action:  [16 16 16 16 16]
+obs= [[16 25 32]
+ [16 25 31]
+ [16 25 30]
+ [16 25 29]
+ [16 25 28]] reward= [0.14611138 0.12182778 0.10144877 0.08582594 0.07405105] done= [False False False False False]
+Step 24
+Action:  [17 17 17 17 17]
+obs= [[16 25 29]
+ [16 25 30]
+ [16 25 31]
+ [16 25 32]
+ [16 25 33]] reward= [0.08582594 0.10144877 0.12182778 0.14611138 0.16708587] done= [False False False False False]
+Step 25
+Action:  [17 17 17 17 16]
+obs= [[16 25 34]
+ [16 25 35]
+ [16 25 36]
+ [16 25 37]
+ [16 25 36]] reward= [0.17033952 0.15273103 0.12794036 0.10589935 0.12794036] done= [False False False False False]
+Step 26
+Action:  [16 16 16 17 16]
+obs= [[16 25 35]
+ [16 25 34]
+ [16 25 33]
+ [16 25 34]
+ [16 25 33]] reward= [0.15273103 0.17033952 0.16708587 0.17033952 0.16708587] done= [False False False False False]
+Step 27
+Action:  [16 16 16 16 16]
+obs= [[16 25 32]
+ [16 25 31]
+ [16 25 30]
+ [16 25 29]
+ [16 25 28]] reward= [0.14611138 0.12182778 0.10144877 0.08582594 0.07405105] done= [False False False False False]
+Step 28
+Action:  [17 17 17 17 17]
+obs= [[16 25 29]
+ [16 25 30]
+ [16 25 31]
+ [16 25 32]
+ [16 25 33]] reward= [0.08582594 0.10144877 0.12182778 0.14611138 0.16708587] done= [False False False False False]
+Step 29
+Action:  [17 17 17 17 16]
+obs= [[16 25 34]
+ [16 25 35]
+ [16 25 36]
+ [16 25 37]
+ [16 25 36]] reward= [0.17033952 0.15273103 0.12794036 0.10589935 0.12794036] done= [False False False False False]
+Step 30
+Action:  [16 16 16 17 16]
+obs= [[16 25 35]
+ [16 25 34]
+ [16 25 33]
+ [16 25 34]
+ [16 25 33]] reward= [0.15273103 0.17033952 0.16708587 0.17033952 0.16708587] done= [False False False False False]
+Step 31
+Action:  [16 16 16 16 16]
+obs= [[16 25 32]
+ [16 25 31]
+ [16 25 30]
+ [16 25 29]
+ [16 25 28]] reward= [0.14611138 0.12182778 0.10144877 0.08582594 0.07405105] done= [False False False False False]
+Step 32
+Action:  [17 17 17 17 17]
+obs= [[16 25 29]
+ [16 25 30]
+ [16 25 31]
+ [16 25 32]
+ [16 25 33]] reward= [0.08582594 0.10144877 0.12182778 0.14611138 0.16708587] done= [False False False False False]
+Step 33
+Action:  [17 17 17 17 16]
+obs= [[16 25 34]
+ [16 25 35]
+ [16 25 36]
+ [16 25 37]
+ [16 25 36]] reward= [0.17033952 0.15273103 0.12794036 0.10589935 0.12794036] done= [False False False False False]
+Step 34
+Action:  [16 16 16 17 16]
+obs= [[16 25 35]
+ [16 25 34]
+ [16 25 33]
+ [16 25 34]
+ [16 25 33]] reward= [0.15273103 0.17033952 0.16708587 0.17033952 0.16708587] done= [False False False False False]
+Step 35
+Action:  [16 16 16 16 16]
+obs= [[16 25 32]
+ [16 25 31]
+ [16 25 30]
+ [16 25 29]
+ [16 25 28]] reward= [0.14611138 0.12182778 0.10144877 0.08582594 0.07405105] done= [False False False False False]
+Step 36
+Action:  [17 17 17 17 17]
+obs= [[16 25 29]
+ [16 25 30]
+ [16 25 31]
+ [16 25 32]
+ [16 25 33]] reward= [0.08582594 0.10144877 0.12182778 0.14611138 0.16708587] done= [False False False False False]
+Step 37
+Action:  [17 17 17 17 16]
+obs= [[16 25 34]
+ [16 25 35]
+ [16 25 36]
+ [16 25 37]
+ [16 25 36]] reward= [0.17033952 0.15273103 0.12794036 0.10589935 0.12794036] done= [False False False False False]
+Step 38
+Action:  [16 16 16 17 16]
+obs= [[16 25 35]
+ [16 25 34]
+ [16 25 33]
+ [16 25 34]
+ [16 25 33]] reward= [0.15273103 0.17033952 0.16708587 0.17033952 0.16708587] done= [False False False False False]
+Step 39
+Action:  [16 16 16 16 16]
+obs= [[16 25 32]
+ [16 25 31]
+ [16 25 30]
+ [16 25 29]
+ [16 25 28]] reward= [0.14611138 0.12182778 0.10144877 0.08582594 0.07405105] done= [False False False False False]
+Step 40
+Action:  [17 17 17 17 17]
+obs= [[16 25 29]
+ [16 25 30]
+ [16 25 31]
+ [16 25 32]
+ [16 25 33]] reward= [0.08582594 0.10144877 0.12182778 0.14611138 0.16708587] done= [False False False False False]
+Step 41
+Action:  [17 17 17 17 16]
+obs= [[16 25 34]
+ [16 25 35]
+ [16 25 36]
+ [16 25 37]
+ [16 25 36]] reward= [0.17033952 0.15273103 0.12794036 0.10589935 0.12794036] done= [False False False False False]
+Step 42
+Action:  [16 16 16 17 16]
+obs= [[16 25 35]
+ [16 25 34]
+ [16 25 33]
+ [16 25 34]
+ [16 25 33]] reward= [0.15273103 0.17033952 0.16708587 0.17033952 0.16708587] done= [False False False False False]
+Step 43
+Action:  [16 16 16 16 16]
+obs= [[16 25 32]
+ [16 25 31]
+ [16 25 30]
+ [16 25 29]
+ [16 25 28]] reward= [0.14611138 0.12182778 0.10144877 0.08582594 0.07405105] done= [False False False False False]
+Step 44
+Action:  [17 17 17 17 17]
+obs= [[16 25 29]
+ [16 25 30]
+ [16 25 31]
+ [16 25 32]
+ [16 25 33]] reward= [0.08582594 0.10144877 0.12182778 0.14611138 0.16708587] done= [False False False False False]
+Step 45
+Action:  [17 17 17 17 16]
+obs= [[16 25 34]
+ [16 25 35]
+ [16 25 36]
+ [16 25 37]
+ [16 25 36]] reward= [0.17033952 0.15273103 0.12794036 0.10589935 0.12794036] done= [False False False False False]
+Step 46
+Action:  [16 16 16 17 16]
+obs= [[16 25 35]
+ [16 25 34]
+ [16 25 33]
+ [16 25 34]
+ [16 25 33]] reward= [0.15273103 0.17033952 0.16708587 0.17033952 0.16708587] done= [False False False False False]
+Step 47
+Action:  [16 16 16 16 16]
+obs= [[16 25 32]
+ [16 25 31]
+ [16 25 30]
+ [16 25 29]
+ [16 25 28]] reward= [0.14611138 0.12182778 0.10144877 0.08582594 0.07405105] done= [False False False False False]
+Step 48
+Action:  [17 17 17 17 17]
+obs= [[16 25 29]
+ [16 25 30]
+ [16 25 31]
+ [16 25 32]
+ [16 25 33]] reward= [0.08582594 0.10144877 0.12182778 0.14611138 0.16708587] done= [False False False False False]
+Step 49
+Action:  [17 17 17 17 16]
+obs= [[16 25 34]
+ [16 25 35]
+ [16 25 36]
+ [16 25 37]
+ [16 25 36]] reward= [0.17033952 0.15273103 0.12794036 0.10589935 0.12794036] done= [False False False False False]
+Step 50
+Action:  [16 16 16 17 16]
+obs= [[16 25 35]
+ [16 25 34]
+ [16 25 33]
+ [16 25 34]
+ [16 25 33]] reward= [0.15273103 0.17033952 0.16708587 0.17033952 0.16708587] done= [False False False False False]
+Test: NO.7
+Step 1
+Action:  [17 16 17 17 17]
+obs= [[11 10 24]
+ [11 10 23]
+ [11 10 24]
+ [11 10 25]
+ [11 10 26]] reward= [0.01813132 0.01770196 0.01813132 0.01865083 0.01927537] done= [False False False False False]
+Step 2
+Action:  [17 17 17 17 17]
+obs= [[11 10 27]
+ [11 10 28]
+ [11 10 29]
+ [11 10 30]
+ [11 10 31]] reward= [0.0200065  0.02084062 0.02177786 0.02282365 0.02398844] done= [False False False False False]
+Step 3
+Action:  [17 17 17 17 17]
+obs= [[11 10 32]
+ [11 10 33]
+ [11 10 34]
+ [11 10 35]
+ [11 10 36]] reward= [0.02528727 0.02674005 0.02837219 0.03021592 0.03231208] done= [False False False False False]
+Step 4
+Action:  [17 16 16 16 16]
+obs= [[11 10 37]
+ [11 10 36]
+ [11 10 35]
+ [11 10 34]
+ [11 10 33]] reward= [0.03471278 0.03231208 0.03021592 0.02837219 0.02674005] done= [False False False False False]
+Step 5
+Action:  [17 16 16 16 16]
+obs= [[11 10 34]
+ [11 10 33]
+ [11 10 32]
+ [11 10 31]
+ [11 10 30]] reward= [0.02837219 0.02674005 0.02528727 0.02398844 0.02282365] done= [False False False False False]
+Step 6
+Action:  [16 16 17 17 17]
+obs= [[11 10 29]
+ [11 10 28]
+ [11 10 29]
+ [11 10 30]
+ [11 10 31]] reward= [0.02177786 0.02084062 0.02177786 0.02282365 0.02398844] done= [False False False False False]
+Step 7
+Action:  [17 17 17 17 17]
+obs= [[11 10 32]
+ [11 10 33]
+ [11 10 34]
+ [11 10 35]
+ [11 10 36]] reward= [0.02528727 0.02674005 0.02837219 0.03021592 0.03231208] done= [False False False False False]
+Step 8
+Action:  [17 16 16 16 16]
+obs= [[11 10 37]
+ [11 10 36]
+ [11 10 35]
+ [11 10 34]
+ [11 10 33]] reward= [0.03471278 0.03231208 0.03021592 0.02837219 0.02674005] done= [False False False False False]
+Step 9
+Action:  [17 16 16 16 16]
+obs= [[11 10 34]
+ [11 10 33]
+ [11 10 32]
+ [11 10 31]
+ [11 10 30]] reward= [0.02837219 0.02674005 0.02528727 0.02398844 0.02282365] done= [False False False False False]
+Step 10
+Action:  [16 16 17 17 17]
+obs= [[11 10 29]
+ [11 10 28]
+ [11 10 29]
+ [11 10 30]
+ [11 10 31]] reward= [0.02177786 0.02084062 0.02177786 0.02282365 0.02398844] done= [False False False False False]
+Step 11
+Action:  [17 17 17 17 17]
+obs= [[11 10 32]
+ [11 10 33]
+ [11 10 34]
+ [11 10 35]
+ [11 10 36]] reward= [0.02528727 0.02674005 0.02837219 0.03021592 0.03231208] done= [False False False False False]
+Step 12
+Action:  [17 16 16 16 16]
+obs= [[11 10 37]
+ [11 10 36]
+ [11 10 35]
+ [11 10 34]
+ [11 10 33]] reward= [0.03471278 0.03231208 0.03021592 0.02837219 0.02674005] done= [False False False False False]
+Step 13
+Action:  [17 16 16 16 16]
+obs= [[11 10 34]
+ [11 10 33]
+ [11 10 32]
+ [11 10 31]
+ [11 10 30]] reward= [0.02837219 0.02674005 0.02528727 0.02398844 0.02282365] done= [False False False False False]
+Step 14
+Action:  [16 16 17 17 17]
+obs= [[11 10 29]
+ [11 10 28]
+ [11 10 29]
+ [11 10 30]
+ [11 10 31]] reward= [0.02177786 0.02084062 0.02177786 0.02282365 0.02398844] done= [False False False False False]
+Step 15
+Action:  [17 17 17 17 17]
+obs= [[11 10 32]
+ [11 10 33]
+ [11 10 34]
+ [11 10 35]
+ [11 10 36]] reward= [0.02528727 0.02674005 0.02837219 0.03021592 0.03231208] done= [False False False False False]
+Step 16
+Action:  [17 16 16 16 16]
+obs= [[11 10 37]
+ [11 10 36]
+ [11 10 35]
+ [11 10 34]
+ [11 10 33]] reward= [0.03471278 0.03231208 0.03021592 0.02837219 0.02674005] done= [False False False False False]
+Step 17
+Action:  [17 16 16 16 16]
+obs= [[11 10 34]
+ [11 10 33]
+ [11 10 32]
+ [11 10 31]
+ [11 10 30]] reward= [0.02837219 0.02674005 0.02528727 0.02398844 0.02282365] done= [False False False False False]
+Step 18
+Action:  [16 16 17 17 17]
+obs= [[11 10 29]
+ [11 10 28]
+ [11 10 29]
+ [11 10 30]
+ [11 10 31]] reward= [0.02177786 0.02084062 0.02177786 0.02282365 0.02398844] done= [False False False False False]
+Step 19
+Action:  [17 17 17 17 17]
+obs= [[11 10 32]
+ [11 10 33]
+ [11 10 34]
+ [11 10 35]
+ [11 10 36]] reward= [0.02528727 0.02674005 0.02837219 0.03021592 0.03231208] done= [False False False False False]
+Step 20
+Action:  [17 16 16 16 16]
+obs= [[11 10 37]
+ [11 10 36]
+ [11 10 35]
+ [11 10 34]
+ [11 10 33]] reward= [0.03471278 0.03231208 0.03021592 0.02837219 0.02674005] done= [False False False False False]
+Step 21
+Action:  [17 16 16 16 16]
+obs= [[11 10 34]
+ [11 10 33]
+ [11 10 32]
+ [11 10 31]
+ [11 10 30]] reward= [0.02837219 0.02674005 0.02528727 0.02398844 0.02282365] done= [False False False False False]
+Step 22
+Action:  [16 16 17 17 17]
+obs= [[11 10 29]
+ [11 10 28]
+ [11 10 29]
+ [11 10 30]
+ [11 10 31]] reward= [0.02177786 0.02084062 0.02177786 0.02282365 0.02398844] done= [False False False False False]
+Step 23
+Action:  [17 17 17 17 17]
+obs= [[11 10 32]
+ [11 10 33]
+ [11 10 34]
+ [11 10 35]
+ [11 10 36]] reward= [0.02528727 0.02674005 0.02837219 0.03021592 0.03231208] done= [False False False False False]
+Step 24
+Action:  [17 16 16 16 16]
+obs= [[11 10 37]
+ [11 10 36]
+ [11 10 35]
+ [11 10 34]
+ [11 10 33]] reward= [0.03471278 0.03231208 0.03021592 0.02837219 0.02674005] done= [False False False False False]
+Step 25
+Action:  [17 16 16 16 16]
+obs= [[11 10 34]
+ [11 10 33]
+ [11 10 32]
+ [11 10 31]
+ [11 10 30]] reward= [0.02837219 0.02674005 0.02528727 0.02398844 0.02282365] done= [False False False False False]
+Step 26
+Action:  [16 16 17 17 17]
+obs= [[11 10 29]
+ [11 10 28]
+ [11 10 29]
+ [11 10 30]
+ [11 10 31]] reward= [0.02177786 0.02084062 0.02177786 0.02282365 0.02398844] done= [False False False False False]
+Step 27
+Action:  [17 17 17 17 17]
+obs= [[11 10 32]
+ [11 10 33]
+ [11 10 34]
+ [11 10 35]
+ [11 10 36]] reward= [0.02528727 0.02674005 0.02837219 0.03021592 0.03231208] done= [False False False False False]
+Step 28
+Action:  [17 16 16 16 16]
+obs= [[11 10 37]
+ [11 10 36]
+ [11 10 35]
+ [11 10 34]
+ [11 10 33]] reward= [0.03471278 0.03231208 0.03021592 0.02837219 0.02674005] done= [False False False False False]
+Step 29
+Action:  [17 16 16 16 16]
+obs= [[11 10 34]
+ [11 10 33]
+ [11 10 32]
+ [11 10 31]
+ [11 10 30]] reward= [0.02837219 0.02674005 0.02528727 0.02398844 0.02282365] done= [False False False False False]
+Step 30
+Action:  [16 16 17 17 17]
+obs= [[11 10 29]
+ [11 10 28]
+ [11 10 29]
+ [11 10 30]
+ [11 10 31]] reward= [0.02177786 0.02084062 0.02177786 0.02282365 0.02398844] done= [False False False False False]
+Step 31
+Action:  [17 17 17 17 17]
+obs= [[11 10 32]
+ [11 10 33]
+ [11 10 34]
+ [11 10 35]
+ [11 10 36]] reward= [0.02528727 0.02674005 0.02837219 0.03021592 0.03231208] done= [False False False False False]
+Step 32
+Action:  [17 16 16 16 16]
+obs= [[11 10 37]
+ [11 10 36]
+ [11 10 35]
+ [11 10 34]
+ [11 10 33]] reward= [0.03471278 0.03231208 0.03021592 0.02837219 0.02674005] done= [False False False False False]
+Step 33
+Action:  [17 16 16 16 16]
+obs= [[11 10 34]
+ [11 10 33]
+ [11 10 32]
+ [11 10 31]
+ [11 10 30]] reward= [0.02837219 0.02674005 0.02528727 0.02398844 0.02282365] done= [False False False False False]
+Step 34
+Action:  [16 16 17 17 17]
+obs= [[11 10 29]
+ [11 10 28]
+ [11 10 29]
+ [11 10 30]
+ [11 10 31]] reward= [0.02177786 0.02084062 0.02177786 0.02282365 0.02398844] done= [False False False False False]
+Step 35
+Action:  [17 17 17 17 17]
+obs= [[11 10 32]
+ [11 10 33]
+ [11 10 34]
+ [11 10 35]
+ [11 10 36]] reward= [0.02528727 0.02674005 0.02837219 0.03021592 0.03231208] done= [False False False False False]
+Step 36
+Action:  [17 16 16 16 16]
+obs= [[11 10 37]
+ [11 10 36]
+ [11 10 35]
+ [11 10 34]
+ [11 10 33]] reward= [0.03471278 0.03231208 0.03021592 0.02837219 0.02674005] done= [False False False False False]
+Step 37
+Action:  [17 16 16 16 16]
+obs= [[11 10 34]
+ [11 10 33]
+ [11 10 32]
+ [11 10 31]
+ [11 10 30]] reward= [0.02837219 0.02674005 0.02528727 0.02398844 0.02282365] done= [False False False False False]
+Step 38
+Action:  [16 16 17 17 17]
+obs= [[11 10 29]
+ [11 10 28]
+ [11 10 29]
+ [11 10 30]
+ [11 10 31]] reward= [0.02177786 0.02084062 0.02177786 0.02282365 0.02398844] done= [False False False False False]
+Step 39
+Action:  [17 17 17 17 17]
+obs= [[11 10 32]
+ [11 10 33]
+ [11 10 34]
+ [11 10 35]
+ [11 10 36]] reward= [0.02528727 0.02674005 0.02837219 0.03021592 0.03231208] done= [False False False False False]
+Step 40
+Action:  [17 16 16 16 16]
+obs= [[11 10 37]
+ [11 10 36]
+ [11 10 35]
+ [11 10 34]
+ [11 10 33]] reward= [0.03471278 0.03231208 0.03021592 0.02837219 0.02674005] done= [False False False False False]
+Step 41
+Action:  [17 16 16 16 16]
+obs= [[11 10 34]
+ [11 10 33]
+ [11 10 32]
+ [11 10 31]
+ [11 10 30]] reward= [0.02837219 0.02674005 0.02528727 0.02398844 0.02282365] done= [False False False False False]
+Step 42
+Action:  [16 16 17 17 17]
+obs= [[11 10 29]
+ [11 10 28]
+ [11 10 29]
+ [11 10 30]
+ [11 10 31]] reward= [0.02177786 0.02084062 0.02177786 0.02282365 0.02398844] done= [False False False False False]
+Step 43
+Action:  [17 17 17 17 17]
+obs= [[11 10 32]
+ [11 10 33]
+ [11 10 34]
+ [11 10 35]
+ [11 10 36]] reward= [0.02528727 0.02674005 0.02837219 0.03021592 0.03231208] done= [False False False False False]
+Step 44
+Action:  [17 16 16 16 16]
+obs= [[11 10 37]
+ [11 10 36]
+ [11 10 35]
+ [11 10 34]
+ [11 10 33]] reward= [0.03471278 0.03231208 0.03021592 0.02837219 0.02674005] done= [False False False False False]
+Step 45
+Action:  [17 16 16 16 16]
+obs= [[11 10 34]
+ [11 10 33]
+ [11 10 32]
+ [11 10 31]
+ [11 10 30]] reward= [0.02837219 0.02674005 0.02528727 0.02398844 0.02282365] done= [False False False False False]
+Step 46
+Action:  [16 16 17 17 17]
+obs= [[11 10 29]
+ [11 10 28]
+ [11 10 29]
+ [11 10 30]
+ [11 10 31]] reward= [0.02177786 0.02084062 0.02177786 0.02282365 0.02398844] done= [False False False False False]
+Step 47
+Action:  [17 17 17 17 17]
+obs= [[11 10 32]
+ [11 10 33]
+ [11 10 34]
+ [11 10 35]
+ [11 10 36]] reward= [0.02528727 0.02674005 0.02837219 0.03021592 0.03231208] done= [False False False False False]
+Step 48
+Action:  [17 16 16 16 16]
+obs= [[11 10 37]
+ [11 10 36]
+ [11 10 35]
+ [11 10 34]
+ [11 10 33]] reward= [0.03471278 0.03231208 0.03021592 0.02837219 0.02674005] done= [False False False False False]
+Step 49
+Action:  [17 16 16 16 16]
+obs= [[11 10 34]
+ [11 10 33]
+ [11 10 32]
+ [11 10 31]
+ [11 10 30]] reward= [0.02837219 0.02674005 0.02528727 0.02398844 0.02282365] done= [False False False False False]
+Step 50
+Action:  [16 16 17 17 17]
+obs= [[11 10 29]
+ [11 10 28]
+ [11 10 29]
+ [11 10 30]
+ [11 10 31]] reward= [0.02177786 0.02084062 0.02177786 0.02282365 0.02398844] done= [False False False False False]
+Test: NO.8
+Step 1
+Action:  [16 17 17 17 17]
+obs= [[26 14 36]
+ [26 14 37]
+ [26 14 38]
+ [24 18 25]
+ [24 18 26]] reward= [ 0.05927073  0.05337048  0.04836728 -1.          0.08808807] done= [False False False  True False]
+Goal reached! reward= [ 0.05927073  0.05337048  0.04836728 -1.          0.08808807]
+Test: NO.9
+Step 1
+Action:  [17 17 17 17 17]
+obs= [[16  0 18]
+ [16  0 19]
+ [16  0 20]
+ [16  0 21]
+ [16  0 22]] reward= [0.01426517 0.01449427 0.01472309 0.01496011 0.01521571] done= [False False False False False]
+Step 2
+Action:  [17 17 17 17 17]
+obs= [[16  0 23]
+ [16  0 24]
+ [16  0 25]
+ [16  0 26]
+ [16  0 27]] reward= [0.01550334 0.01584022 0.01624343 0.01672228 0.01727624] done= [False False False False False]
+Step 3
+Action:  [17 17 17 17 17]
+obs= [[16  0 28]
+ [16  0 29]
+ [16  0 30]
+ [16  0 31]
+ [16  0 32]] reward= [0.01790113 0.01859532 0.01936076 0.02020255 0.02112849] done= [False False False False False]
+Step 4
+Action:  [17 17 17 17 17]
+obs= [[16  0 33]
+ [16  0 34]
+ [16  0 35]
+ [16  0 36]
+ [16  0 37]] reward= [0.02214897 0.0232772  0.02452962 0.02592671 0.02749405] done= [False False False False False]
+Step 5
+Action:  [16 16 16 16 17]
+obs= [[16  0 36]
+ [16  0 35]
+ [16  0 34]
+ [16  0 33]
+ [16  0 34]] reward= [0.02592671 0.02452962 0.0232772  0.02214897 0.0232772 ] done= [False False False False False]
+Step 6
+Action:  [16 16 16 16 16]
+obs= [[16  0 33]
+ [16  0 32]
+ [16  0 31]
+ [16  0 30]
+ [16  0 29]] reward= [0.02214897 0.02112849 0.02020255 0.01936076 0.01859532] done= [False False False False False]
+Step 7
+Action:  [16 17 17 17 17]
+obs= [[16  0 28]
+ [16  0 29]
+ [16  0 30]
+ [16  0 31]
+ [16  0 32]] reward= [0.01790113 0.01859532 0.01936076 0.02020255 0.02112849] done= [False False False False False]
+Step 8
+Action:  [17 17 17 17 17]
+obs= [[16  0 33]
+ [16  0 34]
+ [16  0 35]
+ [16  0 36]
+ [16  0 37]] reward= [0.02214897 0.0232772  0.02452962 0.02592671 0.02749405] done= [False False False False False]
+Step 9
+Action:  [16 16 16 16 17]
+obs= [[16  0 36]
+ [16  0 35]
+ [16  0 34]
+ [16  0 33]
+ [16  0 34]] reward= [0.02592671 0.02452962 0.0232772  0.02214897 0.0232772 ] done= [False False False False False]
+Step 10
+Action:  [16 16 16 16 16]
+obs= [[16  0 33]
+ [16  0 32]
+ [16  0 31]
+ [16  0 30]
+ [16  0 29]] reward= [0.02214897 0.02112849 0.02020255 0.01936076 0.01859532] done= [False False False False False]
+Step 11
+Action:  [16 17 17 17 17]
+obs= [[16  0 28]
+ [16  0 29]
+ [16  0 30]
+ [16  0 31]
+ [16  0 32]] reward= [0.01790113 0.01859532 0.01936076 0.02020255 0.02112849] done= [False False False False False]
+Step 12
+Action:  [17 17 17 17 17]
+obs= [[16  0 33]
+ [16  0 34]
+ [16  0 35]
+ [16  0 36]
+ [16  0 37]] reward= [0.02214897 0.0232772  0.02452962 0.02592671 0.02749405] done= [False False False False False]
+Step 13
+Action:  [16 16 16 16 17]
+obs= [[16  0 36]
+ [16  0 35]
+ [16  0 34]
+ [16  0 33]
+ [16  0 34]] reward= [0.02592671 0.02452962 0.0232772  0.02214897 0.0232772 ] done= [False False False False False]
+Step 14
+Action:  [16 16 16 16 16]
+obs= [[16  0 33]
+ [16  0 32]
+ [16  0 31]
+ [16  0 30]
+ [16  0 29]] reward= [0.02214897 0.02112849 0.02020255 0.01936076 0.01859532] done= [False False False False False]
+Step 15
+Action:  [16 17 17 17 17]
+obs= [[16  0 28]
+ [16  0 29]
+ [16  0 30]
+ [16  0 31]
+ [16  0 32]] reward= [0.01790113 0.01859532 0.01936076 0.02020255 0.02112849] done= [False False False False False]
+Step 16
+Action:  [17 17 17 17 17]
+obs= [[16  0 33]
+ [16  0 34]
+ [16  0 35]
+ [16  0 36]
+ [16  0 37]] reward= [0.02214897 0.0232772  0.02452962 0.02592671 0.02749405] done= [False False False False False]
+Step 17
+Action:  [16 16 16 16 17]
+obs= [[16  0 36]
+ [16  0 35]
+ [16  0 34]
+ [16  0 33]
+ [16  0 34]] reward= [0.02592671 0.02452962 0.0232772  0.02214897 0.0232772 ] done= [False False False False False]
+Step 18
+Action:  [16 16 16 16 16]
+obs= [[16  0 33]
+ [16  0 32]
+ [16  0 31]
+ [16  0 30]
+ [16  0 29]] reward= [0.02214897 0.02112849 0.02020255 0.01936076 0.01859532] done= [False False False False False]
+Step 19
+Action:  [16 17 17 17 17]
+obs= [[16  0 28]
+ [16  0 29]
+ [16  0 30]
+ [16  0 31]
+ [16  0 32]] reward= [0.01790113 0.01859532 0.01936076 0.02020255 0.02112849] done= [False False False False False]
+Step 20
+Action:  [17 17 17 17 17]
+obs= [[16  0 33]
+ [16  0 34]
+ [16  0 35]
+ [16  0 36]
+ [16  0 37]] reward= [0.02214897 0.0232772  0.02452962 0.02592671 0.02749405] done= [False False False False False]
+Step 21
+Action:  [16 16 16 16 17]
+obs= [[16  0 36]
+ [16  0 35]
+ [16  0 34]
+ [16  0 33]
+ [16  0 34]] reward= [0.02592671 0.02452962 0.0232772  0.02214897 0.0232772 ] done= [False False False False False]
+Step 22
+Action:  [16 16 16 16 16]
+obs= [[16  0 33]
+ [16  0 32]
+ [16  0 31]
+ [16  0 30]
+ [16  0 29]] reward= [0.02214897 0.02112849 0.02020255 0.01936076 0.01859532] done= [False False False False False]
+Step 23
+Action:  [16 17 17 17 17]
+obs= [[16  0 28]
+ [16  0 29]
+ [16  0 30]
+ [16  0 31]
+ [16  0 32]] reward= [0.01790113 0.01859532 0.01936076 0.02020255 0.02112849] done= [False False False False False]
+Step 24
+Action:  [17 17 17 17 17]
+obs= [[16  0 33]
+ [16  0 34]
+ [16  0 35]
+ [16  0 36]
+ [16  0 37]] reward= [0.02214897 0.0232772  0.02452962 0.02592671 0.02749405] done= [False False False False False]
+Step 25
+Action:  [16 16 16 16 17]
+obs= [[16  0 36]
+ [16  0 35]
+ [16  0 34]
+ [16  0 33]
+ [16  0 34]] reward= [0.02592671 0.02452962 0.0232772  0.02214897 0.0232772 ] done= [False False False False False]
+Step 26
+Action:  [16 16 16 16 16]
+obs= [[16  0 33]
+ [16  0 32]
+ [16  0 31]
+ [16  0 30]
+ [16  0 29]] reward= [0.02214897 0.02112849 0.02020255 0.01936076 0.01859532] done= [False False False False False]
+Step 27
+Action:  [16 17 17 17 17]
+obs= [[16  0 28]
+ [16  0 29]
+ [16  0 30]
+ [16  0 31]
+ [16  0 32]] reward= [0.01790113 0.01859532 0.01936076 0.02020255 0.02112849] done= [False False False False False]
+Step 28
+Action:  [17 17 17 17 17]
+obs= [[16  0 33]
+ [16  0 34]
+ [16  0 35]
+ [16  0 36]
+ [16  0 37]] reward= [0.02214897 0.0232772  0.02452962 0.02592671 0.02749405] done= [False False False False False]
+Step 29
+Action:  [16 16 16 16 17]
+obs= [[16  0 36]
+ [16  0 35]
+ [16  0 34]
+ [16  0 33]
+ [16  0 34]] reward= [0.02592671 0.02452962 0.0232772  0.02214897 0.0232772 ] done= [False False False False False]
+Step 30
+Action:  [16 16 16 16 16]
+obs= [[16  0 33]
+ [16  0 32]
+ [16  0 31]
+ [16  0 30]
+ [16  0 29]] reward= [0.02214897 0.02112849 0.02020255 0.01936076 0.01859532] done= [False False False False False]
+Step 31
+Action:  [16 17 17 17 17]
+obs= [[16  0 28]
+ [16  0 29]
+ [16  0 30]
+ [16  0 31]
+ [16  0 32]] reward= [0.01790113 0.01859532 0.01936076 0.02020255 0.02112849] done= [False False False False False]
+Step 32
+Action:  [17 17 17 17 17]
+obs= [[16  0 33]
+ [16  0 34]
+ [16  0 35]
+ [16  0 36]
+ [16  0 37]] reward= [0.02214897 0.0232772  0.02452962 0.02592671 0.02749405] done= [False False False False False]
+Step 33
+Action:  [16 16 16 16 17]
+obs= [[16  0 36]
+ [16  0 35]
+ [16  0 34]
+ [16  0 33]
+ [16  0 34]] reward= [0.02592671 0.02452962 0.0232772  0.02214897 0.0232772 ] done= [False False False False False]
+Step 34
+Action:  [16 16 16 16 16]
+obs= [[16  0 33]
+ [16  0 32]
+ [16  0 31]
+ [16  0 30]
+ [16  0 29]] reward= [0.02214897 0.02112849 0.02020255 0.01936076 0.01859532] done= [False False False False False]
+Step 35
+Action:  [16 17 17 17 17]
+obs= [[16  0 28]
+ [16  0 29]
+ [16  0 30]
+ [16  0 31]
+ [16  0 32]] reward= [0.01790113 0.01859532 0.01936076 0.02020255 0.02112849] done= [False False False False False]
+Step 36
+Action:  [17 17 17 17 17]
+obs= [[16  0 33]
+ [16  0 34]
+ [16  0 35]
+ [16  0 36]
+ [16  0 37]] reward= [0.02214897 0.0232772  0.02452962 0.02592671 0.02749405] done= [False False False False False]
+Step 37
+Action:  [16 16 16 16 17]
+obs= [[16  0 36]
+ [16  0 35]
+ [16  0 34]
+ [16  0 33]
+ [16  0 34]] reward= [0.02592671 0.02452962 0.0232772  0.02214897 0.0232772 ] done= [False False False False False]
+Step 38
+Action:  [16 16 16 16 16]
+obs= [[16  0 33]
+ [16  0 32]
+ [16  0 31]
+ [16  0 30]
+ [16  0 29]] reward= [0.02214897 0.02112849 0.02020255 0.01936076 0.01859532] done= [False False False False False]
+Step 39
+Action:  [16 17 17 17 17]
+obs= [[16  0 28]
+ [16  0 29]
+ [16  0 30]
+ [16  0 31]
+ [16  0 32]] reward= [0.01790113 0.01859532 0.01936076 0.02020255 0.02112849] done= [False False False False False]
+Step 40
+Action:  [17 17 17 17 17]
+obs= [[16  0 33]
+ [16  0 34]
+ [16  0 35]
+ [16  0 36]
+ [16  0 37]] reward= [0.02214897 0.0232772  0.02452962 0.02592671 0.02749405] done= [False False False False False]
+Step 41
+Action:  [16 16 16 16 17]
+obs= [[16  0 36]
+ [16  0 35]
+ [16  0 34]
+ [16  0 33]
+ [16  0 34]] reward= [0.02592671 0.02452962 0.0232772  0.02214897 0.0232772 ] done= [False False False False False]
+Step 42
+Action:  [16 16 16 16 16]
+obs= [[16  0 33]
+ [16  0 32]
+ [16  0 31]
+ [16  0 30]
+ [16  0 29]] reward= [0.02214897 0.02112849 0.02020255 0.01936076 0.01859532] done= [False False False False False]
+Step 43
+Action:  [16 17 17 17 17]
+obs= [[16  0 28]
+ [16  0 29]
+ [16  0 30]
+ [16  0 31]
+ [16  0 32]] reward= [0.01790113 0.01859532 0.01936076 0.02020255 0.02112849] done= [False False False False False]
+Step 44
+Action:  [17 17 17 17 17]
+obs= [[16  0 33]
+ [16  0 34]
+ [16  0 35]
+ [16  0 36]
+ [16  0 37]] reward= [0.02214897 0.0232772  0.02452962 0.02592671 0.02749405] done= [False False False False False]
+Step 45
+Action:  [16 16 16 16 17]
+obs= [[16  0 36]
+ [16  0 35]
+ [16  0 34]
+ [16  0 33]
+ [16  0 34]] reward= [0.02592671 0.02452962 0.0232772  0.02214897 0.0232772 ] done= [False False False False False]
+Step 46
+Action:  [16 16 16 16 16]
+obs= [[16  0 33]
+ [16  0 32]
+ [16  0 31]
+ [16  0 30]
+ [16  0 29]] reward= [0.02214897 0.02112849 0.02020255 0.01936076 0.01859532] done= [False False False False False]
+Step 47
+Action:  [16 17 17 17 17]
+obs= [[16  0 28]
+ [16  0 29]
+ [16  0 30]
+ [16  0 31]
+ [16  0 32]] reward= [0.01790113 0.01859532 0.01936076 0.02020255 0.02112849] done= [False False False False False]
+Step 48
+Action:  [17 17 17 17 17]
+obs= [[16  0 33]
+ [16  0 34]
+ [16  0 35]
+ [16  0 36]
+ [16  0 37]] reward= [0.02214897 0.0232772  0.02452962 0.02592671 0.02749405] done= [False False False False False]
+Step 49
+Action:  [16 16 16 16 17]
+obs= [[16  0 36]
+ [16  0 35]
+ [16  0 34]
+ [16  0 33]
+ [16  0 34]] reward= [0.02592671 0.02452962 0.0232772  0.02214897 0.0232772 ] done= [False False False False False]
+Step 50
+Action:  [16 16 16 16 16]
+obs= [[16  0 33]
+ [16  0 32]
+ [16  0 31]
+ [16  0 30]
+ [16  0 29]] reward= [0.02214897 0.02112849 0.02020255 0.01936076 0.01859532] done= [False False False False False]
+Test: NO.10
+Step 1
+Action:  [17 17 17 17 17]
+obs= [[11  2 29]
+ [11  2 30]
+ [11  2 31]
+ [11  2 32]
+ [11  2 33]] reward= [0.01525088 0.01576076 0.01631279 0.01690966 0.01755525] done= [False False False False False]
+Step 2
+Action:  [17 17 16 16 16]
+obs= [[11  2 34]
+ [11  2 35]
+ [11  2 34]
+ [11  2 33]
+ [11  2 32]] reward= [0.01825449 0.01901343 0.01825449 0.01755525 0.01690966] done= [False False False False False]
+Step 3
+Action:  [16 16 16 16 16]
+obs= [[11  2 31]
+ [11  2 30]
+ [11  2 29]
+ [11  2 28]
+ [11  2 27]] reward= [0.01631279 0.01576076 0.01525088 0.01478181 0.01435413] done= [False False False False False]
+Step 4
+Action:  [16 17 17 17 17]
+obs= [[11  2 26]
+ [11  2 27]
+ [11  2 28]
+ [11  2 29]
+ [11  2 30]] reward= [0.0139707  0.01435413 0.01478181 0.01525088 0.01576076] done= [False False False False False]
+Step 5
+Action:  [17 17 17 17 17]
+obs= [[11  2 31]
+ [11  2 32]
+ [11  2 33]
+ [11  2 34]
+ [11  2 35]] reward= [0.01631279 0.01690966 0.01755525 0.01825449 0.01901343] done= [False False False False False]
+Step 6
+Action:  [16 16 16 16 16]
+obs= [[11  2 34]
+ [11  2 33]
+ [11  2 32]
+ [11  2 31]
+ [11  2 30]] reward= [0.01825449 0.01755525 0.01690966 0.01631279 0.01576076] done= [False False False False False]
+Step 7
+Action:  [16 16 16 16 17]
+obs= [[11  2 29]
+ [11  2 28]
+ [11  2 27]
+ [11  2 26]
+ [11  2 27]] reward= [0.01525088 0.01478181 0.01435413 0.0139707  0.01435413] done= [False False False False False]
+Step 8
+Action:  [17 17 17 17 17]
+obs= [[11  2 28]
+ [11  2 29]
+ [11  2 30]
+ [11  2 31]
+ [11  2 32]] reward= [0.01478181 0.01525088 0.01576076 0.01631279 0.01690966] done= [False False False False False]
+Step 9
+Action:  [17 17 17 16 16]
+obs= [[11  2 33]
+ [11  2 34]
+ [11  2 35]
+ [11  2 34]
+ [11  2 33]] reward= [0.01755525 0.01825449 0.01901343 0.01825449 0.01755525] done= [False False False False False]
+Step 10
+Action:  [16 16 16 16 16]
+obs= [[11  2 32]
+ [11  2 31]
+ [11  2 30]
+ [11  2 29]
+ [11  2 28]] reward= [0.01690966 0.01631279 0.01576076 0.01525088 0.01478181] done= [False False False False False]
+Step 11
+Action:  [16 16 17 17 17]
+obs= [[11  2 27]
+ [11  2 26]
+ [11  2 27]
+ [11  2 28]
+ [11  2 29]] reward= [0.01435413 0.0139707  0.01435413 0.01478181 0.01525088] done= [False False False False False]
+Step 12
+Action:  [17 17 17 17 17]
+obs= [[11  2 30]
+ [11  2 31]
+ [11  2 32]
+ [11  2 33]
+ [11  2 34]] reward= [0.01576076 0.01631279 0.01690966 0.01755525 0.01825449] done= [False False False False False]
+Step 13
+Action:  [17 16 16 16 16]
+obs= [[11  2 35]
+ [11  2 34]
+ [11  2 33]
+ [11  2 32]
+ [11  2 31]] reward= [0.01901343 0.01825449 0.01755525 0.01690966 0.01631279] done= [False False False False False]
+Step 14
+Action:  [16 16 16 16 16]
+obs= [[11  2 30]
+ [11  2 29]
+ [11  2 28]
+ [11  2 27]
+ [11  2 26]] reward= [0.01576076 0.01525088 0.01478181 0.01435413 0.0139707 ] done= [False False False False False]
+Step 15
+Action:  [17 17 17 17 17]
+obs= [[11  2 27]
+ [11  2 28]
+ [11  2 29]
+ [11  2 30]
+ [11  2 31]] reward= [0.01435413 0.01478181 0.01525088 0.01576076 0.01631279] done= [False False False False False]
+Step 16
+Action:  [17 17 17 17 16]
+obs= [[11  2 32]
+ [11  2 33]
+ [11  2 34]
+ [11  2 35]
+ [11  2 34]] reward= [0.01690966 0.01755525 0.01825449 0.01901343 0.01825449] done= [False False False False False]
+Step 17
+Action:  [16 16 16 16 16]
+obs= [[11  2 33]
+ [11  2 32]
+ [11  2 31]
+ [11  2 30]
+ [11  2 29]] reward= [0.01755525 0.01690966 0.01631279 0.01576076 0.01525088] done= [False False False False False]
+Step 18
+Action:  [16 16 16 17 17]
+obs= [[11  2 28]
+ [11  2 27]
+ [11  2 26]
+ [11  2 27]
+ [11  2 28]] reward= [0.01478181 0.01435413 0.0139707  0.01435413 0.01478181] done= [False False False False False]
+Step 19
+Action:  [17 17 17 17 17]
+obs= [[11  2 29]
+ [11  2 30]
+ [11  2 31]
+ [11  2 32]
+ [11  2 33]] reward= [0.01525088 0.01576076 0.01631279 0.01690966 0.01755525] done= [False False False False False]
+Step 20
+Action:  [17 17 16 16 16]
+obs= [[11  2 34]
+ [11  2 35]
+ [11  2 34]
+ [11  2 33]
+ [11  2 32]] reward= [0.01825449 0.01901343 0.01825449 0.01755525 0.01690966] done= [False False False False False]
+Step 21
+Action:  [16 16 16 16 16]
+obs= [[11  2 31]
+ [11  2 30]
+ [11  2 29]
+ [11  2 28]
+ [11  2 27]] reward= [0.01631279 0.01576076 0.01525088 0.01478181 0.01435413] done= [False False False False False]
+Step 22
+Action:  [16 17 17 17 17]
+obs= [[11  2 26]
+ [11  2 27]
+ [11  2 28]
+ [11  2 29]
+ [11  2 30]] reward= [0.0139707  0.01435413 0.01478181 0.01525088 0.01576076] done= [False False False False False]
+Step 23
+Action:  [17 17 17 17 17]
+obs= [[11  2 31]
+ [11  2 32]
+ [11  2 33]
+ [11  2 34]
+ [11  2 35]] reward= [0.01631279 0.01690966 0.01755525 0.01825449 0.01901343] done= [False False False False False]
+Step 24
+Action:  [16 16 16 16 16]
+obs= [[11  2 34]
+ [11  2 33]
+ [11  2 32]
+ [11  2 31]
+ [11  2 30]] reward= [0.01825449 0.01755525 0.01690966 0.01631279 0.01576076] done= [False False False False False]
+Step 25
+Action:  [16 16 16 16 17]
+obs= [[11  2 29]
+ [11  2 28]
+ [11  2 27]
+ [11  2 26]
+ [11  2 27]] reward= [0.01525088 0.01478181 0.01435413 0.0139707  0.01435413] done= [False False False False False]
+Step 26
+Action:  [17 17 17 17 17]
+obs= [[11  2 28]
+ [11  2 29]
+ [11  2 30]
+ [11  2 31]
+ [11  2 32]] reward= [0.01478181 0.01525088 0.01576076 0.01631279 0.01690966] done= [False False False False False]
+Step 27
+Action:  [17 17 17 16 16]
+obs= [[11  2 33]
+ [11  2 34]
+ [11  2 35]
+ [11  2 34]
+ [11  2 33]] reward= [0.01755525 0.01825449 0.01901343 0.01825449 0.01755525] done= [False False False False False]
+Step 28
+Action:  [16 16 16 16 16]
+obs= [[11  2 32]
+ [11  2 31]
+ [11  2 30]
+ [11  2 29]
+ [11  2 28]] reward= [0.01690966 0.01631279 0.01576076 0.01525088 0.01478181] done= [False False False False False]
+Step 29
+Action:  [16 16 17 17 17]
+obs= [[11  2 27]
+ [11  2 26]
+ [11  2 27]
+ [11  2 28]
+ [11  2 29]] reward= [0.01435413 0.0139707  0.01435413 0.01478181 0.01525088] done= [False False False False False]
+Step 30
+Action:  [17 17 17 17 17]
+obs= [[11  2 30]
+ [11  2 31]
+ [11  2 32]
+ [11  2 33]
+ [11  2 34]] reward= [0.01576076 0.01631279 0.01690966 0.01755525 0.01825449] done= [False False False False False]
+Step 31
+Action:  [17 16 16 16 16]
+obs= [[11  2 35]
+ [11  2 34]
+ [11  2 33]
+ [11  2 32]
+ [11  2 31]] reward= [0.01901343 0.01825449 0.01755525 0.01690966 0.01631279] done= [False False False False False]
+Step 32
+Action:  [16 16 16 16 16]
+obs= [[11  2 30]
+ [11  2 29]
+ [11  2 28]
+ [11  2 27]
+ [11  2 26]] reward= [0.01576076 0.01525088 0.01478181 0.01435413 0.0139707 ] done= [False False False False False]
+Step 33
+Action:  [17 17 17 17 17]
+obs= [[11  2 27]
+ [11  2 28]
+ [11  2 29]
+ [11  2 30]
+ [11  2 31]] reward= [0.01435413 0.01478181 0.01525088 0.01576076 0.01631279] done= [False False False False False]
+Step 34
+Action:  [17 17 17 17 16]
+obs= [[11  2 32]
+ [11  2 33]
+ [11  2 34]
+ [11  2 35]
+ [11  2 34]] reward= [0.01690966 0.01755525 0.01825449 0.01901343 0.01825449] done= [False False False False False]
+Step 35
+Action:  [16 16 16 16 16]
+obs= [[11  2 33]
+ [11  2 32]
+ [11  2 31]
+ [11  2 30]
+ [11  2 29]] reward= [0.01755525 0.01690966 0.01631279 0.01576076 0.01525088] done= [False False False False False]
+Step 36
+Action:  [16 16 16 17 17]
+obs= [[11  2 28]
+ [11  2 27]
+ [11  2 26]
+ [11  2 27]
+ [11  2 28]] reward= [0.01478181 0.01435413 0.0139707  0.01435413 0.01478181] done= [False False False False False]
+Step 37
+Action:  [17 17 17 17 17]
+obs= [[11  2 29]
+ [11  2 30]
+ [11  2 31]
+ [11  2 32]
+ [11  2 33]] reward= [0.01525088 0.01576076 0.01631279 0.01690966 0.01755525] done= [False False False False False]
+Step 38
+Action:  [17 17 16 16 16]
+obs= [[11  2 34]
+ [11  2 35]
+ [11  2 34]
+ [11  2 33]
+ [11  2 32]] reward= [0.01825449 0.01901343 0.01825449 0.01755525 0.01690966] done= [False False False False False]
+Step 39
+Action:  [16 16 16 16 16]
+obs= [[11  2 31]
+ [11  2 30]
+ [11  2 29]
+ [11  2 28]
+ [11  2 27]] reward= [0.01631279 0.01576076 0.01525088 0.01478181 0.01435413] done= [False False False False False]
+Step 40
+Action:  [16 17 17 17 17]
+obs= [[11  2 26]
+ [11  2 27]
+ [11  2 28]
+ [11  2 29]
+ [11  2 30]] reward= [0.0139707  0.01435413 0.01478181 0.01525088 0.01576076] done= [False False False False False]
+Step 41
+Action:  [17 17 17 17 17]
+obs= [[11  2 31]
+ [11  2 32]
+ [11  2 33]
+ [11  2 34]
+ [11  2 35]] reward= [0.01631279 0.01690966 0.01755525 0.01825449 0.01901343] done= [False False False False False]
+Step 42
+Action:  [16 16 16 16 16]
+obs= [[11  2 34]
+ [11  2 33]
+ [11  2 32]
+ [11  2 31]
+ [11  2 30]] reward= [0.01825449 0.01755525 0.01690966 0.01631279 0.01576076] done= [False False False False False]
+Step 43
+Action:  [16 16 16 16 17]
+obs= [[11  2 29]
+ [11  2 28]
+ [11  2 27]
+ [11  2 26]
+ [11  2 27]] reward= [0.01525088 0.01478181 0.01435413 0.0139707  0.01435413] done= [False False False False False]
+Step 44
+Action:  [17 17 17 17 17]
+obs= [[11  2 28]
+ [11  2 29]
+ [11  2 30]
+ [11  2 31]
+ [11  2 32]] reward= [0.01478181 0.01525088 0.01576076 0.01631279 0.01690966] done= [False False False False False]
+Step 45
+Action:  [17 17 17 16 16]
+obs= [[11  2 33]
+ [11  2 34]
+ [11  2 35]
+ [11  2 34]
+ [11  2 33]] reward= [0.01755525 0.01825449 0.01901343 0.01825449 0.01755525] done= [False False False False False]
+Step 46
+Action:  [16 16 16 16 16]
+obs= [[11  2 32]
+ [11  2 31]
+ [11  2 30]
+ [11  2 29]
+ [11  2 28]] reward= [0.01690966 0.01631279 0.01576076 0.01525088 0.01478181] done= [False False False False False]
+Step 47
+Action:  [16 16 17 17 17]
+obs= [[11  2 27]
+ [11  2 26]
+ [11  2 27]
+ [11  2 28]
+ [11  2 29]] reward= [0.01435413 0.0139707  0.01435413 0.01478181 0.01525088] done= [False False False False False]
+Step 48
+Action:  [17 17 17 17 17]
+obs= [[11  2 30]
+ [11  2 31]

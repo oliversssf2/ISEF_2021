@@ -46,7 +46,8 @@ def greedy2(dplm, s_c_range, s_c_step, s_l_range, s_l_step):
     
     
     guess = np.array(init_guess, copy=True)
-    for greedy_iter_num in range(4): #three iterations for each greedy
+    start = time.time()
+    for greedy_iter_num in range(1): #three iterations for each greedy
         for ind in range(dplm_instance.get_spring_num()):
             rmse = np.zeros(dplm_instance.get_slot_num())
             for slot in range(-dplm_instance.get_slot_num()+1, dplm_instance.get_slot_num()):
@@ -74,7 +75,9 @@ def greedy2(dplm, s_c_range, s_c_step, s_l_range, s_l_step):
     for i in range(len(guess)):
         guess[i] = list(guess[i])
     final_guess = guess
-    return init_guess, final_guess, final_rmse
+    end = time.time()
+    time_elapsed = end-start
+    return init_guess, final_guess, final_rmse, round(time_elapsed,2)
 def plot_gragh(path, sample_count):
     lower_limit, upper_limit, step_size, total_angle_num = dplm_instance.get_allowed_angle_range().values()
 
@@ -140,9 +143,9 @@ def plot_gragh2(path, sample_count):
 
 #settings: f is the greedy function to use
 plotting = True
-save_path_str = 'greedy_graphs/4_springs_5_loops_only_position'
+save_path_str = 'greedy_graphs/4_springs_1_loops_all_para'
 sample_size = 100
-f = greedy1
+f = greedy2
 plot_func = plot_gragh
 
 
@@ -181,8 +184,8 @@ if __name__ == '__main__':
         fig = plt.figure(figsize=[8, 6.4])
 
         for sample_count in range(sample_size):
-            # init_guess, guess, rmse = f(dplm_instance,spring_constant_range, spring_constant_step, spring_length_range, spring_length_step)
-            init_guess, guess, rmse, time_elapsed= f(dplm_instance)
+            init_guess, guess, rmse, time_elapsed= f(dplm_instance,spring_constant_range, spring_constant_step, spring_length_range, spring_length_step)
+            # init_guess, guess, rmse, time_elapsed= f(dplm_instance)
             greedy_timer.append(time_elapsed)
             
             print('time elapsed for this iteration is {}s'.format(time_elapsed))
