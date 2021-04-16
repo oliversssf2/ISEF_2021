@@ -5,6 +5,7 @@ import csv
 import pandas as pd
 import os
 from pathlib import Path
+import time
 
 
 
@@ -20,6 +21,7 @@ def ensure_path(path_str):
     return path
         
 def greedy1(dplm):
+    start = time.time()
     init_guess = np.random.randint(0, high=dplm_instance.get_slot_num()*2-1, size=dplm_instance.get_spring_num())-dplm_instance.get_slot_num()+1
     guess = np.array(init_guess, copy=True)
     for greedy_iter_num in range(5): #three iterations for each greedy
@@ -33,7 +35,11 @@ def greedy1(dplm):
         dplm_instance.set_slot(guess)
     final_rmse = dplm_instance.current_rmse()
     final_guess = guess
-    return init_guess, final_guess, final_rmse
+    end = time.time()
+    time_elapsed = end-start
+    return init_guess, final_guess, final_rmse, time_elapsed
+
+
 def greedy2(dplm, s_c_range, s_c_step, s_l_range, s_l_step):
     spring_num = dplm_instance.get_spring_num()
     slot_num = dplm_instance.get_slot_num()
@@ -41,7 +47,7 @@ def greedy2(dplm, s_c_range, s_c_step, s_l_range, s_l_step):
                   np.random.randint(0, high = int((s_c_range[1]-s_c_range[0])/s_c_step)+1, size=spring_num)*s_c_step+s_c_range[0],
                   np.random.randint(0, high = int((s_l_range[1]-s_l_range[0])/s_l_step)+1, size = spring_num)*s_l_step+s_l_range[0]]
     
- 
+    
     guess = np.array(init_guess, copy=True)
     for greedy_iter_num in range(4): #three iterations for each greedy
         for ind in range(dplm_instance.get_spring_num()):
@@ -161,6 +167,7 @@ if __name__ == '__main__':
     spring_length_range = [0.15, 0.3]
     spring_length_step = 0.1
     
+    greedy_timer = []
 
     path = ensure_path(save_path_str)
 
@@ -173,17 +180,19 @@ if __name__ == '__main__':
         
         #csv settings
         writer = csv.writer(csvfile, delimiter = ',', quotechar = '"')
-        writer.writerow(['rmse', 'initial guess', 'final install positions'])
+        writer.writerow(['rmse', 'initial guess', 'final install positions', 'time elapsed'])
 
         #Start interactive plotting
         plt.ion()
-        fig = plt.figure(figsize=[9.6, 6.4])
+        fig = plt.figure(figsize=[8, 6.4])
 
         for sample_count in range(sample_size):
             # init_guess, guess, rmse = f(dplm_instance,spring_constant_range, spring_constant_step, spring_length_range, spring_length_step)
-            init_guess, guess, rmse = f(dplm_instance)
-
-            writer.writerow([f'{rmse:.2f}', list(init_guess), list(guess)])
+            init_guess, guess, rmse, time_elapsed= f(dplm_instance)
+            greedy_timer.append(time_elapsed)
+            
+            print('time elapsed for this iteration is {}s'.format(time_elapsed))
+            writer.writerow([f'{rmse:.2f}', list(init_guess), list(guess), time_elapsed])
 
             if plotting == True:
                 plot_func(path, sample_count)
