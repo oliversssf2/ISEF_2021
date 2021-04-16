@@ -9,8 +9,6 @@ import time
 
 
 
-
-
 def ensure_path(path_str):
     cwd = Path.cwd()
     path = Path.joinpath(cwd, path_str)
@@ -197,6 +195,7 @@ if __name__ == '__main__':
             if plotting == True:
                 plot_func(path, sample_count)
 
+    print(np.array(time_elapsed).mean())
     k = pd.read_csv(Path.joinpath(path,'greedy.csv'), header = 4)
 
     k.index = np.arange(1, len(k)+1)
