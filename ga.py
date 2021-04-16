@@ -117,7 +117,8 @@ def setup4(file):
              variable_type_mixed=vartype)
     return model
 
-def setup5(dplm_instance): 
+def setup5(file): 
+    dplm_instance = dplm_base.dplm(file)
     aps={'max_num_iteration': None,\
                 'population_size':100,\
                 'mutation_probability':0.2,\
@@ -125,7 +126,7 @@ def setup5(dplm_instance):
                 'crossover_probability': 0.6,\
                 'parents_portion': 0.3,\
                 'crossover_type':'uniform',\
-                'max_iteration_without_improv':30}
+                'max_iteration_without_improv':100}
 
     dplm_instance.show_dplm_config()
     dplm_instance.set_dplm_slot_num(20)
@@ -164,8 +165,8 @@ print("printing output dict")
 for i in model.output_dict.items():
     print(i)
 
-print("printing report")
-for j in model.report:
-    print(j)
+# print("printing report")
+# for j in model.report:
+#     print(j)
 
 # %%
