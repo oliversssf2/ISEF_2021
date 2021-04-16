@@ -81,23 +81,23 @@ def setup2(dplm_instance):
              variable_type_mixed=vartype)
     return model
 
-def setup3(file): 
-    dplm_instance = dplm_base.dplm(file)
-    aps={'max_num_iteration': None,\
-                'population_size':300,\
-                'mutation_probability':0.2,\
-                'elit_ratio': 0.01,\
-                'crossover_probability': 0.5,\
-                'parents_portion': 0.3,\
-                'crossover_type':'uniform',\
-                'max_iteration_without_improv':30}
+
+def setup4(file): 
+    dplm_instance = dplm_base.dplm(file) 
+    aps={'max_num_iteration': None,
+            'population_size':300,                                                                                                                                                                                                                                               'mutation_probability':0.2,\
+            'elit_ratio': 0.01,\
+            'crossover_probability': 0.5,\
+             'parents_portion': 0.3,\
+             'crossover_type':'uniform',\
+             'max_iteration_without_improv':30}
 
     dplm_instance.show_dplm_config()
+    dplm_instance.set_dplm_slot_num(20)
+    dplm_instance.set_dplm_spring_num(4)
+    dplm_instance.set_dplm_spring_constants([600,300,250, 230])
+    dplm_instance.set_dplm_spring_lengths([0.1, 0.2, 0.17, .13])
     dplm_instance.set_dplm_allowed_angle_range(-40, 60, 1)
-
-    spring_constant = 52/2
-    spring_initial_length = 0.184
-    slot_num = 39
 
     install_position_step = 1e-2
     spring_constant_step = 1e1
@@ -105,23 +105,21 @@ def setup3(file):
 
     # dplm_instance.set_dplm_spring_constants([400,300,200])
     # dplm_instance.set_dplm_spring_lengths([0.2, 0.15, 0.1])
-    dplm_instance.set_dplm_slot_num(slot_num)
     def f(X):
-        dplm_instance.add_triangle(spring_constant*X[0], spring_initial_length)
-        dplm_instance.set_slot([X[1], X[2]])
+        dplm_instance.set_slot(X)
         val = dplm_instance.current_rmse()
         dplm_instance.rm_triangle()
         return val
 
-    varbound=np.array([[1, 20]]+ [[-15, 16]]*2)
-    vartype=np.array([['int'],['int'],['int']])
-    model=ga(function=f,dimension=3,
+    varbound=np.array([[-19, 20]]*4)
+    vartype=np.array([['int'],['int'],['int'],['int']])
+    model=ga(function=f,dimension=4,
              variable_boundaries=varbound, algorithm_parameters=aps,
              variable_type_mixed=vartype)
     return model
 
 # dplm_instance = dplm_base.dplm('para1.csv')
-model = setup3('para2.csv')
+model = setup4('para1.csv')
 
 
 start = time.time()

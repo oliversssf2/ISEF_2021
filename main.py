@@ -62,8 +62,9 @@ def setup2():
     # env = make_vec_env(lambda: env, n_envs=40)
 
     # env = make_vec_env(lambda: env, n_envs=10)
-    model = DQN('MlpPolicy', env, verbose=1, tensorboard_log='./dplm_tensorboards/dqn_tensorboard/')
-    return env, model
+    model_name = './rl_model/model_dqn'
+    model = DQN('MlpPolicy', env, verbose=1, tensorboard_log='./dplm_tensorboards/dqn_2_tensorboard/')
+    return env, model, model_name
 
 def setup3():
     cwd = os.getcwd()
@@ -91,8 +92,8 @@ def setup3():
 
    
 if __name__ == '__main__':
-    env,model, model_name = setup3()
-    model.learn(100000)
+    env,model, model_name = setup2()
+    model.learn(50000)
     model.save(model_name)
 
 
