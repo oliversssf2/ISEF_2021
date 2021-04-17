@@ -56,6 +56,6 @@ if __name__ == '__main__':
             rmse.append(dplm_instance.current_rmse_only_springs())
 
         xy = np.vstack([s_pos_flattend,rmse])
-        z = gaussian_kde(xy)(xy)    
+        z = gaussian_kde(xy)(xy)     
         axis.scatter(s_pos_flattend, rmse, c=z, s=1)
     plt.show()
