@@ -62,7 +62,7 @@ def setup2():
     # env = make_vec_env(lambda: env, n_envs=40)
 
     # env = make_vec_env(lambda: env, n_envs=10)
-    model_name = './rl_model/model_dqn'
+    model_name = './rl_model/model_dqn_2'
     model = DQN('MlpPolicy', env, verbose=1, tensorboard_log='./dplm_tensorboards/dqn_2_tensorboard/')
     return env, model, model_name
 

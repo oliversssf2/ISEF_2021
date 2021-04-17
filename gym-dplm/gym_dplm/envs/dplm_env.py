@@ -67,7 +67,7 @@ class DplmEnv(gym.Env):
 
     def __init__(self, dplm_config_file, spring_num = 3, slot_num = 20, \
                  spring_constants=[300, 300, 300], spring_init_lengths=[0.16,0.16,0.16],\
-                 rmse_limit = 2, **allowed_angle_range):
+                 rmse_limit = 2.5, **allowed_angle_range):
         
         #Initialize the dplm agent with given parameters
         self.dplm_agent = dplm_base.dplm(dplm_config_file)
@@ -146,6 +146,8 @@ class DplmEnv(gym.Env):
             self.dplm_agent.set_slot([x-self.dplm_agent.get_slot_num()+1 for x in new_state])
             self.rmse = self.dplm_agent.current_rmse()
             reward = 1/self.rmse
+            if self.rmse < self.rmse_threshold:
+                reward = 200
             # print('Step: new state is {}'.format(new_state))
             # print('Step: new positions are {}.'.format([x-self.dplm_agent.get_slot_num()+1 for x in new_state]))
             done = bool(
