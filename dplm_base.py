@@ -431,6 +431,15 @@ class dplm:
     def current_rmse(self ):
         rmse = self.calculate_current_moment()[3]
         return rmse
+    def current_rmse_only_springs(self):
+        moment_spring_list = self.calculate_current_moment()[1]
+        total_spring_moment = [sum(x) for x in zip(*moment_spring_list)]
+        temp = 0
+        for x in total_spring_moment:
+            temp+=x**2
+        rmse = math.sqrt(temp/self.dplm_allowed_angle_range['total_angle_num'])
+        return rmse
+
     def get_spring_positions(self):
         return self.spring_positions
     def get_slot_num(self):

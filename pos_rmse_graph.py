@@ -53,7 +53,7 @@ if __name__ == '__main__':
             dplm_instance.set_dplm_spring_constants([s_c_flattend[ind]])
             dplm_instance.set_dplm_spring_lengths([s_l_flattend[ind]])
             dplm_instance.set_springs_positions([s_pos_flattend[ind]])
-            rmse.append(dplm_instance.current_rmse())
+            rmse.append(dplm_instance.current_rmse_only_springs())
 
         xy = np.vstack([s_pos_flattend,rmse])
         z = gaussian_kde(xy)(xy)    
