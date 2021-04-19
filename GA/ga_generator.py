@@ -240,7 +240,7 @@ def setup_paras3():
      # Objective sample size
     sample_size = 100000
     # Backup size
-    backup_size = 50 
+    backup_size = 3 
 
     dplm_instance = dplm_base.dplm('para1.csv')
     dplm_instance.set_dplm_allowed_angle_range(*ang_ran)
@@ -311,7 +311,7 @@ if __name__ == "__main__":
 
         #This one is for optimizain rubber bands
         # dplm_instance.add_triangle
-        varbound = np.array([[0,20]]+[[i_p_range[0], i_p_range[1]]]*2)
+        varbound = np.array([[0,6]]+[[i_p_range[0], i_p_range[1]]]*2)
         vartype = np.array([['int']]+[['real']]*s_num)
 
         model=ga(function=fitness_func,
