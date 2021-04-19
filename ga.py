@@ -46,7 +46,7 @@ def setup1(dplm_instance):
     model=ga(function=f,dimension=9,variable_type='int',variable_boundaries=varbound, algorithm_parameters=aps)
     return model
 
-def setup2(dplm_instance): 
+def setup2(file): 
     aps={'max_num_iteration': None,\
                 'population_size':300,\
                 'mutation_probability':0.2,\
@@ -56,7 +56,9 @@ def setup2(dplm_instance):
                 'crossover_type':'uniform',\
                 'max_iteration_without_improv':30}
 
+    dplm_instance = dplm_base.dplm(file)
     dplm_instance.show_dplm_config()
+    dplm_instance.set_dplm_slot_num(39)
     dplm_instance.set_dplm_allowed_angle_range(-40, 60, 1)
 
 
@@ -67,14 +69,14 @@ def setup2(dplm_instance):
     # dplm_instance.set_dplm_spring_constants([400,300,200])
     # dplm_instance.set_dplm_spring_lengths([0.2, 0.15, 0.1])
     def f(X):
-        dplm_instance.add_triangle(62.5*X[0], 0.6)
-        dplm_instance.set_springs_positions([X[1], X[2]])
+        dplm_instance.add_triangle(26*X[0], 0.185)
+        dplm_instance.set_slot([X[1], X[2]])
         val = dplm_instance.current_rmse()
         dplm_instance.rm_triangle()
         return val
 
-    varbound=np.array([[1, 20]]+ [[-.40, .40]]*2)
-    vartype=np.array([['int'],['real'],['real']])
+    varbound=np.array([[1, 13]]+ [[-12, 12]]*2)
+    vartype=np.array([['int'],['int'],['int']])
     model=ga(function=f,dimension=3,
              variable_boundaries=varbound, algorithm_parameters=aps,
              variable_type_mixed=vartype)
@@ -151,7 +153,7 @@ def setup5(file):
     return model
 
 # dplm_instance = dplm_base.dplm('para1.csv')
-model = setup5('para1.csv')
+model = setup2('para2.csv')
 
 
 start = time.time()
