@@ -143,6 +143,8 @@ def setup_paras1():
 
     return s_c_range, s_l_range, e_l_range, s_num_range, i_p_range, i_p_step_size, ang_ran, aps, sample_size, backup_size, dplm_instance, fitness_func, rng
 
+
+
 def setup_paras2():
     # define ranges of random parameters
     # spring constants [150, 500] (N/m)
@@ -206,19 +208,87 @@ def setup_paras2():
     return s_c_range, s_l_range, e_l_range, s_num_range, i_p_range, i_p_step_size, ang_ran, aps, sample_size, backup_size, dplm_instance, fitness_func, rng
 
 
+def setup_paras3():
+    # define ranges of random parameters
+    # spring constants [150, 500] (N/m)
+    s_c_range = np.array([150, 500])
+    # spring initial length [0.2, 0.4] (m)
+    s_l_range = np.array([0.15, 0.4])
+    # extremity load [0, 5] (kg)
+    e_l_range = np.array([0, 10])
+    # number of springs (2 to six)
+    s_num_range = np.array([2, 2])
+
+    # optimization constraint
+    # installation position: [-0.4, 0.4]
+    i_p_range = np.array([-0.4, 0.4])
+    i_p_step_size = 1e-2
+
+    #angle range and step size (lower, upper, step)
+    ang_ran = [-40, 60, 4]
+
+    # GA parameters
+    aps={'max_num_iteration': None,\
+                'population_size':3000,\
+            'mutation_probability':0.01,
+                'elit_ratio': 0.05,\
+                'crossover_probability': 0.5,\
+                'parents_portion': 0.3,\
+                'crossover_type':'uniform',\
+                'max_iteration_without_improv':200} 
+
+     # Objective sample size
+    sample_size = 100000
+    # Backup size
+    backup_size = 50 
+
+    dplm_instance = dplm_base.dplm('para1.csv')
+    dplm_instance.set_dplm_allowed_angle_range(*ang_ran)
+    
+    # dplm_instance.set_dplm_spring_num(s_num)
+    # def f(X):
+    #     dplm_instance.add_triangle(26*X[0], 0.185)
+    #     dplm_instance.set_slot([X[1], X[2]])
+    #     val = dplm_instance.current_rmse()
+    #     dplm_instance.rm_triangle()
+    #     return val
+    # varbound = np.array()
+    def fitness_func(X):
+        init_len = dplm_instance.get_spring_init_lengths()
+        # print('lenght: {}'.format(init_len))
+        spring_con = dplm_instance.get_spring_constatnts()
+        # print('spring_con: {}'.format(spring_con))
+        dplm_instance.set_dplm_spring_lengths([])
+        dplm_instance.set_dplm_spring_constants([])
+        # dplm_instance.set_dplm_spring_num(0)
+        dplm_instance.add_triangle(float(spring_con[0])*int(X[0]), float(init_len[0]))
+        dplm_instance.set_springs_positions(list(X[1:]))
+        val = dplm_instance.current_rmse()
+        dplm_instance.rm_triangle()
+
+        dplm_instance.set_dplm_spring_num(2)
+        dplm_instance.set_dplm_spring_lengths(init_len)
+        dplm_instance.set_dplm_spring_constants(spring_con)
+        dplm_instance.set_dplm_spring_num(0)
+        return val
+    rng = default_rng()
+
+    return s_c_range, s_l_range, e_l_range, s_num_range, i_p_range, i_p_step_size, ang_ran, aps, sample_size, backup_size, dplm_instance, fitness_func, rng
 # %%
 if __name__ == "__main__":
     save_file = file_set_up()
     s_c_range, s_l_range, e_l_range, s_num_range, i_p_range,\
          i_p_step_size, ang_ran, aps, sample_size, backup_size,\
-              dplm_instance, fitness_func, rng = setup_paras2()
+              dplm_instance, fitness_func, rng = setup_paras3()
 
     
     sample_count = 0
     #write the header
+    
 
     buffer = []
     for i in range(sample_size):
+        print('sample count is {}'.format(sample_count))
         start = time.time() #start timer
         # generate random parameters and change the state of the dplm with them
         s_num = int(rng.integers(*s_num_range, endpoint = True))
@@ -226,16 +296,28 @@ if __name__ == "__main__":
         s_l = rng.uniform(*s_l_range, s_num)
         e_l = rng.uniform(*e_l_range)
         
-        dplm_instance.set_dplm_spring_num(s_num)
+        dplm_instance.set_dplm_spring_num(s_num) #can't do this when using triangle
         dplm_instance.set_dplm_spring_constants(s_c)
         dplm_instance.set_dplm_spring_lengths(s_l)
         dplm_instance.set_extremity_load(e_l)
         
+        #for triangle
+        dplm_instance.set_dplm_spring_num(0)
+        
         # varbound=np.array([[i_p_range[0]/i_p_step_size,i_p_range[1]/i_p_step_size]]*s_num)
-        varbound=np.array([[i_p_range[0],i_p_range[1]]]*s_num)
+        
+        # This one is for optimizing separate springs
+        # varbound=np.array([[i_p_range[0],i_p_range[1]]]*s_num)
+
+        #This one is for optimizain rubber bands
+        # dplm_instance.add_triangle
+        varbound = np.array([[0,20]]+[[i_p_range[0], i_p_range[1]]]*2)
+        vartype = np.array([['int']]+[['real']]*s_num)
+
         model=ga(function=fitness_func,
-                dimension=s_num,
-                variable_type='real',
+                dimension=s_num+1,
+                variable_type_mixed=vartype,
+                # variable_type=vartype,
                 variable_boundaries=varbound,
                 algorithm_parameters=aps,
                 convergence_curve=False,
@@ -246,7 +328,7 @@ if __name__ == "__main__":
                   *s_c, 
                   *s_l, 
                   e_l,
-                  *(model.output_dict['variable']*i_p_step_size),
+                  *(model.output_dict['variable']),
                   model.output_dict['function']]
         # print('exporting: {}'.format(export))
         buffer.append(export)
