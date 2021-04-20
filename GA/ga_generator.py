@@ -211,9 +211,9 @@ def setup_paras2():
 def setup_paras3():
     # define ranges of random parameters
     # spring constants [150, 500] (N/m)
-    s_c_range = np.array([150, 500])
+    s_c_range = np.array([75, 250])
     # spring initial length [0.2, 0.4] (m)
-    s_l_range = np.array([0.15, 0.4])
+    s_l_range = np.array([0.3, 0.8])
     # extremity load [0, 5] (kg)
     e_l_range = np.array([0, 10])
     # number of springs (2 to six)
@@ -240,7 +240,7 @@ def setup_paras3():
      # Objective sample size
     sample_size = 100000
     # Backup size
-    backup_size = 3 
+    backup_size = 50
 
     dplm_instance = dplm_base.dplm('para1.csv')
     dplm_instance.set_dplm_allowed_angle_range(*ang_ran)
