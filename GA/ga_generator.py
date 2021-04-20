@@ -167,7 +167,7 @@ def setup_paras2():
     # GA parameters
     aps={'max_num_iteration': None,\
                 'population_size':3000,\
-            'mutation_probability':0.01,
+            'mutation_probability':0.1,
                 'elit_ratio': 0.05,\
                 'crossover_probability': 0.5,\
                 'parents_portion': 0.3,\

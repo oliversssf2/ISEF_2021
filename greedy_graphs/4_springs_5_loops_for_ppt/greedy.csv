@@ -1,0 +1,5 @@
+number of springs: 4
+Number of slots: 20
+spring_constants: [600, 300, 250, 230]
+spring_lengths: [0.1, 0.2, 0.17, 0.13]
+rmse,initial guess,final install positions,time elapsed

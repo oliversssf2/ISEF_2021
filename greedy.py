@@ -19,7 +19,7 @@ def ensure_path(path_str):
         path = Path.joinpath(cwd, path_str)
 
     return path
-def greedy1(dplm):
+def greedy1(dplm_instance):
     start = time.time()
     init_guess = np.random.randint(0, high=dplm_instance.get_slot_num()*2-1, size=dplm_instance.get_spring_num())-dplm_instance.get_slot_num()+1
     guess = np.array(init_guess, copy=True)
@@ -37,7 +37,9 @@ def greedy1(dplm):
     end = time.time()
     time_elapsed = end-start
     return init_guess, final_guess, final_rmse, time_elapsed
-def greedy2(dplm, s_c_range, s_c_step, s_l_range, s_l_step):
+def greedy2(dplm_instance, s_c_range, s_c_step, s_l_range, s_l_step):
+    dplm_instance.set_dplm_spring_num(6)
+    dplm_instance.set_dplm_slot_num(20)
     spring_num = dplm_instance.get_spring_num()
     slot_num = dplm_instance.get_slot_num()
     init_guess = [np.random.randint(0, high=slot_num*2-1, size=spring_num)-slot_num+1,
@@ -84,23 +86,25 @@ def plot_gragh(path, sample_count):
     a,b,c, rmse = dplm_instance.calculate_current_moment()
     ax = plt.gca()
     ax.cla()    
+    ax.set_title('Optimizing positions for 4 RBs',fontweight="semibold")
     # plt.figure()
-    ax.plot(range(lower_limit, upper_limit+1), a, label = 'moment_weight', ls = '--', lw = 1, color = 'grey')
+    ax.plot(range(lower_limit, upper_limit+1), a, label = 'M_W', ls = '--', lw = 3, color = 'grey')
 
     for i in range(len(b)):
-        ax.plot(range(lower_limit,upper_limit+1), b[i], label = 'moment_spring_{}'.format(i+1), ls = '-', lw = 1, color = 'cornflowerblue')
+        ax.plot(range(lower_limit,upper_limit+1), b[i], label = 'M_RB{}'.format(i+1), ls = '--', lw = 3, color = 'cornflowerblue')
 
-    ax.plot(range(lower_limit, upper_limit+1), c, label = 'moment_total', ls = '-', lw =4, color = 'gold')
+    ax.plot(range(lower_limit, upper_limit+1), c, label = 'M_NET', ls = '--', lw = 3, color = 'red')
     ax.axhline(y = 0, ls = '-', lw = 3, color = 'darkgrey')
 
     ax.axis(ymin=-20, ymax=50)
+    ax.axis(xmin = -20, xmax = 60)
     ax.legend()
-    plt.xlabel('angle [degree]')
-    plt.ylabel('moment [Nm]')
+    plt.xlabel('Angle [degree]')
+    plt.ylabel('Moment [Nm]')
     ax.xaxis.set_major_formatter("{x}°")
 
 
-    ax.text(-20,-13, 'RMSE={:.2f} \nInitial random state: {} \nFinal install positions: {}'.format(rmse,init_guess, guess))
+    ax.text(-17,-15, 'RMSE={:.2f} \nInitial random state: {} \nFinal install positions: {}'.format(rmse,init_guess, guess))
     plt.savefig(Path.joinpath(path,'test_{}.png'.format(sample_count+1)))
     # plt.show()
     plt.pause(0.001)
@@ -143,9 +147,9 @@ def plot_gragh2(path, sample_count):
 
 #settings: f is the greedy function to use
 plotting = True
-save_path_str = 'greedy_graphs/4_springs_1_loops_all_para'
+save_path_str = 'greedy_graphs/4_springs_5_loops_for_ppt'
 sample_size = 100
-f = greedy2
+f = greedy1
 plot_func = plot_gragh
 
 
@@ -157,7 +161,7 @@ if __name__ == '__main__':
     # dplm_instance.set_slot([-4, 13, 8])
     dplm_instance.set_dplm_spring_constants([600,300,250, 230])
     dplm_instance.set_dplm_spring_lengths([0.1, 0.2, 0.17, .13])
-    dplm_instance.set_dplm_allowed_angle_range(-40, 60, 1)
+    dplm_instance.set_dplm_allowed_angle_range(-20, 60, 1)
 
     spring_constant_range = [200, 800]
     spring_constant_step = 10
@@ -181,11 +185,11 @@ if __name__ == '__main__':
 
         #Start interactive plotting
         # plt.ion()
-        fig = plt.figure(figsize=[8, 6.4])
+        fig = plt.figure(figsize=[5, 4])
 
         for sample_count in range(sample_size):
-            init_guess, guess, rmse, time_elapsed= f(dplm_instance,spring_constant_range, spring_constant_step, spring_length_range, spring_length_step)
-            # init_guess, guess, rmse, time_elapsed= f(dplm_instance)
+            # init_guess, guess, rmse, time_elapsed= f(dplm_instance,spring_constant_range, spring_constant_step, spring_length_range, spring_length_step)
+            init_guess, guess, rmse, time_elapsed= f(dplm_instance)
             greedy_timer.append(time_elapsed)
             
             print('time elapsed for this iteration is {}s'.format(time_elapsed))
