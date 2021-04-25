@@ -164,7 +164,7 @@ def dens_dist_tri():
     for ind in range(len(s_c_flattened)):
         dplm_instance.set_dplm_spring_constants([s_c_flattened[ind]*tri_num_flattened[ind]])
         dplm_instance.set_dplm_spring_lengths([s_l_flattened[ind]])
-        dplm_instance.set_springs_positions([s_pos_flattened[ind]])
+        dplm_instance.set_springs_position oijs([s_pos_flattened[ind]])
         rmse.append(dplm_instance.current_rmse_only_springs())
     # print()
 
