@@ -75,7 +75,8 @@ def rmse_dist_tri():
     # %gui osx
     # %matplotlib
 
-    ga_data = pd.read_csv('./GA/GA data/ga_triangles_2_processed.csv')
+
+    ga_data = pd.read_csv('./GA/GA data/ga_triangles_3_processed.csv')
     ga_data.columns = ['s_num', 's_c', 's_l', 'e_l', 'tri_num', 'i_pos', 'rmse']
     good_ga_data = ga_data[ga_data['rmse']<=2]
     # print(good_ga_data)
@@ -108,14 +109,24 @@ def dens_dist_tri():
     import math
     from scipy.stats import gaussian_kde
 
+    axis = plt.gca()
+    fig = plt.gcf()
+
+
+    axis.set_title('Triangle')
+    axis.set_xlabel('Installation position [m]')
+    axis.set_ylabel('Net rubber band RMSE')
+    axis.set_xlim(-0.4, 0.4)
+    # axis.set_ylabel('Net rubber band RMSE')
+    # axis.set_xlim(-0.4, 0.4)
 
     dplm_instance = dplm_base.dplm('para1.csv')
-    dplm_instance.set_dplm_spring_num(1)
+    # dplm_instance.set_dplm_spring_num(1)
     # dplm_instance.set_slot([-4, 13, 8])
 
     dplm_instance.set_dplm_allowed_angle_range(-40, 60, 1)
 
-    ga_data = pd.read_csv('./GA/GA data/ga_triangles_2_processed.csv')
+    ga_data = pd.read_csv('./GA/GA data/ga_triangles_3_processed.csv')
     ga_data.columns = ['s_num', 's_c', 's_l', 'e_l', 'tri_num', 'i_pos', 'rmse']
     good_ga_data = ga_data[ga_data['rmse']<=2]
     good_ga_data.columns = ['s_num', 's_c', 's_l', 'e_l', 'tri_num', 'i_pos', 'rmse']
@@ -143,6 +154,7 @@ def dens_dist_tri():
         tri_num_flattened.extend([x,x])
 
 
+
     # for i in 
 
     # def find_similar_values(s_pos, rmse):
@@ -161,11 +173,14 @@ def dens_dist_tri():
     # print(len(s_l_flattened))
     # print(len(s_pos_flattened))
     rmse = []
-    for ind in range(len(s_c_flattened)):
-        dplm_instance.set_dplm_spring_constants([s_c_flattened[ind]*tri_num_flattened[ind]])
-        dplm_instance.set_dplm_spring_lengths([s_l_flattened[ind]])
-        dplm_instance.set_springs_positions([s_pos_flattened[ind]])
-        rmse.append(dplm_instance.current_rmse_only_springs())
+    for ind in range(int(len(s_c_flattened)/2)):
+        dplm_instance.add_triangle(tri_num_flattened[2*ind]*s_c_flattened[2*ind], s_l_flattened[2*ind])
+        # dplm_instance.set_dplm_spring_constants([s_c_flattened[ind]*tri_num_flattened[ind]])
+        # dplm_instance.set_dplm_spring_lengths([s_l_flattened[ind]])
+        dplm_instance.set_springs_positions([s_pos_flattened[2*ind], s_pos_flattened[2*ind+1]])
+        rmse.append(dplm_instance.current_rmse_only_springs_triangle()[0])
+        rmse.append(dplm_instance.current_rmse_only_springs_triangle()[1])
+        dplm_instance.rm_triangle()
     # print()
 
     # print(rmse)
