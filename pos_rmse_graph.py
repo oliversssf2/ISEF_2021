@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.sparse.sputils import upcast
 import dplm_base
 import math
 from scipy.stats import gaussian_kde
@@ -163,10 +164,19 @@ def dens_dist_tri():
     # print(len(s_pos))
     # print(s_pos)
 
+    l_half = 0
+    u_half = 0
     s_pos_flattened = []
     for s in s_pos:
         for pos in s:
             s_pos_flattened.append(pos)
+            if(pos>=0.2):
+                u_half+=1
+            else: 
+                l_half+=1
+    print('Number of rubber bands with installation position >=0.2: {}'.format(u_half))
+    print('Number of rubber bands with installation position <0.2: {}'.format(l_half))
+
     # print(s_pos_flattened[0:100])
 
     # print(len(s_c_flattened))
@@ -188,6 +198,9 @@ def dens_dist_tri():
     xy = np.vstack([s_pos_flattened,rmse])
     z = gaussian_kde(xy)(xy)    
     plt.scatter(s_pos_flattened, rmse, c=z, s=1)
+    plt.axvline(0.2, color = 'red')
+    plt.text(-0.1, 135, 'RBs with D>=0.2:\n{}'.format(l_half), horizontalalignment='center')
+    plt.text(0.3, 135, 'RBs with D<0.2:\n{}'.format(u_half), horizontalalignment='center')
     plt.colorbar()
     plt.show()
 def dens_dist_mul():
@@ -230,13 +243,19 @@ def dens_dist_mul():
         s_c = [[float(x) for x in ga['s_c'].iloc[i][1:-1].split(',')] for i in range(ga.shape[0])]
         s_l = [[float(x) for x in ga['s_l'].iloc[i][1:-1].split(',')] for i in range(ga.shape[0])]
         
-
+        t_count = 0
+        around_0_count = 0
 
         s_pos_flattend = []
         for i in s_pos:
             for j in i:
                 if not math.isnan(j):
+                    t_count+=1
+                    if(-0.05<=j<=0.05): around_0_count+=1
                     s_pos_flattend.append(j)
+        
+        print('Number of RBs close to zero:{}'.format(around_0_count))
+        print("Total number of RBs: {}".format(t_count))
         
         s_c_flattend = []
         for i in s_c:
@@ -266,6 +285,9 @@ def dens_dist_mul():
         xy = np.vstack([s_pos_flattend,rmse])
         z = gaussian_kde(xy)(xy)   
         plt.scatter(s_pos_flattend, rmse, c=z, s=1, cmap='viridis')
+        plt.axvline(0.2, color = 'red')
+        plt.text(-0.1, 135, 'RBs with D>=0.2:\n{}'.format(l_half), horizontalalignment='center')
+        plt.text(0.3, 135, 'RBs with D<0.2:\n{}'.format(u_half), horizontalalignment='center')
         plt.colorbar()
     # plt.colorbar(new_z, orientation='vertical')
     plt.show()
