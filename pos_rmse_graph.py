@@ -110,11 +110,13 @@ def dens_dist_tri():
     import math
     from scipy.stats import gaussian_kde
 
-    axis = plt.gca()
-    fig = plt.gcf()
+    fig, axes = plt.subplots(1, 2)
+    plt.subplot(1,2,1)
+
+    axis = axes[0]
 
 
-    axis.set_title('Triangle')
+    # axis.set_title('Triangle')
     axis.set_xlabel('Installation position [m]')
     axis.set_ylabel('Net rubber band RMSE')
     axis.set_xlim(-0.4, 0.4)
@@ -167,7 +169,15 @@ def dens_dist_tri():
     l_half = 0
     u_half = 0
     s_pos_flattened = []
+    s_pos_lower = []
+    s_pos_higher = []
     for s in s_pos:
+        # print(s)
+        temp = s.copy()
+        temp.sort()
+        s_pos_lower.append(temp[0])
+        s_pos_higher.append(temp[1])
+
         for pos in s:
             s_pos_flattened.append(pos)
             if(pos>=0.2):
@@ -183,15 +193,33 @@ def dens_dist_tri():
     # print(len(s_l_flattened))
     # print(len(s_pos_flattened))
     rmse = []
+    r_lower = []
+    r_higher = []
     for ind in range(int(len(s_c_flattened)/2)):
         dplm_instance.add_triangle(tri_num_flattened[2*ind]*s_c_flattened[2*ind], s_l_flattened[2*ind])
         # dplm_instance.set_dplm_spring_constants([s_c_flattened[ind]*tri_num_flattened[ind]])
         # dplm_instance.set_dplm_spring_lengths([s_l_flattened[ind]])
         dplm_instance.set_springs_positions([s_pos_flattened[2*ind], s_pos_flattened[2*ind+1]])
-        rmse.append(dplm_instance.current_rmse_only_springs_triangle()[0])
-        rmse.append(dplm_instance.current_rmse_only_springs_triangle()[1])
+        r_0 = dplm_instance.current_rmse_only_springs_triangle()[0]
+        r_1 = dplm_instance.current_rmse_only_springs_triangle()[1]
+        rmse.append(r_0)
+        rmse.append(r_1)
+        if(s_pos[ind][0]>s_pos[ind][1]): 
+            r_higher.append(r_0)
+            r_lower.append(r_1)
+        else:
+            r_higher.append(r_1)
+            r_lower.append(r_0)
+        
+    
+
         dplm_instance.rm_triangle()
     # print()
+    print(len(s_pos_lower))
+    print(len(s_pos_higher))
+
+    print(len(r_lower))
+    print(len(r_higher))
 
     # print(rmse)
 
@@ -202,6 +230,10 @@ def dens_dist_tri():
     plt.text(-0.1, 135, 'RBs with D>=0.2:\n{}'.format(l_half), horizontalalignment='center')
     plt.text(0.3, 135, 'RBs with D<0.2:\n{}'.format(u_half), horizontalalignment='center')
     plt.colorbar()
+
+    plt.subplot(1,2,2)
+    plt.scatter(s_pos_lower, r_lower, s=1, marker='*')
+    plt.scatter(s_pos_higher, r_higher, s=1, marker="o")
     plt.show()
 def dens_dist_mul():
     import pandas as pd
@@ -245,15 +277,24 @@ def dens_dist_mul():
         
         t_count = 0
         around_0_count = 0
+        greater_than_point_3_count =0
+        lower_than_0_count = 0
 
         s_pos_flattend = []
         for i in s_pos:
             for j in i:
                 if not math.isnan(j):
                     t_count+=1
-                    if(-0.05<=j<=0.05): around_0_count+=1
+                    if(-0.1<=j<=0.1): around_0_count+=1
+                    if(j>=0.3): greater_than_point_3_count+=1
+                    if(j<=0): lower_than_0_count+=1
                     s_pos_flattend.append(j)
         
+        t_count*=5
+        around_0_count*=5
+        greater_than_point_3_count*=5
+        lower_than_0_count*=5
+
         print('Number of RBs close to zero:{}'.format(around_0_count))
         print("Total number of RBs: {}".format(t_count))
         
@@ -286,7 +327,11 @@ def dens_dist_mul():
         z = gaussian_kde(xy)(xy)   
         plt.scatter(s_pos_flattend, rmse, c=z, s=1, cmap='viridis')
         plt.axvline(0.2, color = 'red')
-        plt.text(0, 30, 'Total RBs number:{}\n RBs close to zero\n(-0.05<=x<=0.05):\n{}'.format(t_count, around_0_count), horizontalalignment='center')
+        plt.text(-0.1, 10, 'Total RBs number:\n{}\n\
+        RBs close to zero\n(-0.1<=x<=0.1):\n{}\n\
+        RBs x>=0.3:\n{}\n\
+        RBs x<=0:\n{}\n\
+        RBs x>0:\n{}'.format(t_count, around_0_count, greater_than_point_3_count, lower_than_0_count, t_count-lower_than_0_count), horizontalalignment='center')
         plt.colorbar()
     # plt.colorbar(new_z, orientation='vertical')
     plt.show()
